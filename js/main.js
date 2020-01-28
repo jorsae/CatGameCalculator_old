@@ -1,4 +1,4 @@
-var userTime = 30;
+var userTime = 60*48*5
 
 function calculateCraft(item, quantity){
     var reqs = getCraftingRequirements(item, quantity);
@@ -17,5 +17,9 @@ function calculateCraft(item, quantity){
     currentCraft.clear();
 }
 
-calculateCraft(needles, 10);
-calculateCraft(ribbon, 20);
+//calculateCraft(needles, 10);
+//calculateCraft(sparkles, 20);
+//calculateCraft(necklace, 20);
+//calculateCraft(fire, 20);
+//calculateCraft(elementstone, 20);
+calculateCraft(artifact, 20);
