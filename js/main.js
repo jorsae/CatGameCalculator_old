@@ -1,15 +1,21 @@
 var userTime = 30;
 
-var reqs = getCraftingRequirements(needles, 10);
+function calculateCraft(item, quantity){
+    var reqs = getCraftingRequirements(item, quantity);
 
-var totalCost = 0;
-console.log(reqs);
-for (const entry of reqs.entries()) {
-    var item = craftingRecipes.get(entry[0]);
+    var totalCost = 0;
+    console.log(reqs);
+    for (const entry of reqs.entries()) {
+        var item = craftingRecipes.get(entry[0]);
+        
+        totalCost += item.getCost(userTime, entry[1]);
+        //console.log(item);
+    }
     
-    totalCost += item.getCost(userTime, entry[1]);
-    //console.log(item);
+    console.log('==============================');
+    console.log('userTime: ' + userTime + '\ttotalCost: ' + totalCost);
+    currentCraft.clear();
 }
 
-console.log('==============================');
-console.log('userTime: ' + userTime + '\ttotalCost: ' + totalCost);
+calculateCraft(needles, 10);
+calculateCraft(ribbon, 20);
