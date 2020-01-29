@@ -8,7 +8,6 @@
         <script type="text/javascript" src="js/main.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
-
     <body>
         <h1>Cat Game Calculator</h1>
         <div class="box">
@@ -17,36 +16,51 @@
                 <div class="crafting-content">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                            <img class="crafting-recipe-image" src="images/game/string.png" alt="string" />
-                            <span>
-                                <p class="inline-paragraph">string</p><p class="inline-paragraph" id="stringAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('string')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('string')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/string.png" alt="string">
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">string: </p>
+                                    <p class="inline-paragraph" id="stringAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('string')">
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('string')">
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/wood.png" alt="wood" />
-                            <span>
-                                <p class="inline-paragraph">wood</p><p class="inline-paragraph" id="woodAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('wood')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('wood')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/wood.png" alt="wood" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">wood:</p>
+                                    <p class="inline-paragraph" id="woodAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('wood')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('wood')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
-                            <span>
-                                <p class="inline-paragraph">ribbon</p><p class="inline-paragraph" id="ribbonAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('ribbon')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('ribbon')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">ribbon:</p>
+                                    <p class="inline-paragraph" id="ribbonAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('ribbon')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('ribbon')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
@@ -59,36 +73,51 @@
                 <div class="crafting-content">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/metal.png" alt="metal" />
-                            <span>
-                                <p class="inline-paragraph">metal</p><p class="inline-paragraph" id="metalAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('metal')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('metal')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/metal.png" alt="metal" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">metal:</p>
+                                    <p class="inline-paragraph" id="metalAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('metal')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('metal')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
-                            <span>
-                                <p class="inline-paragraph">needles</p><p class="inline-paragraph" id="needlesAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('needles')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('needles')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">needles:</p>
+                                    <p class="inline-paragraph" id="needlesAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('needles')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('needles')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
-                            <span>
-                                <p class="inline-paragraph">sparkles</p><p class="inline-paragraph" id="sparklesAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('sparkles')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('sparkles')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">sparkles:</p>
+                                    <p class="inline-paragraph" id="sparklesAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('sparkles')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('sparkles')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
@@ -101,36 +130,51 @@
                 <div class="crafting-content">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
-                            <span>
-                                <p class="inline-paragraph">bronze</p><p class="inline-paragraph" id="bronzeAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('bronze')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('bronze')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">bronze:</p>
+                                    <p class="inline-paragraph" id="bronzeAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('bronze')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('bronze')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
-                            <span>
-                                <p class="inline-paragraph">silver</p><p class="inline-paragraph" id="silverAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('silver')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('silver')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">silver:</p>
+                                    <p class="inline-paragraph" id="silverAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('silver')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('silver')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
-                            <span>
-                                <p class="inline-paragraph">gold</p><p class="inline-paragraph" id="goldAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('gold')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('gold')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">gold:</p>
+                                    <p class="inline-paragraph" id="goldAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('gold')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('gold')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
@@ -143,36 +187,51 @@
                 <div class="crafting-content">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
-                            <span>
-                                <p class="inline-paragraph">amethyst</p><p class="inline-paragraph" id="amethystAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('amethyst')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('amethyst')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">amethyst:</p>
+                                    <p class="inline-paragraph" id="amethystAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('amethyst')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('amethyst')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/pendant.png" alt="pendant" />
-                            <span>
-                                <p class="inline-paragraph">pendant</p><p class="inline-paragraph" id="pendantAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('pendant')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('pendant')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/pendant.png" alt="pendant" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">pendant:</p>
+                                    <p class="inline-paragraph" id="pendantAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('pendant')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('pendant')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/necklace.png" alt="necklace" />
-                            <span>
-                                <p class="inline-paragraph">necklace</p><p class="inline-paragraph" id="necklaceAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('necklace')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('necklace')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/necklace.png" alt="necklace" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">necklace:</p>
+                                    <p class="inline-paragraph" id="necklaceAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('necklace')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('necklace')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
@@ -185,36 +244,51 @@
                 <div class="crafting-content">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
-                            <span>
-                                <p class="inline-paragraph">orb</p><p class="inline-paragraph" id="orbAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('orb')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('orb')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="ribbon" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">orb:</p>
+                                    <p class="inline-paragraph" id="orbAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('orb')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('orb')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/water.png" alt="water" />
-                            <span>
-                                <p class="inline-paragraph">water</p><p class="inline-paragraph" id="waterAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('water')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('water')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/water.png" alt="water" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">water:</p>
+                                    <p class="inline-paragraph" id="waterAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('water')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('water')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/fire.png" alt="fire" />
-                            <span>
-                                <p class="inline-paragraph">fire</p><p class="inline-paragraph" id="fireAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('fire')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('fire')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/fire.png" alt="fire" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">fire:</p>
+                                    <p class="inline-paragraph" id="fireAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('fire')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('fire')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
@@ -227,36 +301,51 @@
                 <div class="crafting-content">
                     <div class="crafting-items rare">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="r" />
-                            <span>
-                                <p class="inline-paragraph">waterstone</p><p class="inline-paragraph" id="waterstoneAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('waterstone')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('waterstone')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/ribbon.png" alt="r" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">waterstone:</p>
+                                    <p class="inline-paragraph" id="waterstoneAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('waterstone')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('waterstone')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items epic">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/firestone.png" alt="firestone" />
-                            <span>
-                                <p class="inline-paragraph">firestone</p><p class="inline-paragraph" id="firestoneAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('firestone')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('firestone')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/firestone.png" alt="firestone" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">firestone:</p>
+                                    <p class="inline-paragraph" id="firestoneAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('firestone')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('firestone')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
                     </div>
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/elementstone.png" alt="elementstone.png" />
-                            <span>
-                                <p class="inline-paragraph">elementstone</p><p class="inline-paragraph" id="elementstoneAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('elementstone')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('elementstone')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/elementstone.png" alt="elementstone.png" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">elementstone:</p>
+                                    <p class="inline-paragraph" id="elementstoneAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('elementstone')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('elementstone')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
@@ -269,12 +358,17 @@
                 <div class="crafting-content">
                     <div class="crafting-items legendary">
                         <div class="crafting-items-top">
-                        <img class="crafting-recipe-image" src="images/game/artifact.png" alt="artifact" />
-                            <span>
-                                <p class="inline-paragraph">artifact</p><p class="inline-paragraph" id="artifactAmount">0</p>
-                                <img class="arrow" src="images/arrow-up.png" onclick="clickUp('artifact')" />
-                                <img class="arrow" src="images/arrow-down.png" onclick="clickDown('artifact')" />
-                            </span>
+                            <img class="crafting-recipe-image" src="images/game/artifact.png" alt="artifact" />
+                            <div class="crafting-items-amount">
+                                <div class="crafting-items-text">
+                                    <p class="inline-paragraph">artifact:</p>
+                                    <p class="inline-paragraph" id="artifactAmount">0</p>
+                                </div>
+                                <div class="arrow-container">
+                                    <img class="arrow" src="images/arrow-up.png" onclick="clickUp('artifact')" />
+                                    <img class="arrow" src="images/arrow-down.png" onclick="clickDown('artifact')" />
+                                </div>
+                            </div>
                         </div>
                         <p>Recipe: 2String, 2Wood</p>
                         <p>Crafting time: 15 minutes</p>
