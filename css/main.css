@@ -1,8 +1,8 @@
 body{
     background-color: lightpink;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("../images/bg2.png"), url("../images/bg.png");
-    background-position: top right, top left;
+    background-image: url("../images/background-cat-left.png"), url("../images/background-cat-right.png");
+    background-position: top left, top right;
     background-size: 25%;
     background-repeat: no-repeat;
 }
