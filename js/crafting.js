@@ -137,5 +137,5 @@ craftingRecipes.set(elementstone.name, elementstone);
 
 // Ruin Crafting
 var artifactReq = [new CraftingRequirement(elementstone, 1), new CraftingRequirement(necklace, 1)];
-artifact = new CraftingItem("Artifact", 2880, 10000, artifactReq); // TODO: This time might be wrong
+artifact = new CraftingItem("Artifact", 4320, 10000, artifactReq);
 craftingRecipes.set(artifact.name, artifact);
