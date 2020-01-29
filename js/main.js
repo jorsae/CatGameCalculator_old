@@ -1,7 +1,5 @@
 window.onload = init;
 
-var userTime = 60*48*5
-
 function init(){
     document.getElementById("calculate").onclick = calculate;
 }
@@ -12,6 +10,12 @@ function init(){
     Afterwards the CraftingItem "UseItem" is then deleted from the craftingRecipes.
 */
 function calculate(){
+    var userTimeElement = document.getElementById("userTime");
+    var userTime = parseInt(userTimeElement.value);
+    if(userTime === NaN){
+        return;
+    }
+
     var userItemReq = [];
 
     for (const entry of craftingRecipes.entries()) {
