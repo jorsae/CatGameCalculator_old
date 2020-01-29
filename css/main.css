@@ -41,7 +41,6 @@ h1{
 }
 
 .crafting-items span{
-    border: solid 1px purple;
     float: right;
     width: fit-content;
     height: fit-content
