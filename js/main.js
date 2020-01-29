@@ -3,7 +3,11 @@ window.onload = init;
 var userTime = 60*48*5
 
 function init(){
+    document.getElementById("calculate").onclick = calculate;
+}
 
+function calculate(){
+    console.log("TODO: calulcate");
 }
 
 function clickUp(arg){
