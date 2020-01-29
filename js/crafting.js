@@ -106,7 +106,7 @@ pendant = new CraftingItem("Pendant", 180, 500, pendantReq);
 craftingRecipes.set(pendant.name, pendant);
 
 var necklaceReq = [new CraftingRequirement(pendant, 3), new CraftingRequirement(gold, 2)];
-necklace = new CraftingItem("Necklace", 760, 500, necklaceReq); // TODO: 760 time, might be wrong!!!
+necklace = new CraftingItem("Necklace", 760, 500, necklaceReq);
 craftingRecipes.set(necklace.name, necklace);
 
 // Magic Crafting
@@ -137,5 +137,5 @@ craftingRecipes.set(elementstone.name, elementstone);
 
 // Ruin Crafting
 var artifactReq = [new CraftingRequirement(elementstone, 1), new CraftingRequirement(necklace, 1)];
-artifact = new CraftingItem("Artifact", 2880, 10000, artifactReq);// TODO: This time might be wrong
+artifact = new CraftingItem("Artifact", 2880, 10000, artifactReq); // TODO: This time might be wrong
 craftingRecipes.set(artifact.name, artifact);
