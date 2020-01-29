@@ -49,8 +49,6 @@ function calculate(){
     currentCraft.clear();
 
     craftingRecipes.delete(userItem.name);
-
-    console.log(craftingRecipes);
 }
 
 function clickUp(arg){
