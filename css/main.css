@@ -22,6 +22,10 @@ body{
     margin: 16px;
 }
 
+.crafting-recipe-image{
+    width: 64px;
+}
+
 .crafting-items-top{
     width: 100%;
     height: fit-content;
