@@ -74,7 +74,7 @@ function createOutput(item, cost, quantity){
     outputTextDiv.classList.add("output-content-text");
     outputTextDiv.classList.add("rare");// TODO: Can change this depending on the item
 
-    var textOutputItem = document.createElement("p");
+    var textOutputItem = document.createElement("p"); // TODO: This should also contain "craft 4x, 10times" information
     textOutputItem.innerText = item.name + ": " + quantity;
     
     var textOutputCost = document.createElement("p");
