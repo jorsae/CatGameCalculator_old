@@ -5,7 +5,6 @@ function getCraftingRequirements(item, parentQuantity = 1){
         return;
     }
 
-    // Adds itself as a requirement
     currentCraft.set(item.name, parentQuantity);
 
     // Adds all the requirements
