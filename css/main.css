@@ -19,7 +19,6 @@ h1{
 }
 
 .crafting-tier{
-    border: solid 1px red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,10 +45,6 @@ h1{
 
 .legendary{
     background-image: linear-gradient(to bottom, #dd7cdb, #a859b4);
-}
-
-.crafting-items{
-    border: solid 1px red;
 }
 
 .crafting-recipe-image{
