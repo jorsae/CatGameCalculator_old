@@ -30,13 +30,20 @@ body{
     width: 100%;
     height: fit-content;
     border: solid 1px pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .crafting-items span{
     border: solid 1px purple;
     float: right;
-    margin-right: 16px;
-    margin-top: -8px;
+    width: fit-content;
+    height: fit-content
+}
+
+.inline-paragraph{
+    margin: 0 0 0 0;
 }
 
 .arrow{
