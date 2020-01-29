@@ -19,8 +19,8 @@
                         <img src="images/ribbon.png" alt="ribbon" />
                         <span>
                             <p>Crafting: 0</p>
-                            <img class="arrow" src="images/arrow-up.png" />
-                            <img class="arrow" src="images/arrow-down.png" />
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('string')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('string')" />
                         </span>
                     </div>
                     <p>Recipe: 2String, 2Wood</p>
@@ -28,48 +28,54 @@
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('wood')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('wood')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('ribbon')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('ribbon')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
             </div>
+
             <div class="crafting-tier">
                 <h3>Shiny Crafting</h3>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('metal')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('metal')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('needles')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('needles')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('sparkles')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('sparkles')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
@@ -80,27 +86,30 @@
                 <h3>Precious Crafting</h3>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('bronze')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('bronze')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('silver')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('silver')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('gold')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('gold')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
@@ -111,70 +120,112 @@
                 <h3>Jewel Crafting</h3>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('amethyst')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('amethyst')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('pendant')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('pendant')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('necklace')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('necklace')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
             </div>
-            <div class="crafting-tier">
 
+            <div class="crafting-tier">
                 <h3>Magic Crafting</h3>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('orb')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('orb')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('water')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('water')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('fire')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('fire')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>
                 </div>
             </div>
+            
             <div class="crafting-tier">
                 <h3>Ancient Crafting</h3>
                 <div class="crafting-items">
                     <img src="images/ribbon.png" alt="ribbon" />
-                    <span>
-                        <p>Crafting: 0</p>
-                        <button>up</button> <button>down</button>
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('waterstone')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('waterstone')" />
+                        </span>
+                    <p>Recipe: 2String, 2Wood</p>
+                    <p>Crafting time: 15 minutes</p>
+                </div>
+                <div class="crafting-items">
+                    <img src="images/ribbon.png" alt="ribbon" />
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('firestone')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('firestone')" />
+                        </span>
+                    <p>Recipe: 2String, 2Wood</p>
+                    <p>Crafting time: 15 minutes</p>
+                </div>
+                <div class="crafting-items">
+                    <img src="images/ribbon.png" alt="ribbon" />
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('elementstone')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('elementstone')" />
+                        </span>
+                    <p>Recipe: 2String, 2Wood</p>
+                    <p>Crafting time: 15 minutes</p>
+                </div>
+            </div>
+
+            <div class="crafting-tier">
+                <h3>Ruin Crafting</h3>
+                <div class="crafting-items">
+                    <img src="images/ribbon.png" alt="ribbon" />
+                        <span>
+                            <p>Crafting: 0</p>
+                            <img class="arrow" src="images/arrow-up.png" onclick="clickUp('artifact')" />
+                            <img class="arrow" src="images/arrow-down.png" onclick="clickDown('artifact')" />
                         </span>
                     <p>Recipe: 2String, 2Wood</p>
                     <p>Crafting time: 15 minutes</p>

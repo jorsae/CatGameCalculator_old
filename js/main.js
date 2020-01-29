@@ -1,4 +1,18 @@
+window.onload = init;
+
 var userTime = 60*48*5
+
+function init(){
+
+}
+
+function clickUp(arg){
+    console.log("clickUp: " + arg);
+}
+
+function clickDown(arg){
+    console.log("clickDown: " + arg);
+}
 
 function calculateCraft(item, quantity){
     var reqs = getCraftingRequirements(item, quantity);
