@@ -1,3 +1,23 @@
 body{
-    background-color: green;
+    background-color: gray;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    margin: auto;
+    width: fit-content;
+}
+
+.crafting-tier{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px blue;
+    justify-content: center;
+}
+
+.crafting-items{
+    border: solid 1px green;
+    margin: 16px;
 }
