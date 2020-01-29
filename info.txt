@@ -1,6 +1,6 @@
 Base: 
     Cotton
-    Logs
+    Log
     Rock
     Quartz
 
