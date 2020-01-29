@@ -45,7 +45,10 @@ function calculate(){
     console.log(reqs);
     for (const entry of reqs.entries()) {
         var item = craftingRecipes.get(entry[0]);
-        totalCost += item.getCost(userTime, entry[1]);
+        var quantity = entry[1];
+        var cost = item.getCost(userTime, quantity);
+        createOutput(item, cost, quantity);
+        totalCost += cost;
     }
     
     console.log('==============================');
@@ -53,6 +56,37 @@ function calculate(){
     currentCraft.clear();
 
     craftingRecipes.delete(userItem.name);
+}
+
+function createOutput(item, cost, quantity){
+    if(item.name === "UserItem"){
+        return;
+    }
+
+    var outputContainerElement = document.getElementById("outputContainer");
+    var outputDiv = document.createElement("div");
+    outputDiv.classList.add("output-content");
+
+    var imgDiv = document.createElement("img");
+    imgDiv.src = "images/game/" + item.name.toLowerCase() + ".png";
+
+    var outputTextDiv = document.createElement("div");
+    outputTextDiv.classList.add("output-content-text");
+    outputTextDiv.classList.add("rare");// TODO: Can change this depending on the item
+
+    var textOutputItem = document.createElement("p");
+    textOutputItem.innerText = item.name + ": " + quantity;
+    
+    var textOutputCost = document.createElement("p");
+    textOutputCost.innerText = "Cost: " + cost;
+
+    outputTextDiv.appendChild(textOutputItem);
+    outputTextDiv.appendChild(textOutputCost);
+
+    outputDiv.appendChild(imgDiv);
+    outputDiv.appendChild(outputTextDiv);
+
+    outputContainerElement.appendChild(outputDiv);
 }
 
 function clickUp(arg){
@@ -93,10 +127,3 @@ function calculateCraft(item, quantity){
     console.log('userTime: ' + userTime + '\ttotalCost: ' + totalCost);
     currentCraft.clear();
 }
-
-//calculateCraft(needles, 10);
-//calculateCraft(sparkles, 20);
-//calculateCraft(necklace, 20);
-//calculateCraft(fire, 20);
-//calculateCraft(elementstone, 20);
-//calculateCraft(artifact, 20);
