@@ -22,7 +22,7 @@ Precious Crafting:
 Jewel Crafting:
     Amethyst : 10 Quartz | 1 hour | 300 coins
     Pendant : 7 Amethyst, 2 Silver | 3 hours | 500 coins
-    Necklace : 3 Pendant, 2 Gold | (in the meantime: 12 hours, 40minutes)??? | 800 coins
+    Necklace : 3 Pendant, 2 Gold | 12hours, 40minutes | 800 coins
 
 Magic Crafting:
     Orb : 20 Quartz | 1 hour | 300 coins
@@ -35,4 +35,4 @@ Ancient Crafting:
     Elementstone : 1 Firestone, 1 Waterstone | 24 hours | 5000 coins
 
 Ruin Crafting:
-    Artifact : 1 Elementstone, 1 Necklace | Time: (in the meantime: 48 hours)??? | 10,000 coins
+    Artifact : 1 Elementstone, 1 Necklace | Time: 72hours | 10,000 coins
