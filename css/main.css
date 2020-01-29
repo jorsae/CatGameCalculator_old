@@ -21,3 +21,21 @@ body{
     border: solid 1px green;
     margin: 16px;
 }
+
+.crafting-items-top{
+    width: 100%;
+    height: fit-content;
+    border: solid 1px pink;
+}
+
+.crafting-items span{
+    border: solid 1px purple;
+    float: right;
+    margin-right: 16px;
+    margin-top: -8px;
+}
+
+.arrow{
+    width: 32px;
+    height: 32px;
+}
