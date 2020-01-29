@@ -1,12 +1,19 @@
 body{
-    background-color: gray;
+    background-color: lightpink;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../images/bg2.png"), url("../images/bg.png");
+    background-position: top right, top left;
+    background-size: 25%;
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
 }
 
 .box{
     display: flex;
     flex-direction: column;
-    border: solid 1px red;
     margin: auto;
     width: fit-content;
 }
@@ -14,12 +21,10 @@ body{
 .crafting-tier{
     display: flex;
     flex-direction: row;
-    border: solid 1px blue;
     justify-content: center;
 }
 
 .crafting-items{
-    border: solid 1px green;
     margin: 4px;
 }
 
@@ -30,7 +35,6 @@ body{
 .crafting-items-top{
     width: 100%;
     height: fit-content;
-    border: solid 1px pink;
     display: flex;
     flex-direction: row;
     justify-content: center;
