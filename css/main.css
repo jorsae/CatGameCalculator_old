@@ -19,13 +19,37 @@ h1{
 }
 
 .crafting-tier{
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crafting-tier h2{
+    text-align: center;
+    margin: 0px;
+}
+
+.crafting-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+.rare{
+    background-image: linear-gradient(to bottom, #2de3f5, #169ed1);
+}
+
+.epic{
+    background-image: linear-gradient(to bottom, #f55d69, #cb2347);
+}
+
+.legendary{
+    background-image: linear-gradient(to bottom, #dd7cdb, #a859b4);
+}
+
 .crafting-items{
-    margin: 4px;
+    border: solid 1px red;
 }
 
 .crafting-recipe-image{
@@ -43,7 +67,7 @@ h1{
 .crafting-items span{
     float: right;
     width: fit-content;
-    height: fit-content
+    height: fit-content;
 }
 
 .inline-paragraph{
