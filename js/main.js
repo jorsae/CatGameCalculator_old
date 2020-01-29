@@ -54,11 +54,25 @@ function calculate(){
 }
 
 function clickUp(arg){
+    var element = document.getElementById(arg + "Amount");
+    if(element === null){
+        return;
+    }
+    var value = parseInt(element.innerText);
+    element.innerText = ++value;
     console.log("clickUp: " + arg);
 }
 
 function clickDown(arg){
-    console.log("clickDown: " + arg);
+    var element = document.getElementById(arg + "Amount");
+    if(element === null){
+        return;
+    }
+    var value = parseInt(element.innerText);
+    element.innerText = --value;
+    if(value <= 0){
+        element.innerText = 0;
+    }
 }
 
 function calculateCraft(item, quantity){
