@@ -41,7 +41,6 @@ function calculate(){
     craftingRecipes.set(userItem.name, userItem);
     var reqs = getCraftingRequirements(userItem, 1);
     
-    var itemNumber = 0;
     var totalCost = 0;
 
     for (const entry of reqs.entries()) {
@@ -54,19 +53,16 @@ function calculate(){
         var cost = itemCost[0];
         var itemsPerCraft = itemCost[1];
         var crafts = itemCost[2];
-        createOutput(item, cost, itemsPerCraft, crafts, itemNumber);
+        createOutput(item, cost, itemsPerCraft, crafts);
         totalCost += cost;
-        itemNumber++;
     }
 
     currentCraft.clear();
     craftingRecipes.delete(userItem.name);
 }
 
-function createOutput(item, cost, itemsPerCraft, crafts, itemNumber){
+function createOutput(item, cost, itemsPerCraft, crafts){
     var outputContainerElement = document.getElementById("outputContainer");
-
-    var outputRowElement = getOutputRow(itemNumber);
 
     var outputDiv = document.createElement("div");
     outputDiv.classList.add("output-content");
@@ -94,8 +90,7 @@ function createOutput(item, cost, itemsPerCraft, crafts, itemNumber){
     outputDiv.appendChild(imgDiv);
     outputDiv.appendChild(outputTextDiv);
 
-    outputRowElement.appendChild(outputDiv);
-    outputContainerElement.appendChild(outputRowElement);
+    outputContainerElement.appendChild(outputDiv);
 }
 
 function getOutputRow(itemNumber){

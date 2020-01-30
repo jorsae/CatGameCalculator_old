@@ -3,3 +3,9 @@
         zoom: 125%;
     }
 }
+
+@media all and (max-width: 800px) {
+    .output-container{
+        max-width: 100%;
+    }
+}
