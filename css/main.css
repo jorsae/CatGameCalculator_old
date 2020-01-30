@@ -67,6 +67,7 @@ h1{
 
 .fit-content{
     width: fit-content;
+    max-width: 40%;
 }
 
 .crafting-recipe-image{

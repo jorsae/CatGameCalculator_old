@@ -3,6 +3,10 @@
         zoom: 125%;
         max-width: 100%;
     }
+
+    .fit-content{
+        max-width: 75%;
+    }
 }
 
 @media all and (max-width: 800px) {
