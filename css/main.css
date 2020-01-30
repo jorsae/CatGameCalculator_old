@@ -40,6 +40,10 @@ h1{
     justify-content: center;
 }
 
+.crafting-items{
+    width: 100%;
+}
+
 .rare{
     background-image: linear-gradient(to bottom, #2de3f5, #169ed1);
 }
@@ -50,6 +54,10 @@ h1{
 
 .legendary{
     background-image: linear-gradient(to bottom, #dd7cdb, #a859b4);
+}
+
+.fit-content{
+    width: fit-content;
 }
 
 .crafting-recipe-image{
