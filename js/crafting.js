@@ -1,8 +1,8 @@
 // Base
-cotton = new CraftingItem("Cotton", 0, 0, null);
-log = new CraftingItem("Log", 0, 0, null);
-rock = new CraftingItem("Rock", 0, 0, null);
-quartz = new CraftingItem("Quartz", 0, 0, null);
+cotton = new CraftingItem("Cotton", 0, 0, rarity.RAW);
+log = new CraftingItem("Log", 0, 0, rarity.RAW);
+rock = new CraftingItem("Rock", 0, 0, rarity.RAW);
+quartz = new CraftingItem("Quartz", 0, 0, rarity.RAW);
 craftingRecipes.set(cotton.name, cotton);
 craftingRecipes.set(log.name, log);
 craftingRecipes.set(rock.name, rock);

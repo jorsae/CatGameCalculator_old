@@ -17,7 +17,6 @@ function calculate(){
     }
 
     var userItemReq = [];
-
     for (const entry of craftingRecipes.entries()) {
         var item = craftingRecipes.get(entry[0]);
         var itemAmountElement = document.getElementById(item.name.toLowerCase() + 'Amount');
@@ -36,9 +35,8 @@ function calculate(){
         }
         continue;
     }
-    userItem = new CraftingItem("UserItem", 0, 0, userItemReq);
+    userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, userItemReq);
     craftingRecipes.set(userItem.name, userItem);
-
     var reqs = getCraftingRequirements(userItem, 1);
     
     var itemNumber = 0;
@@ -76,7 +74,7 @@ function createOutput(item, cost, itemsPerCraft, crafts, itemNumber){
 
     var outputTextDiv = document.createElement("div");
     outputTextDiv.classList.add("output-content-text");
-    outputTextDiv.classList.add("rare");// TODO: Can change this depending on the item
+    outputTextDiv.classList.add(item.rarity);// TODO: Can change this depending on the item
 
     var textOutputItem = document.createElement("p");
     textOutputItem.innerText = item.name + ": " + (itemsPerCraft*crafts);
