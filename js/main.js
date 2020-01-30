@@ -1,7 +1,5 @@
 window.onload = init;
 
-const outputRows = 4;
-
 function init(){
     document.getElementById("calculate").onclick = calculate;
 }

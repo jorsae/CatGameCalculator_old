@@ -1,5 +1,3 @@
-var craftingRecipes = new Map(); // Used to store all the different crafting recipes
-
 class CraftingRequirement{
     constructor(craftingItem, quantity){
         this.craftingItem = craftingItem;

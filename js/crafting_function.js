@@ -1,5 +1,3 @@
-var currentCraft = new Map();
-
 function getCraftingRequirements(item, parentQuantity = 1){
     if(item.craftingRequirements === null){
         return;
