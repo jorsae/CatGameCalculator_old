@@ -1,5 +1,7 @@
 window.onload = init;
 
+const outputRows = 5;
+
 function init(){
     document.getElementById("calculate").onclick = calculate;
 }
@@ -41,14 +43,19 @@ function calculate(){
 
     var reqs = getCraftingRequirements(userItem, 1);
     
+    var itemNumber = 0;
     var totalCost = 0;
-    console.log(reqs);
+
     for (const entry of reqs.entries()) {
         var item = craftingRecipes.get(entry[0]);
+        if(item.name === "UserItem") {
+            continue;
+        }
         var quantity = entry[1];
         var cost = item.getCost(userTime, quantity);
-        createOutput(item, cost, quantity);
+        createOutput(item, cost, quantity, itemNumber);
         totalCost += cost;
+        itemNumber++;
     }
     
     console.log('==============================');
@@ -58,12 +65,11 @@ function calculate(){
     craftingRecipes.delete(userItem.name);
 }
 
-function createOutput(item, cost, quantity){
-    if(item.name === "UserItem"){
-        return;
-    }
-
+function createOutput(item, cost, quantity, itemNumber){
     var outputContainerElement = document.getElementById("outputContainer");
+
+    var outputRowElement = getOutputRow(itemNumber);
+
     var outputDiv = document.createElement("div");
     outputDiv.classList.add("output-content");
 
@@ -86,7 +92,22 @@ function createOutput(item, cost, quantity){
     outputDiv.appendChild(imgDiv);
     outputDiv.appendChild(outputTextDiv);
 
-    outputContainerElement.appendChild(outputDiv);
+    outputRowElement.appendChild(outputDiv);
+    outputContainerElement.appendChild(outputRowElement);
+}
+
+function getOutputRow(itemNumber){
+    var itemNumberModulo = itemNumber % outputRows;
+    console.log(itemNumber + " : " + itemNumberModulo);
+    if(itemNumberModulo === 0){
+        console.log("=== 0");
+        var outputRowElement = document.createElement("div");
+        outputRowElement.classList.add("output-content-row");
+        outputRowElement.id = itemNumber - itemNumberModulo;
+        return outputRowElement;
+    }
+    console.log(itemNumber - itemNumberModulo);
+    return document.getElementById(itemNumber - itemNumberModulo);
 }
 
 function clickUp(arg){

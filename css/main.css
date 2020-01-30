@@ -100,14 +100,26 @@ h1{
 
 .output-container{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: auto;
+}
+
+.output-content-row{
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+}
+
+.output-content-text{
+    width: 64px;
 }
 
 .output-content{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    height: fit-content;
 }
 
 .output-content img{
