@@ -113,13 +113,12 @@ h1{
 }
 
 .output-content-text{
-    width: 64px;
+    width: 128px;
 }
 
 .output-content{
     display: flex;
     justify-content: center;
-    height: fit-content;
 }
 
 .output-content img{
