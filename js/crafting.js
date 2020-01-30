@@ -43,7 +43,7 @@ class CraftingItem{
         var cost = (this.cost / 4) * (Math.pow(itemsPerCraft, 2) + 3 * itemsPerCraft) * crafts;
 
         console.log(this.name + ': ' + itemsPerCraft + 'x, ' + crafts + 'times | cost: ' + cost);
-        return cost;
+        return [cost, itemsPerCraft, crafts];
     }
 }
 

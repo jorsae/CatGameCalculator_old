@@ -52,8 +52,11 @@ function calculate(){
             continue;
         }
         var quantity = entry[1];
-        var cost = item.getCost(userTime, quantity);
-        createOutput(item, cost, quantity, itemNumber);
+        var itemCost = item.getCost(userTime, quantity);
+        var cost = itemCost[0];
+        var itemsPerCraft = itemCost[1];
+        var crafts = itemCost[2];
+        createOutput(item, cost, itemsPerCraft, crafts, itemNumber);
         totalCost += cost;
         itemNumber++;
     }
@@ -65,7 +68,7 @@ function calculate(){
     craftingRecipes.delete(userItem.name);
 }
 
-function createOutput(item, cost, quantity, itemNumber){
+function createOutput(item, cost, itemsPerCraft, crafts, itemNumber){
     var outputContainerElement = document.getElementById("outputContainer");
 
     var outputRowElement = getOutputRow(itemNumber);
@@ -80,14 +83,18 @@ function createOutput(item, cost, quantity, itemNumber){
     outputTextDiv.classList.add("output-content-text");
     outputTextDiv.classList.add("rare");// TODO: Can change this depending on the item
 
-    var textOutputItem = document.createElement("p"); // TODO: This should also contain "craft 4x, 10times" information
-    textOutputItem.innerText = item.name + ": " + quantity;
+    var textOutputItem = document.createElement("p");
+    textOutputItem.innerText = item.name + ": " + (itemsPerCraft*crafts);
     
     var textOutputCost = document.createElement("p");
     textOutputCost.innerText = "Cost: " + cost;
 
+    var textOutputCraft = document.createElement("p");
+    textOutputCraft.innerText = "Craft: " + itemsPerCraft + "x, " + crafts + " times";
+
     outputTextDiv.appendChild(textOutputItem);
     outputTextDiv.appendChild(textOutputCost);
+    outputTextDiv.appendChild(textOutputCraft);
 
     outputDiv.appendChild(imgDiv);
     outputDiv.appendChild(outputTextDiv);
