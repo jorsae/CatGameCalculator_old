@@ -1,11 +1,26 @@
 @media all and (max-width: 800px) {
     .crafting-container{
         zoom: 125%;
+        max-width: 100%;
     }
 }
 
 @media all and (max-width: 800px) {
     .output-container{
         max-width: 100%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .crafting-container{
+        zoom: 125%;
+        max-width: 50%;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .crafting-container{
+        zoom: 125%;
+        max-width: 60%;
     }
 }

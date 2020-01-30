@@ -21,6 +21,7 @@ h1{
     flex-direction: column;
     margin: auto;
     width: fit-content;
+    max-width: 75%;
 }
 
 .crafting-tier{
