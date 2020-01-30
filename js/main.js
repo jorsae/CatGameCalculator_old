@@ -76,7 +76,7 @@ function createOutput(item, cost, itemsPerCraft, crafts, itemNumber){
 
     var outputTextDiv = document.createElement("div");
     outputTextDiv.classList.add("output-content-text");
-    outputTextDiv.classList.add(item.rarity);// TODO: Can change this depending on the item
+    outputTextDiv.classList.add(item.rarity);
 
     var textOutputItem = document.createElement("p");
     textOutputItem.innerText = item.name + ": " + (itemsPerCraft*crafts);
