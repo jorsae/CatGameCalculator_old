@@ -44,6 +44,10 @@ h1{
     width: 100%;
 }
 
+.raw{
+    background-image: linear-gradient(to bottom, #ffffff, #aaaaaa);
+}
+
 .common{
     background-image: linear-gradient(to bottom, #2de3f5, #169ed1);
 }
