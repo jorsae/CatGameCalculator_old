@@ -11,10 +11,12 @@ function init(){
 */
 function calculate(){
     var userTimeElement = document.getElementById("userTime");
-    var userTime = parseInt(userTimeElement.value);
-    if(userTime === NaN){
+    var userTime = parseInt(userTimeElement.valueAsNumber);
+    if(userTime === NaN) {
+        console.log("NaN");
         return;
     }
+    userTime *= 60000; // convert from ms to minutes
 
     var userItemReq = [];
     for (const entry of craftingRecipes.entries()) {

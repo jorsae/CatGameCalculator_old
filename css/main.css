@@ -112,8 +112,21 @@ h1{
     display: inline-flex;
 }
 
-/* CSS for output of the calculations */
+/* CSS for the calculator container */
+.calculator-container{
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
 
+.user-time{
+    top: 0px;
+    bottom: 0px;
+    margin: auto 4px auto 4px;
+}
+
+/* CSS for output of the calculations */
 .output-container{
     display: flex;
     flex-direction: column;
