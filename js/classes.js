@@ -10,10 +10,11 @@ class CraftingRequirement{
 }
 
 class CraftingItem{
-    constructor(name, craftingTime, cost, craftingRequirements){
+    constructor(name, craftingTime, cost, rarity, craftingRequirements){
         this.name = name;
         this.craftingTime = craftingTime;
         this.cost = cost;
+        this.rarity = rarity;
 
         this.craftingRequirements = craftingRequirements;
     }
