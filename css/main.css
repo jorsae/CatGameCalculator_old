@@ -107,6 +107,14 @@ h1{
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: 8px;
+}
+
+.crafting-items-info{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: auto;
 }
 
 .arrow-container{
