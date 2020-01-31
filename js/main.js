@@ -45,8 +45,18 @@ function calculate(){
     var totalCost = 0;
 
     // Make sure everything is cleared
-    document.getElementById("outputContainer").innerHTML = "";;
+    var outputContainerElement = document.getElementById("outputContainer")
+    outputContainerElement.innerHTML = "";
 
+    // Create span for storing "total" information, cost, time, etc
+    var spanTotal = document.createElement("span");
+    spanTotal.id = "spanTotal";
+    spanTotal.classList.add("output-container-items");
+    outputContainerElement.appendChild(spanTotal);
+
+    // Create span for storing all crafting items needed
+    var spanItems = document.createElement("span");
+    spanItems.classList.add("output-container-items");
 
     for (const entry of reqs.entries()) {
         var item = craftingRecipes.get(entry[0]);
@@ -58,15 +68,20 @@ function calculate(){
         var cost = itemCost[0];
         var itemsPerCraft = itemCost[1];
         var crafts = itemCost[2];
-        createOutput(item, cost, itemsPerCraft, crafts);
+        createOutput(item, cost, itemsPerCraft, crafts, spanItems);
         totalCost += cost;
     }
+
+    // Adding paragraph with total cost, time, etc to the spanTotal element
+    var totalParagraph = document.createElement("p");
+    totalParagraph.innerText = "Total cost: " + totalCost
+    spanTotal.appendChild(totalParagraph);
 
     currentCraft.clear();
     craftingRecipes.delete(userItem.name);
 }
 
-function createOutput(item, cost, itemsPerCraft, crafts){
+function createOutput(item, cost, itemsPerCraft, crafts, spanItems){
     var outputContainerElement = document.getElementById("outputContainer");
 
     var outputDiv = document.createElement("div");
@@ -94,8 +109,9 @@ function createOutput(item, cost, itemsPerCraft, crafts){
 
     outputDiv.appendChild(imgDiv);
     outputDiv.appendChild(outputTextDiv);
+    spanItems.appendChild(outputDiv);
 
-    outputContainerElement.appendChild(outputDiv);
+    outputContainerElement.appendChild(spanItems);
 }
 
 function getOutputRow(itemNumber){

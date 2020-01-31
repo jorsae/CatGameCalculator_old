@@ -125,26 +125,25 @@ h1{
 /* CSS for output of the calculations */
 .output-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     margin: auto;
     max-width: 75%;
 }
 
-.output-content-row{
+.output-container-items{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-.output-content-text{
-    width: 128px;
 }
 
 .output-content{
     display: flex;
     justify-content: center;
+}
+
+.output-content-text{
+    width: 128px;
 }
 
 .output-content img{
