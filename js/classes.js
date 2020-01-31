@@ -69,7 +69,6 @@ class CraftingItemOutput{
                 return 4;
             case rarity.LEGENDARY:
                 return 5;
-                
         }
     }
 

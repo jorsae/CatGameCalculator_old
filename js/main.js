@@ -57,7 +57,7 @@ function calculate(){
     var spanItems = document.createElement("span");
     spanItems.classList.add("output-container-items");
     
-    var totalCost = 0;
+    // Sort and output all the crafting items
     var temporaryCraftingItems = Array.from(reqs);
     var craftingItems = [];
     for(var i = 0; i < temporaryCraftingItems.length; i++){
@@ -72,7 +72,8 @@ function calculate(){
     craftingItems.sort(function(a, b){
         return a.getRarityValue() - b.getRarityValue();
     });
-
+    
+    var totalCost = 0;
     for(var i = 0; i < craftingItems.length; i++){
         var item = craftingItems[i];
         var cost = item.getCost(userTime);
