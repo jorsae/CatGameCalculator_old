@@ -1,16 +1,16 @@
-✔ Make calculate button and input better looking @done(20-02-01 02:21)
-☐ Make website better for mobile
-  ✔ Make it more zoomed in @done(20-02-01 02:01)
-  ✔ Make the button to increase/decrease amount larger @done(20-02-01 02:08)
-  ☐ Increase the font size
 ☐ Add a "How-to-use"
 ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
 ☐ Add a "clear" button
 ☐ Make an "export to excel" button?
-✔ Crafting-items: Add a 'information' in top, right corner, with "recipe and crafting time". @done(20-02-01 03:54)
 ☐ Completion time should be formatted properly
 
 Archive:
+  ✔ Make calculate button and input better looking @done(20-02-01 02:21)
+  ✔ Make website better for mobile @done(20-02-01 04:12)
+  ✔ Make it more zoomed in @done(20-02-01 02:01)
+  ✔ Make the button to increase/decrease amount larger @done(20-02-01 02:08)
+  ✔ Increase the font size @done(20-02-01 04:12)
+  ✔ Crafting-items: Add a 'information' in top, right corner, with "recipe and crafting time". @done(20-02-01 03:54)
   ✔ Sort the output, based on quantity? rarity? ascending, descending? @done(20-01-31 18:19)
   ✔ Add a total tally of cost, etc in the output @done(20-01-31 17:45)
   ✔ After you click "calculcate" have everything be automatically cleared @done(20-01-31 17:10)
