@@ -35,7 +35,6 @@ h1{
     flex-direction: column;
     margin: auto;
     width: fit-content;
-    max-width: 75%;
 }
 
 .crafting-tier{
@@ -108,6 +107,7 @@ h1{
     flex-direction: row;
     justify-content: center;
     margin-left: 8px;
+    font-size: 24px;
 }
 
 .crafting-items-info{
