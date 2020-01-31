@@ -1,3 +1,17 @@
+/* TODO: Temporary just a marker for beta version */
+
+.beta{
+    position: absolute;
+    left: 0px;
+    top: 24px;
+    color: red;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
 body{
     background-color: lightpink;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
