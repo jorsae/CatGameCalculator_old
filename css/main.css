@@ -135,6 +135,10 @@ h1{
     margin: auto 4px auto 4px;
 }
 
+.user-time-input{
+    width: 48px;
+}
+
 /* CSS for output of the calculations */
 .output-container{
     display: flex;

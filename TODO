@@ -1,5 +1,4 @@
-☐ Fix userTime into 2x input type="number" fields.
-☐ Make calculate button and input better looking
+✔ Make calculate button and input better looking @done(20-02-01 02:21)
 ☐ Make website better for mobile
   ✔ Make it more zoomed in @done(20-02-01 02:01)
   ✔ Make the button to increase/decrease amount larger @done(20-02-01 02:08)
@@ -8,8 +7,6 @@
 ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
 ☐ Add a "clear" button
 ☐ Make an "export to excel" button?
-☐ On phones, makes it more zoomed in
-
 
 Archive:
   ✔ Sort the output, based on quantity? rarity? ascending, descending? @done(20-01-31 18:19)
