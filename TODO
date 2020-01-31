@@ -1,12 +1,14 @@
-☐ Clean up the code
 ☐ Make an "export to excel" button?
 ☐ Make website better for mobile
 ☐ Make calculate button and input better looking
 ☐ Sort the output, based on quantity? rarity? ascending, descending?
 ☐ Add a total tally of cost, etc in the output
 ☐ Add a "clear" button
-☐ Add a max-width/height on stuff with fit-content on
+
 Archive:
+  ✔ After you click "calculcate" have everything be automatically cleared @done(20-01-31 17:10)
+  ✔ Clean up the code @done(20-01-31 17:06)
+  ✔ Add a max-width/height on stuff with fit-content on @done(20-01-31 17:06)
   ✔ Change rarity properly in the output @done(20-01-31 05:13)
   ✔ Clean up css/html @done(20-01-30 17:36)
   ✔ Fill the text on crafting items properly @done(20-01-31 05:13)

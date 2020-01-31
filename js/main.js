@@ -22,9 +22,10 @@ function calculate(){
     for (const entry of craftingRecipes.entries()) {
         var item = craftingRecipes.get(entry[0]);
         var itemAmountElement = document.getElementById(item.name.toLowerCase() + 'Amount');
-
+        
         if(itemAmountElement !== null){
             var itemAmount = parseInt(itemAmountElement.innerText);
+            itemAmountElement.innerText = "0";
             if(itemAmount > 0){
                 userItemReq.push(new CraftingRequirement(item, itemAmount));
                 for(var i = 0; i < item.craftingRequirements.length; i++){
@@ -42,6 +43,10 @@ function calculate(){
     var reqs = getCraftingRequirements(userItem, 1);
     
     var totalCost = 0;
+
+    // Make sure everything is cleared
+    document.getElementById("outputContainer").innerHTML = "";;
+
 
     for (const entry of reqs.entries()) {
         var item = craftingRecipes.get(entry[0]);
