@@ -1,6 +1,11 @@
-@media all and (max-width: 800px) {
+@media all and (max-width: 1400px) {
     .crafting-container{
-        zoom: 125%;
+        zoom: 150%;
+        max-width: 100%;
+        min-width: 75%
+    }
+
+    .output-container{
         max-width: 100%;
     }
 
@@ -9,9 +14,10 @@
     }
 }
 
-@media all and (max-width: 800px) {
-    .output-container{
-        max-width: 100%;
+@media all and (min-width: 1000px) {
+    .crafting-container{
+        zoom: 125%;
+        max-width: 60%;
     }
 }
 
@@ -19,12 +25,5 @@
     .crafting-container{
         zoom: 125%;
         max-width: 50%;
-    }
-}
-
-@media all and (min-width: 1000px) {
-    .crafting-container{
-        zoom: 125%;
-        max-width: 60%;
     }
 }
