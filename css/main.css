@@ -130,10 +130,22 @@ h1{
     margin: 8px;
 }
 
+.calculator-header{
+    position: absolute;
+    float: right;
+    font-size: 24px;
+    margin-top: -8px;
+}
+
 .user-time{
     top: 0px;
     bottom: 0px;
     margin: auto 4px auto 4px;
+}
+
+.info-icon{
+    width: 32px;
+    height: 32px;
 }
 
 .user-time-input{
