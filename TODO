@@ -5,6 +5,7 @@
 ☐ Sort the output, based on quantity? rarity? ascending, descending?
 ☐ Add a total tally of cost, etc in the output
 ☐ Add a "clear" button
+☐ Add a max-width/height on stuff with fit-content on
 Archive:
   ✔ Change rarity properly in the output @done(20-01-31 05:13)
   ✔ Clean up css/html @done(20-01-30 17:36)
