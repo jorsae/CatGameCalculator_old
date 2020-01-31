@@ -10,14 +10,20 @@ function init(){
     Afterwards the CraftingItem "UseItem" is then deleted from the craftingRecipes.
 */
 function calculate(){
-    var userTimeElement = document.getElementById("userTime");
-    var userTime = parseInt(userTimeElement.valueAsNumber);
-    if(userTime === NaN) {
-        console.log("NaN");
+    var userHours = parseInt(document.getElementById("userTimeHours").value);
+    var userMinutes = parseInt(document.getElementById("userTimeMinutes").value);
+    
+    var userTime = 0;
+    if(!isNaN(userHours)) {
+        userTime += userHours * 60;
+    }
+    if(!isNaN(userMinutes)){
+        userTime += userMinutes;
+    }
+    if(userTime <= 0){
         return;
     }
-    userTime /= 60000; // convert from ms to minutes
-
+    
     var userItemReq = [];
     for (const entry of craftingRecipes.entries()) {
         var item = craftingRecipes.get(entry[0]);
@@ -87,7 +93,7 @@ function calculate(){
     spanTotal.appendChild(totalCostParagraph);
 
     var totalTimeParagraph = document.createElement("p");
-    totalTimeParagraph.innerText = "Completion time: " + userTimeElement.value;
+    totalTimeParagraph.innerText = "Completion time: " + userTime;
     spanTotal.appendChild(totalTimeParagraph);
 
     currentCraft.clear();
