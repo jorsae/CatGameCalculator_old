@@ -57,11 +57,13 @@ function calculate(){
     var spanItems = document.createElement("span");
     spanItems.classList.add("output-container-items");
     
-    //console.log(Array.from(reqs));
     var totalCost = 0;
     var craftingItems = Array.from(reqs);
+    craftingItems.sort(function(a, b){
+        return a[1] - b[1];
+    });
+
     for(var i = 0; i < craftingItems.length; i++){
-        console.log(craftingItems[i][0]);
         var item = craftingRecipes.get(craftingItems[i][0]);
         if(item.name === "UserItem"){
             continue;
@@ -69,25 +71,9 @@ function calculate(){
         var quantity = craftingItems[i][1];
         var itemCost = item.getCost(userTime, quantity);
         var cost = itemCost[0];
-        var itemsPerCraft = itemCost[1];
-        var crafts = itemCost[2];
-        createOutput(item, cost, itemsPerCraft, crafts, spanItems);
+        createOutput(item, cost, itemCost[1], itemCost[2], spanItems);
         totalCost += cost;
     }
-    /*for (const entry of reqs.entries()) {
-        var item = craftingRecipes.get(entry[0]);
-        console.log(entry[0]);
-        if(item.name === "UserItem") {
-            continue;
-        }
-        var quantity = entry[1];
-        var itemCost = item.getCost(userTime, quantity);
-        var cost = itemCost[0];
-        var itemsPerCraft = itemCost[1];
-        var crafts = itemCost[2];
-        createOutput(item, cost, itemsPerCraft, crafts, spanItems);
-        totalCost += cost;
-    }*/
 
     // Adding paragraph with total cost, time, etc to the spanTotal element
     var totalCostParagraph = document.createElement("p");

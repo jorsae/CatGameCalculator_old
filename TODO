@@ -1,10 +1,10 @@
 ☐ Make an "export to excel" button?
 ☐ Make website better for mobile
 ☐ Make calculate button and input better looking
-☐ Sort the output, based on quantity? rarity? ascending, descending?
 ☐ Add a "clear" button
 
 Archive:
+  ✔ Sort the output, based on quantity? rarity? ascending, descending? @done(20-01-31 18:19)
   ✔ Add a total tally of cost, etc in the output @done(20-01-31 17:45)
   ✔ After you click "calculcate" have everything be automatically cleared @done(20-01-31 17:10)
   ✔ Clean up the code @done(20-01-31 17:06)
