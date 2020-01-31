@@ -12,6 +12,11 @@
     .fit-content{
         max-width: 75%;
     }
+
+    .arrow{
+        width: 64px;
+        height: 64px;
+    }
 }
 
 @media all and (min-width: 1000px) {

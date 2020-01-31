@@ -1,7 +1,7 @@
 ☐ Fix userTime into 2x input type="number" fields.
 ☐ Make calculate button and input better looking
 ☐ Make website better for mobile
-  ☐ Make it more zoomed in
+  ✔ Make it more zoomed in @done(20-02-01 02:01)
   ☐ Make the button to increase/decrease amount larger
   ☐ Increase the font size
 ☐ Add a "How-to-use"
