@@ -96,6 +96,9 @@ function calculate(){
     totalTimeParagraph.innerText = "Completion time: " + userTime;
     spanTotal.appendChild(totalTimeParagraph);
 
+    // Scroll down to the results
+    document.getElementById("outputContainer").scrollIntoView();
+
     currentCraft.clear();
     craftingRecipes.delete(userItem.name);
 }
