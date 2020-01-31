@@ -58,20 +58,25 @@ function calculate(){
     spanItems.classList.add("output-container-items");
     
     var totalCost = 0;
-    var craftingItems = Array.from(reqs);
+    var temporaryCraftingItems = Array.from(reqs);
+    var craftingItems = [];
+    for(var i = 0; i < temporaryCraftingItems.length; i++){
+        var item = craftingRecipes.get(temporaryCraftingItems[i][0]);
+        if(item.rarity === rarity.HIDDEN){
+            continue;
+        }
+        var quantity = temporaryCraftingItems[i][1];
+        craftingItems.push(new CraftingItemOutput(item.name, item.craftingTime, item.cost, item.rarity, quantity));
+    }
+    
     craftingItems.sort(function(a, b){
-        return a[1] - b[1];
+        return a.getRarityValue() - b.getRarityValue();
     });
 
     for(var i = 0; i < craftingItems.length; i++){
-        var item = craftingRecipes.get(craftingItems[i][0]);
-        if(item.name === "UserItem"){
-            continue;
-        }
-        var quantity = craftingItems[i][1];
-        var itemCost = item.getCost(userTime, quantity);
-        var cost = itemCost[0];
-        createOutput(item, cost, itemCost[1], itemCost[2], spanItems);
+        var item = craftingItems[i];
+        var cost = item.getCost(userTime);
+        createOutput(item, cost, item.getItemsPerCraft(userTime), item.getCrafts(userTime), spanItems);
         totalCost += cost;
     }
 
