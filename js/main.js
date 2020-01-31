@@ -66,7 +66,7 @@ function calculate(){
             continue;
         }
         var quantity = temporaryCraftingItems[i][1];
-        craftingItems.push(new CraftingItemOutput(item.name, item.craftingTime, item.cost, item.rarity, quantity));
+        craftingItems.push(new CraftingItemOutput(item.name, item.craftingTime, item.baseCost, item.rarity, quantity));
     }
     
     craftingItems.sort(function(a, b){
