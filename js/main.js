@@ -42,22 +42,22 @@ function calculate(){
     craftingRecipes.set(userItem.name, userItem);
     var reqs = getCraftingRequirements(userItem, 1);
     
-    var totalCost = 0;
-
     // Make sure everything is cleared
     var outputContainerElement = document.getElementById("outputContainer")
     outputContainerElement.innerHTML = "";
-
+    
     // Create span for storing "total" information, cost, time, etc
     var spanTotal = document.createElement("span");
     spanTotal.id = "spanTotal";
-    spanTotal.classList.add("output-container-items");
+    spanTotal.classList.add("output-container-total");
+    spanTotal.classList.add("output-total");
     outputContainerElement.appendChild(spanTotal);
-
+    
     // Create span for storing all crafting items needed
     var spanItems = document.createElement("span");
     spanItems.classList.add("output-container-items");
-
+    
+    var totalCost = 0;
     for (const entry of reqs.entries()) {
         var item = craftingRecipes.get(entry[0]);
         if(item.name === "UserItem") {
@@ -73,9 +73,13 @@ function calculate(){
     }
 
     // Adding paragraph with total cost, time, etc to the spanTotal element
-    var totalParagraph = document.createElement("p");
-    totalParagraph.innerText = "Total cost: " + totalCost
-    spanTotal.appendChild(totalParagraph);
+    var totalCostParagraph = document.createElement("p");
+    totalCostParagraph.innerText = "Total cost: " + totalCost
+    spanTotal.appendChild(totalCostParagraph);
+
+    var totalTimeParagraph = document.createElement("p");
+    totalTimeParagraph.innerText = "Completion time: " + userTimeElement.value;
+    spanTotal.appendChild(totalTimeParagraph);
 
     currentCraft.clear();
     craftingRecipes.delete(userItem.name);
