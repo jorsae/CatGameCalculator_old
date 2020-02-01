@@ -92,8 +92,13 @@ function calculate(){
     totalCostParagraph.innerText = "Total cost: " + totalCost.toLocaleString();
     spanTotal.appendChild(totalCostParagraph);
 
+    var hours = Math.floor(userTime / 60);
+    hours = (hours.toString().length == 1) ? '0' + hours : hours;
+    var minutes = userTime % 60;
+    minutes = (minutes.toString().length == 1) ? '0' + minutes : minutes;
+    
     var totalTimeParagraph = document.createElement("p");
-    totalTimeParagraph.innerText = "Completion time: " + userTime;
+    totalTimeParagraph.innerText = "Time to craft: " + hours + ":" + minutes;
     spanTotal.appendChild(totalTimeParagraph);
 
     // Scroll down to the results
