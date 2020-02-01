@@ -4,9 +4,9 @@
 ☐ Make an "export to excel" button?
 ☐ Completion time should be formatted properly
 ☐ Add a nav bar with link to a google form for feedback
-☐ Crafting items with rarity 'raw' should not say "Craft 1x, 20 times", etc..
 
 Archive:
+  ✔ Crafting items with rarity 'raw' should not say "Craft 1x, 20 times", etc.. @done(20-02-01 17:27)
   ✔ Have cost numbers be comma seperated for easier readability @done(20-02-01 17:23)
   ✔ Add alt text to all images @done(20-02-01 15:49)
   ✔ Buy domain and hook it up to the github page @done(20-02-01 15:49)

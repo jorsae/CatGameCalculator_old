@@ -83,7 +83,7 @@ function calculate(){
     for(var i = 0; i < craftingItems.length; i++){
         var item = craftingItems[i];
         var cost = item.getCost(userTime);
-        createOutput(item, cost, item.getItemsPerCraft(userTime), item.getCrafts(userTime), spanItems);
+        createOutput(item, cost, userTime, spanItems);
         totalCost += cost;
     }
 
@@ -103,34 +103,44 @@ function calculate(){
     craftingRecipes.delete(userItem.name);
 }
 
-function createOutput(item, cost, itemsPerCraft, crafts, spanItems){
+function createOutput(item, cost, userTime, spanItems){
     var outputContainerElement = document.getElementById("outputContainer");
-
+    
+    // Creating a div to store this output in
     var outputDiv = document.createElement("div");
     outputDiv.classList.add("output-content");
-
+    
+    // Image for the item we are outputting
     var imgDiv = document.createElement("img");
     imgDiv.src = "images/game/" + item.name.toLowerCase() + ".png";
-
+    
+    // Creating a div to store the text for the item we are outputting
     var outputTextDiv = document.createElement("div");
     outputTextDiv.classList.add("output-content-text");
     outputTextDiv.classList.add(item.rarity);
+    
+    var itemsPerCraft = item.getItemsPerCraft(userTime);
+    var crafts = item.getCrafts(userTime);
 
+    // Text fields for storing item output
     var textOutputItem = document.createElement("p");
     textOutputItem.innerText = item.name + ": " + (itemsPerCraft*crafts).toLocaleString();
     
     var textOutputCost = document.createElement("p");
     textOutputCost.innerText = "Cost: " + cost.toLocaleString();
 
-    
+    // Adding text fields to our div. We have to add these before the potential crafting "guide"
     outputTextDiv.appendChild(textOutputItem);
     outputTextDiv.appendChild(textOutputCost);
+
+    // Raw ingredients, does not need to be crafted, so we don't add that text to them
     if(item.rarity !== rarity.RAW){
         var textOutputCraft = document.createElement("p");
         textOutputCraft.innerText = "Craft: " + itemsPerCraft + "x, " + crafts + " times";
         outputTextDiv.appendChild(textOutputCraft);
     }
 
+    // Adding all DOM elements we created together to the main output container
     outputDiv.appendChild(imgDiv);
     outputDiv.appendChild(outputTextDiv);
     spanItems.appendChild(outputDiv);
