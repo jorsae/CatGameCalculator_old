@@ -89,7 +89,7 @@ function calculate(){
 
     // Adding paragraph with total cost, time, etc to the spanTotal element
     var totalCostParagraph = document.createElement("p");
-    totalCostParagraph.innerText = "Total cost: " + totalCost
+    totalCostParagraph.innerText = "Total cost: " + totalCost.toLocaleString();
     spanTotal.appendChild(totalCostParagraph);
 
     var totalTimeParagraph = document.createElement("p");
@@ -120,7 +120,7 @@ function createOutput(item, cost, itemsPerCraft, crafts, spanItems){
     textOutputItem.innerText = item.name + ": " + (itemsPerCraft*crafts);
     
     var textOutputCost = document.createElement("p");
-    textOutputCost.innerText = "Cost: " + cost;
+    textOutputCost.innerText = "Cost: " + cost.toLocaleString();
 
     var textOutputCraft = document.createElement("p");
     textOutputCraft.innerText = "Craft: " + itemsPerCraft + "x, " + crafts + " times";
