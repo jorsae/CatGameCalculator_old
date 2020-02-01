@@ -117,17 +117,19 @@ function createOutput(item, cost, itemsPerCraft, crafts, spanItems){
     outputTextDiv.classList.add(item.rarity);
 
     var textOutputItem = document.createElement("p");
-    textOutputItem.innerText = item.name + ": " + (itemsPerCraft*crafts);
+    textOutputItem.innerText = item.name + ": " + (itemsPerCraft*crafts).toLocaleString();
     
     var textOutputCost = document.createElement("p");
     textOutputCost.innerText = "Cost: " + cost.toLocaleString();
 
-    var textOutputCraft = document.createElement("p");
-    textOutputCraft.innerText = "Craft: " + itemsPerCraft + "x, " + crafts + " times";
-
+    
     outputTextDiv.appendChild(textOutputItem);
     outputTextDiv.appendChild(textOutputCost);
-    outputTextDiv.appendChild(textOutputCraft);
+    if(item.rarity !== rarity.RAW){
+        var textOutputCraft = document.createElement("p");
+        textOutputCraft.innerText = "Craft: " + itemsPerCraft + "x, " + crafts + " times";
+        outputTextDiv.appendChild(textOutputCraft);
+    }
 
     outputDiv.appendChild(imgDiv);
     outputDiv.appendChild(outputTextDiv);
