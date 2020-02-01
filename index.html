@@ -374,17 +374,17 @@
         
         <hr>
         <div class="calculator-container">
-            <img class="info-icon user-time" src="images/info-icon.png" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." />
-            
-            <p class="inline-paragraph calculator-header">Crafting time</p>
-
-            <p class="inline-paragraph user-time">Hours:</p>
-
-            <input id="userTimeHours" class="user-time user-time-input" type="number" value="2" />
-            
-            <p class="inline-paragraph user-time">Minutes:</p>
-            <input id="userTimeMinutes" class="user-time user-time-input" type="number" value="0" />
-            <button id="calculate"><img src="images/calculate-button64.png"></button>
+            <div class="calculator-header">
+                <p class="inline-paragraph">Crafting time</p>
+            </div>
+            <div class="calculator-body">
+                <img class="info-icon user-time" src="images/info-icon.png" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." />
+                <p class="inline-paragraph user-time">Hours:</p>
+                <input id="userTimeHours" class="user-time user-time-input" type="number" value="2" />
+                <p class="inline-paragraph user-time">Minutes:</p>
+                <input id="userTimeMinutes" class="user-time user-time-input" type="number" value="0" />
+                <button id="calculate">Calculate meow!</button>
+            </div>
         </div>
         <div id="outputContainer" class="output-container">
         </div>
