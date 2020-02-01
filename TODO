@@ -6,11 +6,11 @@
 ☐ Add a nav bar with link to a google form for feedback
 ☐ Crafting items with rarity 'raw' should not say "Craft 1x, 20 times", etc..
 ☐ Have cost numbers be comma seperated for easier readability
-☐ Buy domain and hook it up to the github page
-☐ Add google analytics
-☐ Add alt text to all images
 
 Archive:
+  ✔ Add alt text to all images @done(20-02-01 15:49)
+  ✔ Buy domain and hook it up to the github page @done(20-02-01 15:49)
+  ✔ Add google analytics @done(20-02-01 15:49)
   ✔ Add description for SEO @done(20-02-01 15:06)
   ✔ When you click on "calculate" button, have it automatically scroll down to the results @done(20-02-01 04:31)
   ✔ Make calculate button and input better looking @done(20-02-01 02:21)
