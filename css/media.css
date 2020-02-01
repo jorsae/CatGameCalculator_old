@@ -4,6 +4,10 @@
         min-width: 75%
     }
 
+    .calculator-container{
+        zoom: 200%;
+    }
+
     .output-container{
         max-width: 100%;
     }
@@ -21,6 +25,10 @@
 @media all and (min-width: 1000px) {
     .crafting-container{
         zoom: 125%;
+    }
+
+    .calculator-container{
+        zoom: 150%;
     }
 }
 
