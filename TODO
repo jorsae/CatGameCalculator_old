@@ -1,8 +1,10 @@
 Technical:
+  ☐ Add a nav bar
+  ☐ Add a google form for feedback
+  ☐ Add a "About" page
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
   ☐ Add a "clear" button
   ☐ Make an "export to excel" button?
-  ☐ Add a nav bar with link to a google form for feedback
   ☐ Make an email address and put it in on the website (footer?)
   ☐ Display to the user that calculate is on cooldown
   ☐ Tooltip on images doesn't display on mobile devices

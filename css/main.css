@@ -2,8 +2,9 @@
 .beta{
     position: absolute;
     left: 0px;
-    top: 24px;
+    top: 28px;
     color: red;
+    background-color: black;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -19,6 +20,38 @@ body{
     background-size: 25%;
     background-repeat: no-repeat;
     color: #ffffff;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    background-color: #74270c;
+    margin-left: -3px;
+    border: solid 3px black;
+}
+
+nav ul li:hover{
+    background-color: #4bbeff;
+}
+
+a{
+    color: greenyellow
+}
+
+li a:visited{
+    color: lightpink;
 }
 
 p{
