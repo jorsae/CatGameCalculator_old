@@ -10,6 +10,12 @@ function init(){
     Afterwards the CraftingItem "UseItem" is then deleted from the craftingRecipes.
 */
 function calculate(){
+    if(new Date().getTime() < (lastTimeCalculated + calculateDelay)){
+        console.log("Calculate is on cooldown");
+        return;
+    }
+    lastTimeCalculated = new Date().getTime();
+
     var userHours = parseInt(document.getElementById("userTimeHours").value);
     var userMinutes = parseInt(document.getElementById("userTimeMinutes").value);
     
