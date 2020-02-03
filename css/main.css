@@ -1,15 +1,10 @@
 /* TODO: Temporary just a marker for beta version */
 .beta{
     position: absolute;
-    left: 0px;
-    top: 73px;
+    font-size: 24px;
+    right: 1%;
     color: red;
-    background-color: black;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    z-index: -1000;
 }
 
 body{
