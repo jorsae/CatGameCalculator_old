@@ -2,7 +2,7 @@ Technical:
   ☐ Improve performance
     - https://search.google.com/search-console/speed?resource_id=sc-domain%3Acatgamecalculator.com
     - https://stackoverflow.com/questions/10808109/script-tag-async-defer
-    ☐ Set async/defer on external js and css files when appropriate
+    ✔ Set async/defer on external js and css files when appropriate @done(20-02-04 18:36)
   ☐ Add a google form for feedback
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
   ☐ Add a "clear" button
