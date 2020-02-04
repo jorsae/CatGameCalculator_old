@@ -109,6 +109,7 @@ p{
 
 .crafting-recipe-image{
     padding: 4px;
+    width: auto;
 }
 
 .crafting-items-amount{
