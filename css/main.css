@@ -109,8 +109,7 @@ p{
 
 .crafting-recipe-image{
     padding: 4px;
-    min-height: 64px;
-    width: fit-content;
+    min-height: 128px;
 }
 
 .crafting-items-amount{
