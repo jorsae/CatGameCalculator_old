@@ -123,7 +123,7 @@ function createOutput(item, cost, userTime, spanItems){
     
     // Image for the item we are outputting
     var imgDiv = document.createElement("img");
-    imgDiv.src = "images/game/" + item.name.toLowerCase() + ".png";
+    imgDiv.src = "images/game/" + item.name.toLowerCase() + ".jpg";
     
     // Creating a div to store the text for the item we are outputting
     var outputTextDiv = document.createElement("div");
