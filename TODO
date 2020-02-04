@@ -1,5 +1,4 @@
 Technical:
-  ☐ Fix apple/google link in about.html. Doesn't look right on mobile.
   ☐ Add a google form for feedback
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
   ☐ Add a "clear" button
@@ -22,6 +21,7 @@ SEO / "Advertisement":
   ☐ Comment on google play review?
   
 Archive:
+  ✔ Fix apple/google link in about.html. Doesn't look right on mobile. @done(20-02-04 14:36) @project(Technical)
   ✔ Add a nav bar @done(20-02-04 06:01) @project(Technical)
   ✔ Add a "About" page @done(20-02-04 06:01) @project(Technical)
   ✔ Add a "How-to-use" @done(20-02-03 05:05) @project(Technical)
