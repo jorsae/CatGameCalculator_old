@@ -10,7 +10,7 @@
 body{
     background-color: #74270c;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("../images/background-cat-left.png"), url("../images/background-cat-right.png");
+    background-image: url("../images/background-cat-left.gif"), url("../images/background-cat-right.gif");
     background-position: top 45px left, top 45px right;
     background-size: 25%;
     background-repeat: no-repeat;
