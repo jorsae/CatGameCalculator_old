@@ -1,8 +1,4 @@
 Technical:
-  ☐ Improve performance
-    - https://search.google.com/search-console/speed?resource_id=sc-domain%3Acatgamecalculator.com
-    - https://stackoverflow.com/questions/10808109/script-tag-async-defer
-    ✔ Set async/defer on external js and css files when appropriate @done(20-02-04 18:36)
   ☐ Add a google form for feedback
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
   ☐ Add a "clear" button
@@ -10,7 +6,6 @@ Technical:
   ☐ Make an email address and put it in on the website (footer?)
   ☐ Display to the user that calculate is on cooldown
   ☐ Tooltip on images doesn't display on mobile devices
-  ☐ Look into flipping images with css to save almost duplicate images
 SEO / "Advertisement":
   ☐ Comment/post on different websites to plug catgamecalculator.com
   - https://www.giantbomb.com/cat-game-the-cat-collector/3030-69993/forums/
@@ -26,6 +21,8 @@ SEO / "Advertisement":
   ☐ Comment on google play review?
   
 Archive:
+  ✔ Improve performance @done(20-02-05 02:01) @project(Technical)
+  ✔ Set async/defer on external js and css files when appropriate @done(20-02-04 18:36) @project(Technical)
   ✔ Fix apple/google link in about.html. Doesn't look right on mobile. @done(20-02-04 14:36) @project(Technical)
   ✔ Add a nav bar @done(20-02-04 06:01) @project(Technical)
   ✔ Add a "About" page @done(20-02-04 06:01) @project(Technical)
