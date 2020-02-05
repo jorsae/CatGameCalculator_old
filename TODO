@@ -6,8 +6,6 @@ Technical:
   ☐ Make an email address and put it in on the website (footer?)
   ☐ Display to the user that calculate is on cooldown
   ☐ Tooltip on images doesn't display on mobile devices
-  ☐ Cost calculation will round up. e.g.: If you need 7items, and you have time for 3 batches, it doesn't calculate this properly!
-    It wil lcalculate it as 3x items and 3 batches
 SEO / "Advertisement":
   ☐ Comment/post on different websites to plug catgamecalculator.com
   - https://www.giantbomb.com/cat-game-the-cat-collector/3030-69993/forums/
@@ -23,6 +21,8 @@ SEO / "Advertisement":
   ☐ Comment on google play review?
   
 Archive:
+  ✔ Cost calculation will round up. e.g.: If you need 7items, and you have time for 3 batches, it doesn't calculate this properly! @done(20-02-06 03:40) @project(Technical)
+    It wil lcalculate it as 3x items and 3 batches
   ✔ Add a google form for feedback @done(20-02-05 02:19) @project(Technical)
   ✔ Improve performance @done(20-02-05 02:01) @project(Technical)
   ✔ Set async/defer on external js and css files when appropriate @done(20-02-04 18:36) @project(Technical)
