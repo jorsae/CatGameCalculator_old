@@ -56,8 +56,7 @@ function calculate(){
         continue;
     }
 
-    //userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, userItemReq);
-    userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, [new CraftingRequirement(artifact, 1),
+    userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, userItemReq);
     new CraftingRequirement(elementstone, 2), new CraftingRequirement(firestone, 8), new CraftingRequirement(waterstone, 6),
     new CraftingRequirement(fire, 8), new CraftingRequirement(water, 7), new CraftingRequirement(orb, 16),
     new CraftingRequirement(necklace, 4), new CraftingRequirement(pendant, 4)]);
