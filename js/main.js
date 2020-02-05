@@ -2,6 +2,18 @@ window.onload = init;
 
 function init(){
     document.getElementById("calculate").onclick = calculate;
+    document.getElementById("clear").onclick = clear;
+}
+
+function clear(){
+    for (const entry of craftingRecipes.entries()) {
+        var item = craftingRecipes.get(entry[0]);
+        var itemAmountElement = document.getElementById(item.name.toLowerCase() + 'Amount');
+        if(itemAmountElement !== null){
+            itemAmountElement.innerText = "0";
+        }
+        continue;
+    }
 }
 
 /*
@@ -37,11 +49,9 @@ function calculate(){
         
         if(itemAmountElement !== null){
             var itemAmount = parseInt(itemAmountElement.innerText);
-            itemAmountElement.innerText = "0";
             if(itemAmount > 0){
                 userItemReq.push(new CraftingRequirement(item, itemAmount));
             }
-
         }
         continue;
     }
