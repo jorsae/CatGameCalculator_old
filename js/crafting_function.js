@@ -1,9 +1,10 @@
-function getCraftingRequirements(item, parentQuantity = 1){
+function getCraftingRequirements(item, parentQuantity = 1, setMainItem = false){
     if(item.craftingRequirements === null){
         return;
     }
-
-    currentCraft.set(item.name, parentQuantity);
+    if(setMainItem){
+        currentCraft.set(item.name, parentQuantity);
+    }
     // Adds all the requirements
     for(var i = 0; i < item.craftingRequirements.length; i++){
         var name = item.craftingRequirements[i].craftingItem.name;

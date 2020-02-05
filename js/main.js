@@ -40,16 +40,12 @@ function calculate(){
             itemAmountElement.innerText = "0";
             if(itemAmount > 0){
                 userItemReq.push(new CraftingRequirement(item, itemAmount));
-                for(var i = 0; i < item.craftingRequirements.length; i++){
-                    var craftingItem = item.craftingRequirements[i].craftingItem;
-                    var totalItemAmount = item.craftingRequirements[i].quantity * itemAmount;
-                    userItemReq.push(new CraftingRequirement(craftingItem, totalItemAmount));
-                }
             }
 
         }
         continue;
     }
+
     userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, userItemReq);
     craftingRecipes.set(userItem.name, userItem);
     var reqs = getCraftingRequirements(userItem, 1);
@@ -84,7 +80,7 @@ function calculate(){
     craftingItems.sort(function(a, b){
         return a.getRarityValue() - b.getRarityValue();
     });
-    
+
     var totalCost = 0;
     for(var i = 0; i < craftingItems.length; i++){
         var item = craftingItems[i];
