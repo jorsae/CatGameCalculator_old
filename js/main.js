@@ -152,15 +152,15 @@ function createOutput(item, cost, userTime, spanItems){
 
     // Raw ingredients, does not need to be crafted, so we don't add that text to them
     if(item.rarity !== rarity.RAW){
-        if(crafts[0] !== 0){
-            var textOutputCraftMax = document.createElement("p");
-            textOutputCraftMax.innerText = "Craft: " + itemsPerCraft[0] + "x, " + crafts[0] + " times";
-            outputTextDiv.appendChild(textOutputCraftMax);
-        }
-
+        var textOutputCraftMax = document.createElement("p");
+        textOutputCraftMax.innerText = "Craft: " + itemsPerCraft[0] + "x, " + crafts[0] + " times";
+        outputTextDiv.appendChild(textOutputCraftMax);
+        
+        if(crafts[1] !== 0){
         var textOutputCraftMin = document.createElement("p");
         textOutputCraftMin.innerText = "Craft: " + itemsPerCraft[1] + "x, " + crafts[1] + " times";
         outputTextDiv.appendChild(textOutputCraftMin);
+        }
     }
 
     // Adding all DOM elements we created together to the main output container

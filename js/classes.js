@@ -65,6 +65,9 @@ class CraftingItemOutput{
         crafts = Math.floor(crafts);
         var maxCrafts = this.quantity % crafts;
         var minCrafts = crafts - maxCrafts;
+        if(maxCrafts === 0){
+            return [minCrafts, maxCrafts];
+        }
         return [maxCrafts, minCrafts];
     }
 
@@ -76,6 +79,7 @@ class CraftingItemOutput{
         if(crafts > this.quantity){
             crafts = this.quantity;
         }
+        
         crafts = this.quantity / crafts;
         return [Math.ceil(crafts), Math.floor(crafts)];
     }
