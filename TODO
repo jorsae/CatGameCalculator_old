@@ -6,6 +6,8 @@ Technical:
   ☐ Make an email address and put it in on the website (footer?)
   ☐ Display to the user that calculate is on cooldown
   ☐ Tooltip on images doesn't display on mobile devices
+  ☐ Cost calculation will round up. e.g.: If you need 7items, and you have time for 3 batches, it doesn't calculate this properly!
+    It wil lcalculate it as 3x items and 3 batches
 SEO / "Advertisement":
   ☐ Comment/post on different websites to plug catgamecalculator.com
   - https://www.giantbomb.com/cat-game-the-cat-collector/3030-69993/forums/

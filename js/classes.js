@@ -54,33 +54,39 @@ class CraftingItemOutput{
                 return 5;
         }
     }
-
-    getCrafts(time){
+    getCrafts(time, max, min){
         var crafts = 1;
         if(this.craftingTime < time){
-            crafts = Math.ceil(time / this.craftingTime);
+            crafts = time / this.craftingTime;
         }
         if(crafts > this.quantity){
-            return this.quantity;
+            crafts = this.quantity;
         }
-        return crafts;
+        crafts = Math.floor(crafts);
+        var maxCrafts = this.quantity % crafts;
+        var minCrafts = crafts - maxCrafts;
+        return [maxCrafts, minCrafts];
     }
 
     getItemsPerCraft(time){
         var crafts = 1;
         if(this.craftingTime < time){
-            crafts = Math.ceil(time / this.craftingTime);
+            crafts = time / this.craftingTime;
         }
         if(crafts > this.quantity){
             crafts = this.quantity;
         }
-        return Math.ceil(this.quantity / crafts);
+        crafts = this.quantity / crafts;
+        return [Math.ceil(crafts), Math.floor(crafts)];
     }
 
     getCost(time){
         var itemsPerCraft = this.getItemsPerCraft(time);
-        var crafts = this.getCrafts(time);
+        var crafts = this.getCrafts(time, itemsPerCraft[0], itemsPerCraft[1])
 
-        return (this.baseCost / 4) * (Math.pow(itemsPerCraft, 2) + 3 * itemsPerCraft) * crafts;
+        var maxCost = (this.baseCost / 4) * (Math.pow(itemsPerCraft[0], 2) + 3 * itemsPerCraft[0]) * crafts[0];
+        var minCost = (this.baseCost / 4) * (Math.pow(itemsPerCraft[1], 2) + 3 * itemsPerCraft[1]) * crafts[1];
+
+        return maxCost + minCost;
     }
 }

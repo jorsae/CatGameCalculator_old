@@ -56,7 +56,11 @@ function calculate(){
         continue;
     }
 
-    userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, userItemReq);
+    //userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, userItemReq);
+    userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, [new CraftingRequirement(artifact, 1),
+    new CraftingRequirement(elementstone, 2), new CraftingRequirement(firestone, 8), new CraftingRequirement(waterstone, 6),
+    new CraftingRequirement(fire, 8), new CraftingRequirement(water, 7), new CraftingRequirement(orb, 16),
+    new CraftingRequirement(necklace, 4), new CraftingRequirement(pendant, 4)]);
     craftingRecipes.set(userItem.name, userItem);
     var reqs = getCraftingRequirements(userItem, 1);
     
@@ -141,7 +145,7 @@ function createOutput(item, cost, userTime, spanItems){
 
     // Text fields for storing item output
     var textOutputItem = document.createElement("p");
-    textOutputItem.innerText = item.name + ": " + (itemsPerCraft*crafts).toLocaleString();
+    textOutputItem.innerText = item.name + ": " + (item.quantity).toLocaleString();
     
     var textOutputCost = document.createElement("p");
     textOutputCost.innerText = "Cost: " + cost.toLocaleString();
@@ -152,9 +156,15 @@ function createOutput(item, cost, userTime, spanItems){
 
     // Raw ingredients, does not need to be crafted, so we don't add that text to them
     if(item.rarity !== rarity.RAW){
-        var textOutputCraft = document.createElement("p");
-        textOutputCraft.innerText = "Craft: " + itemsPerCraft + "x, " + crafts + " times";
-        outputTextDiv.appendChild(textOutputCraft);
+        if(crafts[0] !== 0){
+            var textOutputCraftMax = document.createElement("p");
+            textOutputCraftMax.innerText = "Craft: " + itemsPerCraft[0] + "x, " + crafts[0] + " times";
+            outputTextDiv.appendChild(textOutputCraftMax);
+        }
+
+        var textOutputCraftMin = document.createElement("p");
+        textOutputCraftMin.innerText = "Craft: " + itemsPerCraft[1] + "x, " + crafts[1] + " times";
+        outputTextDiv.appendChild(textOutputCraftMin);
     }
 
     // Adding all DOM elements we created together to the main output container
