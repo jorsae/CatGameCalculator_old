@@ -259,3 +259,35 @@ p{
 .output-content img{
     width: 64px;
 }
+
+/* about.html */
+.about-article{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.about-article p{
+    display: inline-block;
+}
+
+.download{
+    margin-top: 20px;
+}
+
+.download img{
+    text-decoration: none;
+}
+
+.download a img{
+    max-width: 250px;
+}
+
+.app-store-icon{
+    height: 97px;
+    width: 225px;
+}
+
+/* feedback.html */
+.feedback{
+    text-align: center;
+}
