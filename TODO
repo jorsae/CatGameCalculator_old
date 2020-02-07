@@ -1,4 +1,7 @@
 Technical:
+  ☐ Improve UI for "calculate div"
+  ☐ Improve UI for output
+  ☐ Make the output of the calculations able to be copy-pasted into excel
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
   ☐ Add a "clear" button
   ☐ Make an "export to excel" button?
