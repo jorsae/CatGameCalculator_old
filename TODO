@@ -8,15 +8,17 @@ Technical:
 SEO / "Advertisement":
   ☐ "Advertise" on the different discord server. Read and follow the rules before doing so!
   ☐ "Advertise" on youtube videos
-  ☐ Make posts on forums:
-    - https://www.giantbomb.com/cat-game-the-cat-collector/3030-69993/forums/
-    - https://boardgamegeek.com/forums/thing/231302/cat-game
-    - https://www.mrguider.org/cheats/cat-game-the-cats-collector-cheats-guide-tips-tricks/
-    - https://montrealgazette.com/news/local-news/gaming-startup-poised-to-pounce-with-cat-game
-    - https://www.behance.net/gallery/85092753/Cat-Game-The-Cats-Collector
   ☐ Post on their facebook page?
   
 Archive:
+  ✔ Make posts on forums: @done(20-02-08 01:34) @project(SEO / "Advertisement")
+  ✘ https://www.giantbomb.com/cat-game-the-cat-collector/3030-69993/forums/ @cancelled(20-02-08 01:32) @project(SEO / "Advertisement")
+    Banned for posting a link
+  ✔ https://www.mrguider.org/cheats/cat-game-the-cats-collector-cheats-guide-tips-tricks/ @done(20-02-08 01:32) @project(SEO / "Advertisement")
+  ✘ https://montrealgazette.com/news/local-news/gaming-startup-poised-to-pounce-with-cat-game @cancelled(20-02-08 01:32) @project(SEO / "Advertisement")
+    Don't allow comments anymore
+  ✘ https://www.behance.net/gallery/85092753/Cat-Game-The-Cats-Collector @cancelled(20-02-08 01:34) @project(SEO / "Advertisement")
+    Aids to create account
   ✘ Comment on google play review? @cancelled(20-02-08 01:16) @project(SEO / "Advertisement")
   ✔ Clean up the css. Combine them into as few .css files as possible @done(20-02-08 01:14) @project(Technical)
   ✔ Bug: Inputting: 2waterstone, 2hours, 59minutes. will result in: "Silver 4: craft 3x, 1times" @done(20-02-08 01:14) @project(Technical)
