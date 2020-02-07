@@ -92,7 +92,6 @@ function calculate(){
     });
 
     var totalCost = 0;
-    debugger;
     for(var i = 0; i < craftingItems.length; i++){
         var item = craftingItems[i];
         var craftingMethods = item.getCraftingMethod(userTime);
