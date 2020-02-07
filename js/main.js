@@ -92,10 +92,12 @@ function calculate(){
     });
 
     var totalCost = 0;
+    debugger;
     for(var i = 0; i < craftingItems.length; i++){
         var item = craftingItems[i];
-        var cost = item.getCost(userTime);
-        createOutput(item, cost, userTime, spanItems);
+        var craftingMethods = item.getCraftingMethod(userTime);
+        var cost = item.getCost(craftingMethods);
+        createOutput(item, cost, craftingMethods, userTime, spanItems);
         totalCost += cost;
     }
 
@@ -120,7 +122,7 @@ function calculate(){
     craftingRecipes.delete(userItem.name);
 }
 
-function createOutput(item, cost, userTime, spanItems){
+function createOutput(item, cost, craftingMethods, userTime, spanItems){
     var outputContainerElement = document.getElementById("outputContainer");
     
     // Creating a div to store this output in
@@ -136,9 +138,6 @@ function createOutput(item, cost, userTime, spanItems){
     outputTextDiv.classList.add("output-content-text");
     outputTextDiv.classList.add(item.rarity);
     
-    var itemsPerCraft = item.getItemsPerCraft(userTime);
-    var crafts = item.getCrafts(userTime);
-
     // Text fields for storing item output
     var textOutputItem = document.createElement("p");
     textOutputItem.innerText = item.name + ": " + (item.quantity).toLocaleString();
@@ -149,17 +148,16 @@ function createOutput(item, cost, userTime, spanItems){
     // Adding text fields to our div. We have to add these before the potential crafting "guide"
     outputTextDiv.appendChild(textOutputItem);
     outputTextDiv.appendChild(textOutputCost);
-
+    
     // Raw ingredients, does not need to be crafted, so we don't add that text to them
     if(item.rarity !== rarity.RAW){
-        var textOutputCraftMax = document.createElement("p");
-        textOutputCraftMax.innerText = "Craft: " + itemsPerCraft[0] + "x, " + crafts[0] + " times";
-        outputTextDiv.appendChild(textOutputCraftMax);
-        
-        if(crafts[1] !== 0){
-        var textOutputCraftMin = document.createElement("p");
-        textOutputCraftMin.innerText = "Craft: " + itemsPerCraft[1] + "x, " + crafts[1] + " times";
-        outputTextDiv.appendChild(textOutputCraftMin);
+        for(var i = 0; i < craftingMethods.length; i++){
+            var textOutputCrafting = document.createElement("p");
+            if(craftingMethods[i].crafts === 0){
+                continue;
+            }
+            textOutputCrafting.innerText = "Craft: " + craftingMethods[i].itemQuantity + "x, " + craftingMethods[i].crafts + " times";
+            outputTextDiv.appendChild(textOutputCrafting);
         }
     }
 

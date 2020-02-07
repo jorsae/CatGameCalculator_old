@@ -1,4 +1,6 @@
 Technical:
+  ☐ Bug: Inputting: 2waterstone, 2hours, 59minutes. will result in: "Silver 4: craft 3x, 1times"
+  
   ☐ Clean up the css. Combine them into as few .css files as possible
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
   ☐ Add a "clear" button

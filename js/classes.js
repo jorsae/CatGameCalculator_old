@@ -1,3 +1,10 @@
+class CraftingMethod{
+    constructor(itemQuantity, crafts){
+        this.itemQuantity = itemQuantity;
+        this.crafts = crafts;
+    }
+}
+
 class CraftingRequirement{
     constructor(craftingItem, quantity){
         this.craftingItem = craftingItem;
@@ -54,43 +61,42 @@ class CraftingItemOutput{
                 return 5;
         }
     }
-    getCrafts(time, max, min){
-        var crafts = 1;
+
+    getCraftingMethod(time){
+        var crafts = 1; // How many crafts you can do in the time given. Rounded down. Minimum 1
         if(this.craftingTime < time){
-            crafts = time / this.craftingTime;
+            crafts = Math.floor(time / this.craftingTime);
         }
+
+        // You can do more crafts, than items needed. Ergo: 1 item, per craft
         if(crafts > this.quantity){
             crafts = this.quantity;
+            return [new CraftingMethod(1, this.quantity)];
         }
-        crafts = Math.floor(crafts);
-        var maxCrafts = this.quantity % crafts;
-        var minCrafts = crafts - maxCrafts;
-        if(maxCrafts === 0){
-            return [minCrafts, maxCrafts];
+        // You can only do 1 craft. Ergo: x items, 1 craft
+        if(crafts === 1){
+            return [new CraftingMethod(this.quantity, 1)];
         }
-        return [maxCrafts, minCrafts];
+
+        var maxQuantity = Math.ceil(this.quantity / crafts);
+        var minQuantity = maxQuantity - 1;
+
+        for(var i = 1; i <= crafts; i++){
+            var max = maxQuantity * i;
+            var min = minQuantity * (crafts - i);
+            if((max+min) === this.quantity){
+                return [new CraftingMethod(maxQuantity, i), new CraftingMethod(minQuantity, (crafts-i))];
+            }
+        }
+
+        return [];
     }
 
-    getItemsPerCraft(time){
-        var crafts = 1;
-        if(this.craftingTime < time){
-            crafts = time / this.craftingTime;
+    getCost(craftingMethods){
+        var totalCost = 0;
+        for(var i = 0; i < craftingMethods.length; i++){
+            totalCost += (this.baseCost / 4) * (Math.pow(craftingMethods[i].itemQuantity, 2) + 3 * craftingMethods[i].itemQuantity) * craftingMethods[i].crafts;
         }
-        if(crafts > this.quantity){
-            crafts = this.quantity;
-        }
-        
-        crafts = this.quantity / crafts;
-        return [Math.ceil(crafts), Math.floor(crafts)];
-    }
-
-    getCost(time){
-        var itemsPerCraft = this.getItemsPerCraft(time);
-        var crafts = this.getCrafts(time, itemsPerCraft[0], itemsPerCraft[1])
-
-        var maxCost = (this.baseCost / 4) * (Math.pow(itemsPerCraft[0], 2) + 3 * itemsPerCraft[0]) * crafts[0];
-        var minCost = (this.baseCost / 4) * (Math.pow(itemsPerCraft[1], 2) + 3 * itemsPerCraft[1]) * crafts[1];
-
-        return maxCost + minCost;
+        return totalCost;
     }
 }
