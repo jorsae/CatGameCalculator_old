@@ -12,6 +12,10 @@
         max-width: 100%;
     }
 
+    #outputTable{
+        min-width: 100%;
+    }
+
     .fit-content{
         max-width: 75%;
     }
@@ -29,10 +33,6 @@
 
     .calculator-container{
         zoom: 150%;
-    }
-
-    table{
-        min-width: 100%;
     }
 }
 
