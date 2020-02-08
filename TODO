@@ -1,6 +1,4 @@
 Technical:
-  ☐ Improve UI for "calculate div"
-  ☐ Improve UI for output
   ☐ Make the output of the calculations able to be copy-pasted into excel
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
   ☐ Add a "clear" button
@@ -14,6 +12,8 @@ SEO / "Advertisement":
   ☐ Post on their facebook page?
   
 Archive:
+  ✔ Improve UI for output @done(20-02-08 16:47) @project(Technical)
+  ✔ Improve UI for "calculate div" @done(20-02-08 02:00) @project(Technical)
   ✔ Make posts on forums: @done(20-02-08 01:34) @project(SEO / "Advertisement")
   ✘ https://www.giantbomb.com/cat-game-the-cat-collector/3030-69993/forums/ @cancelled(20-02-08 01:32) @project(SEO / "Advertisement")
     Banned for posting a link

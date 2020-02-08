@@ -242,24 +242,26 @@ p{
     margin: auto;
 }
 
-.output-container-items{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+th{
+    font-size: 24px;
+    font-style: bold;
+    text-align: center;
 }
 
-.output-content{
-    display: flex;
-    justify-content: center;
+td{
+    text-align: center;
 }
 
-.output-content-text{
-    width: 128px;
+tbody tr:nth-child(odd){
+    background-color: #169ed1;
 }
 
-.output-content img{
-    width: 64px;
+tbody tr:nth-child(even){
+    background-color: #a859b4;
+}
+
+table img{
+    height: 64px;
 }
 
 /* about.html */

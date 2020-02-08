@@ -60,21 +60,6 @@ function calculate(){
     craftingRecipes.set(userItem.name, userItem);
     var reqs = getCraftingRequirements(userItem, 1);
     
-    // Make sure everything is cleared
-    var outputContainerElement = document.getElementById("outputContainer")
-    outputContainerElement.innerHTML = "";
-    
-    // Create span for storing "total" information, cost, time, etc
-    var spanTotal = document.createElement("span");
-    spanTotal.id = "spanTotal";
-    spanTotal.classList.add("output-container-total");
-    spanTotal.classList.add("output-total");
-    outputContainerElement.appendChild(spanTotal);
-    
-    // Create span for storing all crafting items needed
-    var spanItems = document.createElement("span");
-    spanItems.classList.add("output-container-items");
-    
     // Sort and output all the crafting items
     var temporaryCraftingItems = Array.from(reqs);
     var craftingItems = [];
@@ -91,20 +76,28 @@ function calculate(){
         return a.getRarityValue() - b.getRarityValue();
     });
 
+    document.getElementById('outputTable').getElementsByTagName('tbody')[0].innerHTML = "";
     var totalCost = 0;
     for(var i = 0; i < craftingItems.length; i++){
+        var tableRow = document.createElement("tr");
+
         var item = craftingItems[i];
         var craftingMethods = item.getCraftingMethod(userTime);
         var cost = item.getCost(craftingMethods);
-        createOutput(item, cost, craftingMethods, userTime, spanItems);
+        createOutput(item, cost, craftingMethods, userTime);
         totalCost += cost;
     }
 
-    // Adding paragraph with total cost, time, etc to the spanTotal element
+    // Adding paragraph with total cost, time, etc to the outputTotal element
+    var outputTotal = document.getElementById("outputTotal");
+    outputTotal.innerHTML = "";
+    
+    // Adding total Cost
     var totalCostParagraph = document.createElement("p");
     totalCostParagraph.innerText = "Total cost: " + totalCost.toLocaleString();
-    spanTotal.appendChild(totalCostParagraph);
+    outputTotal.appendChild(totalCostParagraph);
 
+    // Adding crafting time
     var hours = Math.floor(userTime / 60);
     hours = (hours.toString().length == 1) ? '0' + hours : hours;
     var minutes = userTime % 60;
@@ -112,60 +105,58 @@ function calculate(){
     
     var totalTimeParagraph = document.createElement("p");
     totalTimeParagraph.innerText = "Time to craft: " + hours + ":" + minutes;
-    spanTotal.appendChild(totalTimeParagraph);
+    outputTotal.appendChild(totalTimeParagraph);
 
     // Scroll down to the results
     document.getElementById("outputContainer").scrollIntoView();
-
+    
     currentCraft.clear();
     craftingRecipes.delete(userItem.name);
 }
 
-function createOutput(item, cost, craftingMethods, userTime, spanItems){
-    var outputContainerElement = document.getElementById("outputContainer");
-    
-    // Creating a div to store this output in
-    var outputDiv = document.createElement("div");
-    outputDiv.classList.add("output-content");
-    
-    // Image for the item we are outputting
-    var imgDiv = document.createElement("img");
-    imgDiv.src = "images/game/" + item.name.toLowerCase() + ".jpg";
-    
-    // Creating a div to store the text for the item we are outputting
-    var outputTextDiv = document.createElement("div");
-    outputTextDiv.classList.add("output-content-text");
-    outputTextDiv.classList.add(item.rarity);
-    
-    // Text fields for storing item output
-    var textOutputItem = document.createElement("p");
-    textOutputItem.innerText = item.name + ": " + (item.quantity).toLocaleString();
-    
-    var textOutputCost = document.createElement("p");
-    textOutputCost.innerText = "Cost: " + cost.toLocaleString();
+function createOutput(item, cost, craftingMethods, userTime){
+    var outputTable = document.getElementById('outputTable').getElementsByTagName('tbody')[0];
+    var tableRow = outputTable.insertRow();
 
-    // Adding text fields to our div. We have to add these before the potential crafting "guide"
-    outputTextDiv.appendChild(textOutputItem);
-    outputTextDiv.appendChild(textOutputCost);
-    
+    // Add image cell
+    var cellImage = tableRow.insertCell(0);
+    var cellNodeImage = document.createElement("img");
+    cellNodeImage.src = "images/game/" + item.name.toLowerCase() + ".jpg";
+    cellImage.appendChild(cellNodeImage);
+
+    // Add item name cell
+    var cellItem = tableRow.insertCell(1);
+    var cellNodeItem = document.createTextNode(item.name);
+    cellItem.appendChild(cellNodeItem);
+
+    // Add quantity cell
+    var cellQuantity = tableRow.insertCell(2);
+    var cellNodeQuantity = document.createTextNode(item.quantity);
+    cellQuantity.appendChild(cellNodeQuantity);
+
+    // Add cost cell
+    var cellCost = tableRow.insertCell(3);
+    var cellNodeCost = document.createTextNode(cost.toLocaleString());
+    cellCost.appendChild(cellNodeCost);
+
     // Raw ingredients, does not need to be crafted, so we don't add that text to them
+    var craftingText = "";
     if(item.rarity !== rarity.RAW){
         for(var i = 0; i < craftingMethods.length; i++){
-            var textOutputCrafting = document.createElement("p");
             if(craftingMethods[i].crafts === 0){
                 continue;
             }
-            textOutputCrafting.innerText = "Craft: " + craftingMethods[i].itemQuantity + "x, " + craftingMethods[i].crafts + " times";
-            outputTextDiv.appendChild(textOutputCrafting);
+            craftingText += "Craft: " + craftingMethods[i].itemQuantity + "x, " + craftingMethods[i].crafts + " times & ";
         }
+        craftingText = craftingText.substring(0, craftingText.length-3);
     }
-
-    // Adding all DOM elements we created together to the main output container
-    outputDiv.appendChild(imgDiv);
-    outputDiv.appendChild(outputTextDiv);
-    spanItems.appendChild(outputDiv);
-
-    outputContainerElement.appendChild(spanItems);
+    else{
+        craftingText = "None";
+    }
+    // Add crafting method cell
+    var cellCrafting = tableRow.insertCell(4);
+    var cellNodeCrafting = document.createTextNode(craftingText);
+    cellCrafting.appendChild(cellNodeCrafting);
 }
 
 function getOutputRow(itemNumber){
