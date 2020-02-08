@@ -1,17 +1,19 @@
 Technical:
-  ☐ Make the output of the calculations able to be copy-pasted into excel
+  ☐ Add a "Copy to clipboard" of the table output
+  ☐ Improve UI on "Total cost" and "Total time"
+  ☐ Improve tooltip, make them display right away on hover
+  ☐ Make tooltip show on mobile devices
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
-  ☐ Add a "clear" button
-  ☐ Make an "export to excel" button?
   ☐ Make an email address and put it in on the website (footer?)
   ☐ Display to the user that calculate is on cooldown
-  ☐ Tooltip on images doesn't display on mobile devices
 SEO / "Advertisement":
   ☐ "Advertise" on the different discord server. Read and follow the rules before doing so!
   ☐ "Advertise" on youtube videos
   ☐ Post on their facebook page?
   
 Archive:
+  ✘ Make an "export to excel" button? @cancelled(20-02-08 17:46) @project(Technical)
+    Need server side to be able to do this
   ✔ Improve UI for output @done(20-02-08 16:47) @project(Technical)
   ✔ Improve UI for "calculate div" @done(20-02-08 02:00) @project(Technical)
   ✔ Make posts on forums: @done(20-02-08 01:34) @project(SEO / "Advertisement")
