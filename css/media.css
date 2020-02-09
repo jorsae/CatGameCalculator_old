@@ -7,10 +7,6 @@
         font-size: 48px;
     }
 
-    .calculator-container{
-        zoom: 2;
-    }
-
     .output-container{
         max-width: 100%;
     }
