@@ -1,11 +1,13 @@
 @media all and (max-width: 1400px) {
     .crafting-container{
-        zoom: 125%;
+        zoom: 1.25;
+        -moz-transform: scale(1.25);
         min-width: 75%
     }
 
     .calculator-container{
-        zoom: 200%;
+        zoom: 2;
+        -moz-transform: scale(2);
     }
 
     .output-container{
@@ -29,16 +31,19 @@
 
 @media all and (min-width: 1000px) {
     .crafting-container{
-        zoom: 125%;
+        zoom: 1.25;
+        -moz-transform: scale(1.25);
     }
 
     .calculator-container{
-        zoom: 150%;
+        zoom: 1.5;
+        -moz-transform: scale(1.5);
     }
 }
 
 @media all and (min-width: 1200px) {
     .crafting-container{
-        zoom: 125%;
+        zoom: 1.25;
+        -moz-transform: scale(1.25);
     }
 }
