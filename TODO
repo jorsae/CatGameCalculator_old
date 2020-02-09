@@ -1,5 +1,5 @@
 Technical:
-  ☐ Add a "Copy to clipboard" of the table output
+  ✔ Add a "Copy to clipboard" of the table output @done(20-02-09 21:00)
   ☐ Improve UI on "Total cost" and "Total time"
   ☐ Improve tooltip, make them display right away on hover
   ☐ Make tooltip show on mobile devices
