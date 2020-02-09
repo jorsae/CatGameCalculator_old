@@ -1,13 +1,14 @@
 @media all and (max-width: 1400px) {
     .crafting-container{
-        zoom: 1.25;
-        -moz-transform: scale(1.25);
         min-width: 75%
+    }
+
+    .calculator-text{
+        font-size: 48px;
     }
 
     .calculator-container{
         zoom: 2;
-        -moz-transform: scale(2);
     }
 
     .output-container{
@@ -29,21 +30,26 @@
     }
 }
 
-@media all and (min-width: 1000px) {
-    .crafting-container{
-        zoom: 1.25;
-        -moz-transform: scale(1.25);
-    }
-
-    .calculator-container{
-        zoom: 1.5;
-        -moz-transform: scale(1.5);
+@media all and (max-width: 1200px) {
+    .calculator-text{
+        font-size: 42px;
     }
 }
 
-@media all and (min-width: 1200px) {
-    .crafting-container{
-        zoom: 1.25;
-        -moz-transform: scale(1.25);
+@media all and (max-width: 1000px) {
+    .calculator-text{
+        font-size: 38px;
+    }
+
+}
+
+@media all and (max-width: 800px) {
+    .calculator-container{
+        min-width: 70%;
+        max-width: 90%;
+    }
+
+    .calculator-text{
+        font-size: 32px;
     }
 }

@@ -199,6 +199,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .calculator-body button{
@@ -207,10 +208,18 @@ p{
     width: fit-content;
 }
 
+.calculator-time{
+    display: flex;
+}
+
+.calculator-text{
+    font-size: 48px;
+}
+
 .user-time{
     top: 0px;
     bottom: 0px;
-    margin: auto 4px auto 4px;
+    margin: auto 2px auto 2px;
 }
 
 .info-icon{
@@ -220,6 +229,7 @@ p{
 
 .user-time-input{
     width: 48px;
+    text-align: right;
 }
 
 /* CSS for output of the calculations */
