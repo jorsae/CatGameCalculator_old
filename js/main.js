@@ -131,7 +131,6 @@ function calculate(){
     craftingItems.sort(function(a, b){
         return a.sortingOrder - b.sortingOrder;
     });
-    console.log(craftingItems);
 
     document.getElementById('outputTable').getElementsByTagName('tbody')[0].innerHTML = "";
     var totalCost = 0;
