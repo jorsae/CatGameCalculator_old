@@ -112,7 +112,7 @@ function calculate(){
         continue;
     }
 
-    userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, userItemReq);
+    userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, 1000, userItemReq);
     craftingRecipes.set(userItem.name, userItem);
     var reqs = getCraftingRequirements(userItem, 1);
     
@@ -125,12 +125,13 @@ function calculate(){
             continue;
         }
         var quantity = temporaryCraftingItems[i][1];
-        craftingItems.push(new CraftingItemOutput(item.name, item.craftingTime, item.baseCost, item.rarity, quantity));
+        craftingItems.push(new CraftingItemOutput(item.name, item.craftingTime, item.baseCost, item.rarity, quantity, item.sortingOrder));
     }
     
     craftingItems.sort(function(a, b){
-        return a.getRarityValue() - b.getRarityValue();
+        return a.sortingOrder - b.sortingOrder;
     });
+    console.log(craftingItems);
 
     document.getElementById('outputTable').getElementsByTagName('tbody')[0].innerHTML = "";
     var totalCost = 0;

@@ -17,11 +17,12 @@ class CraftingRequirement{
 }
 
 class CraftingItem{
-    constructor(name, craftingTime, baseCost, rarity, craftingRequirements = null){
+    constructor(name, craftingTime, baseCost, rarity, sortingOrder, craftingRequirements = null){
         this.name = name;
         this.craftingTime = craftingTime;
         this.baseCost = baseCost;
         this.rarity = rarity;
+        this.sortingOrder = sortingOrder
 
         this.craftingRequirements = craftingRequirements;
     }
@@ -36,12 +37,13 @@ class CraftingItem{
 }
 
 class CraftingItemOutput{
-    constructor(name, craftingTime, baseCost, rarity, quantity){
+    constructor(name, craftingTime, baseCost, rarity, quantity, sortingOrder){
         this.name = name;
         this.craftingTime = craftingTime;
         this.baseCost = baseCost;
         this.rarity = rarity;
         this.quantity = quantity;
+        this.sortingOrder = sortingOrder
     }
 
     getRarityValue(){
