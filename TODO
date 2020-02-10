@@ -1,5 +1,5 @@
 Technical:
-  ✔ Add a "Copy to clipboard" of the table output @done(20-02-09 21:00)
+  Table looks really weird on firefox on mobile!
   ☐ Improve UI on "Total cost" and "Total time"
   ☐ Improve tooltip, make them display right away on hover
   ☐ Make tooltip show on mobile devices
@@ -13,6 +13,7 @@ SEO / "Advertisement":
   ☐ Post on their facebook page?
   
 Archive:
+  ✔ Add a "Copy to clipboard" of the table output @done(20-02-09 21:00) @project(Technical)
   ✘ Make an "export to excel" button? @cancelled(20-02-08 17:46) @project(Technical)
     Need server side to be able to do this
   ✔ Improve UI for output @done(20-02-08 16:47) @project(Technical)
