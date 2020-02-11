@@ -7,6 +7,37 @@
     z-index: -1000;
 }
 
+.inline-paragraph2{
+    margin: 0 0 0 0;
+}
+
+.cookie-policy{
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    width: 70%;
+    border: solid 2px darkgray;
+}
+
+.cookie-policy-close{
+    margin: 4px;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #2de3f5, #169ed1);
+    border: none;
+    text-align: center;
+}
+
+.cookie-policy-close:hover{
+    color: #000000;
+    cursor: pointer;
+}
+
 body{
     background-color: #74270c;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
