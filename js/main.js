@@ -66,7 +66,7 @@ function clear(){
         var item = craftingRecipes.get(entry[0]);
         var itemAmountElement = document.getElementById(item.name.toLowerCase() + 'Amount');
         if(itemAmountElement !== null){
-            itemAmountElement.innerText = "0";
+            itemAmountElement.value = 0;
         }
         continue;
     }
