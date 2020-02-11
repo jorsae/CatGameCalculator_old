@@ -30,6 +30,10 @@
     .calculator-text{
         font-size: 42px;
     }
+
+    .calculator-body button{
+        height: 42px;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -37,6 +41,9 @@
         font-size: 38px;
     }
 
+    .calculator-body button{
+        height: 38px;
+    }
 }
 
 @media all and (max-width: 800px) {
@@ -47,5 +54,9 @@
 
     .calculator-text{
         font-size: 32px;
+    }
+
+    .calculator-body button{
+        height: 32px;
     }
 }
