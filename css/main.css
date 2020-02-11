@@ -133,6 +133,14 @@ p{
 .crafting-item-amount{
     margin-right: 32px;
     font-size: 24px;
+    width: 40px;
+    background: transparent;
+    text-align: center;
+    color: #ffffff;
+    border:none;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
 }
 
 .crafting-items-info{
@@ -313,4 +321,18 @@ tbody tr:nth-child(even){
 /* feedback.html */
 .feedback{
     text-align: center;
+}
+
+/* Removes up/down arrows on 'input type="number"' */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

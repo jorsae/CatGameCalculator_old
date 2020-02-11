@@ -104,7 +104,7 @@ function calculate(){
         var itemAmountElement = document.getElementById(item.name.toLowerCase() + 'Amount');
         
         if(itemAmountElement !== null){
-            var itemAmount = parseInt(itemAmountElement.innerText);
+            var itemAmount = parseInt(itemAmountElement.value);
             if(itemAmount > 0){
                 userItemReq.push(new CraftingRequirement(item, itemAmount));
             }
@@ -231,8 +231,8 @@ function clickUp(arg){
     if(element === null){
         return;
     }
-    var value = parseInt(element.innerText);
-    element.innerText = ++value;
+    var value = parseInt(element.value);
+    element.value = ++value;
 }
 
 function clickDown(arg){
@@ -240,9 +240,9 @@ function clickDown(arg){
     if(element === null){
         return;
     }
-    var value = parseInt(element.innerText);
-    element.innerText = --value;
+    var value = parseInt(element.value);
+    element.value = --value;
     if(value <= 0){
-        element.innerText = 0;
+        element.value = 0;
     }
 }
