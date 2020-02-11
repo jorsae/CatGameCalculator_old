@@ -3,7 +3,7 @@
         min-width: 75%
     }
 
-    .calculator-text{
+    .calculator-text, .calculator-body button{
         font-size: 48px;
     }
 
@@ -27,22 +27,14 @@
 }
 
 @media all and (max-width: 1200px) {
-    .calculator-text{
+    .calculator-text, .calculator-body button{
         font-size: 42px;
-    }
-
-    .calculator-body button{
-        height: 42px;
     }
 }
 
 @media all and (max-width: 1000px) {
-    .calculator-text{
+    .calculator-text, .calculator-body button{
         font-size: 38px;
-    }
-
-    .calculator-body button{
-        height: 38px;
     }
 }
 
@@ -52,11 +44,7 @@
         max-width: 90%;
     }
 
-    .calculator-text{
+    .calculator-text, .calculator-body button{
         font-size: 32px;
-    }
-
-    .calculator-body button{
-        height: 32px;
     }
 }

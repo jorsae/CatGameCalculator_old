@@ -1,5 +1,7 @@
 Technical:
-  Table looks really weird on firefox on mobile!
+  Table looks really weird on firefox on mobile! (This should be fixed)
+  Increase the size slightly on mobile on calculator-container
+
   ☐ Improve UI on "Total cost" and "Total time"
   ☐ Improve tooltip, make them display right away on hover
   ☐ Make tooltip show on mobile devices

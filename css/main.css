@@ -207,7 +207,6 @@ p{
 
 .calculator-body button{
     margin: 4px;
-    height: 48px;
     width: fit-content;
 }
 
@@ -215,7 +214,7 @@ p{
     display: flex;
 }
 
-.calculator-text{
+.calculator-text, .calculator-body button{
     font-size: 48px;
 }
 
