@@ -1,17 +1,5 @@
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance:textfield;
-}
-
 Technical:
-  ☐ Improve UI on "Total cost" and "Total time"
+  ☐ Add banner for cookie policy
   ☐ Improve tooltip, make them display right away on hover
   ☐ Make tooltip show on mobile devices
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
@@ -25,6 +13,8 @@ SEO / "Advertisement":
   ☐ Post on their facebook page?
   
 Archive:
+  ✔ Add cookie policy @done(20-02-12 07:42) @project(Technical)
+  ✔ Improve UI on "Total cost" and "Total time" @done(20-02-12 07:32) @project(Technical)
   ✔ Add a "Copy to clipboard" of the table output @done(20-02-09 21:00) @project(Technical)
   ✘ Make an "export to excel" button? @cancelled(20-02-08 17:46) @project(Technical)
     Need server side to be able to do this

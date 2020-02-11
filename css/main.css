@@ -323,6 +323,19 @@ tbody tr:nth-child(even){
     text-align: center;
 }
 
+/* privacy.html */
+.privacy{
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.privacy ul li{
+    list-style-type: none;
+}
+
 /* Removes up/down arrows on 'input type="number"' */
 
 /* Chrome, Safari, Edge, Opera */
