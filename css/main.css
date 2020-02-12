@@ -170,9 +170,9 @@ p{
     text-align: center;
     color: #ffffff;
     border:none;
-    -webkit-box-shadow: inset 0px 0px 8px #c1c1c1;
-    -moz-box-shadow: inset 0px 0px 8px #c1c1c1;
-    box-shadow: inset 0px 0px 8px #c1c1c1;
+    -webkit-box-shadow: inset 0px 0px 8px #333333;
+    -moz-box-shadow: inset 0px 0px 8px #333333;
+    box-shadow: inset 0px 0px 8px #333333;
 }
 
 .crafting-items-info{
