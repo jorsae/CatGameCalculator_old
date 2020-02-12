@@ -72,8 +72,8 @@ nav ul li{
     margin: 4px;
 }
 
-nav ul li:hover{
-    background-color: #4bbeff;
+nav ul li a:hover{
+    color: #000000;
 }
 
 a{
