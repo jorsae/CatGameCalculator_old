@@ -1,4 +1,6 @@
 Technical:
+  ☐ Cookie policy banner should display on all pages. Not just index.html
+    Might be smart to make a own .js file for cookie policy
   ☐ Improve tooltip, make them display right away on hover
   ☐ Make tooltip show on mobile devices
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
