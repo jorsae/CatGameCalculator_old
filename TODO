@@ -3,7 +3,6 @@ Technical:
   ☐ Add a pattern to the website?
     - https://www.heropatterns.com/
     - https://www.gradientmagic.com/browse
-  ☐ Look into compress png? compresspng.com
   ☐ Improve tooltip, make them display right away on hover
   ☐ Make tooltip show on mobile devices
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
@@ -17,6 +16,7 @@ SEO / "Advertisement":
   ☐ Post on their facebook page?
   
 Archive:
+  ✔ Look into compress png? compresspng.com @done(20-02-13 18:21) @project(Technical)
   ✔ Look into changing some % stuff into vw or vh @done(20-02-13 17:41) @project(Technical)
   ✔ Fix multiple homepage urls! homepage is now catgamecalculator.com/ && catgamecalculator.com/index.html @done(20-02-13 13:50) @project(Technical)
     Linking to just '/' DOES not work without root level domain. So localhost and .../CatGameCalculatorTest does not work!
