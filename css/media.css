@@ -11,11 +11,6 @@
         max-width: 100%;
     }
 
-    table{
-        min-width: 100%;
-        font-size: 22px;
-    }
-
     .fit-content{
         max-width: 75%;
     }
