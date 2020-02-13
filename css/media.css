@@ -19,6 +19,10 @@
         width: 64px;
         height: 64px;
     }
+
+    .cookie-policy, .cookie-policy-close{
+        font-size: 18px;
+    }
 }
 
 @media all and (max-width: 1200px) {
@@ -29,6 +33,10 @@
     table{
         min-width: 80vw;
     }
+
+    .cookie-policy, .cookie-policy-close{
+        font-size: 1em;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -38,6 +46,10 @@
 
     table{
         min-width: 90vw;
+    }
+
+    .cookie-policy, .cookie-policy-close{
+        font-size: 24px;
     }
 }
 

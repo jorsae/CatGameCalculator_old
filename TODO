@@ -1,5 +1,4 @@
 Technical:
-  ☐ Look into changing some % stuff into vw or vh
   ☐ Change font
   ☐ Add a pattern to the website?
     - https://www.heropatterns.com/
@@ -18,6 +17,7 @@ SEO / "Advertisement":
   ☐ Post on their facebook page?
   
 Archive:
+  ✔ Look into changing some % stuff into vw or vh @done(20-02-13 17:41) @project(Technical)
   ✔ Fix multiple homepage urls! homepage is now catgamecalculator.com/ && catgamecalculator.com/index.html @done(20-02-13 13:50) @project(Technical)
     Linking to just '/' DOES not work without root level domain. So localhost and .../CatGameCalculatorTest does not work!
   ✔ Cookie policy banner should display on all pages. Not just index.html @done(20-02-13 13:35) @project(Technical)
