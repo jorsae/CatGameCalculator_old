@@ -25,11 +25,19 @@
     .calculator-text, .calculator-body button{
         font-size: 42px;
     }
+
+    table{
+        min-width: 80vw;
+    }
 }
 
 @media all and (max-width: 1000px) {
     .calculator-text, .calculator-body button{
         font-size: 38px;
+    }
+
+    table{
+        min-width: 90vw;
     }
 }
 
