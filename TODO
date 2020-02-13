@@ -1,6 +1,4 @@
 Technical:
-  ☐ Fix multiple homepage urls! homepage is now catgamecalculator.com/ && catgamecalculator.com/index.html
-    Can I link like this?: '<a href="/"' ?
   ☐ Look into changing some % stuff into vw or vh
   ☐ Change font
   ☐ Add a pattern to the website?
@@ -20,6 +18,8 @@ SEO / "Advertisement":
   ☐ Post on their facebook page?
   
 Archive:
+  ✔ Fix multiple homepage urls! homepage is now catgamecalculator.com/ && catgamecalculator.com/index.html @done(20-02-13 13:50) @project(Technical)
+    Linking to just '/' DOES not work without root level domain. So localhost and .../CatGameCalculatorTest does not work!
   ✔ Cookie policy banner should display on all pages. Not just index.html @done(20-02-13 13:35) @project(Technical)
     Might be smart to make a own .js file for cookie policy
   ✔ Add banner for cookie policy @done(20-02-12 11:04) @project(Technical)
