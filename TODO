@@ -1,5 +1,4 @@
 Technical:
-  ☐ Change font
   ☐ Add a pattern to the website?
     - https://www.heropatterns.com/
     - https://www.gradientmagic.com/browse
@@ -16,6 +15,8 @@ SEO / "Advertisement":
   ☐ Post on their facebook page?
   
 Archive:
+  ✘ Change font @cancelled(20-02-13 18:32) @project(Technical)
+    Tried some new fonts and old one is good
   ✔ Look into compress png? compresspng.com @done(20-02-13 18:21) @project(Technical)
   ✔ Look into changing some % stuff into vw or vh @done(20-02-13 17:41) @project(Technical)
   ✔ Fix multiple homepage urls! homepage is now catgamecalculator.com/ && catgamecalculator.com/index.html @done(20-02-13 13:50) @project(Technical)
