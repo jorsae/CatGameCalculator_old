@@ -385,11 +385,6 @@ div.tooltip{
 div.tooltip:hover{
     z-index: 10;
 }
-div.tooltip img{
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    transition: all 0.8s;
-}
 div.tooltip img:hover{
     width: 140px;
     z-index: 10;
@@ -399,7 +394,7 @@ div.tooltip span {
     display: none;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -130;
     right: 0;
     background: #333;
     color: #fff;
