@@ -380,7 +380,14 @@ tbody tr:nth-child(even){
 div.tooltip{
     display: inline-block;
     position: relative;
-    max-width: 130px;
+    max-width: 160px;
+}
+div.tooltip:hover{
+    z-index: 10;
+}
+div.tooltip img:hover{
+    width: 140px;
+    z-index: 10;
 }
 
 div.tooltip span {
