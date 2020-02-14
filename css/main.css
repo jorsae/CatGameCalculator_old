@@ -273,7 +273,7 @@ p{
 
 /* CSS for output of the calculations */
 table{
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     font-size: 0.5em;
 }
@@ -295,7 +295,7 @@ table img{
 }
 
 th{
-    font-size: 24px;
+    font-size: 18px;
     font-style: bold;
     text-align: center;
 }
