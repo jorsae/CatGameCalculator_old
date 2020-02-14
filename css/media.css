@@ -54,12 +54,7 @@
 }
 
 @media all and (max-width: 800px) {
-    .calculator-container{
-        min-width: 70%;
-        max-width: 90%;
-    }
-
-    .calculator-text, .calculator-body button{
-        font-size: 32px;
+    nav{
+        font-size: 1em;
     }
 }
