@@ -6,6 +6,15 @@ function init(){
     document.getElementById("copyClipboard").onclick = copyClipboard;
 }
 
+function hamburgerMenu(){
+    var x = document.getElementById("hamburgerMenu");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+}
+
 /*
     Puts the output table to the users clipboard.
     We can only copy to clipboard things that are on the website itself.
