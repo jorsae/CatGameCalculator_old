@@ -31,10 +31,12 @@
                 --><li><a href="feedback.html">Feedback</a></li>
             </ul>
         </nav>
+        <!-- TODO: Temporary remove cookie banner, cause annoying
         <div id="cookiePolicyBanner" class="cookie-policy">
             <p class="cookie-paragraph">This site uses cookies to improve your user experience. By using CatGameCalcuator, you agree to our <a href="privacy.html">use of cookies</a>&nbsp;&nbsp;&nbsp;</p>
             <button id="cookieAccept" class="cookie-policy-close">Accept</button>
         </div>
+        -->
 
         <h1 class="text-center">Cat Game Calculator</h1>
         <div class="guide-container">
@@ -47,43 +49,18 @@
         </div>
 
         <div class="crafting-container">
-            
+            <h2>Basic Crafting</h2>
+            <div class="crafting-tier">
+                <div class="crafting-item">
+                    <h3>String</h3>
+                </div>
+                <div class="crafting-item">
+                    <h3>Wood</h3>
+                </div>
+                <div class="crafting-item">
+                    <h3>Ribbon</h3>
+                </div>
+            </div>
         </div>
-        
-        <hr>
-        <div class="calculator-container">
-            <div class="calculator-header">
-                <h1 class="inline-paragraph calculator-text">Crafting time</h1>
-                <img class="info-icon user-time" src="images/info-icon.png" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." />
-            </div>
-            <div class="calculator-body">
-                <span class="calculator-time">
-                    <p class="inline-paragraph user-time calculator-text">Hours:</p>
-                    <input id="userTimeHours" class="user-time user-time-input calculator-text" type="number" value="0" />
-                </span>
-                <span class=calculator-time>
-                    <p class="inline-paragraph user-time calculator-text">Minutes:</p>
-                    <input id="userTimeMinutes" class="user-time user-time-input calculator-text" type="number" value="1" />
-                </span>
-            </div>
-            <div class="calculator-body">
-                <button id="calculate">Calculate meow</button>
-                <button id="clear">Clear</button>
-            </div>
-            <!-- TODO: Temporary for beta version-->
-            <p style="font-size: 16px;">The calculator is still in beta version. If you notice an error, please leave <a href="feedback.html" style="color:blue;">feedback</a>, so I can correct it. Thank you!</p>
-        </div>
-            <span id="outputTotal" class="output-container-total output-total"></span>
-            <table id="outputTable">
-                <thead>
-                    <th><button id="copyClipboard">Copy to clipboard</button></th>
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>Cost</th>
-                    <th>Crafting method</th>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
     </body>
 </html>
