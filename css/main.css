@@ -103,92 +103,6 @@ p{
     overflow: visible;
 }
 
-.crafting-tier{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.crafting-tier h2{
-    text-align: center;
-    margin: 0px;
-}
-
-.crafting-items-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-    max-width: 100%;
-}
-
-.crafting-items{
-    margin-right: 1px;
-}
-
-.crafting-item-title{
-    font-size: 1em;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: normal;
-}
-
-.crafting-items-top{
-    width: 33.33vw;
-    height: fit-content;
-}
-
-.crafting-recipe-image{
-    display: block;
-    margin: auto;
-    padding-bottom: 4px;
-}
-
-.crafting-items-amount{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-.crafting-items-text{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 8px;
-    font-size: 24px;
-}
-
-.crafting-item-amount{
-    margin-right: 32px;
-    font-size: 24px;
-    width: 40px;
-    background: transparent;
-    text-align: center;
-    color: #ffffff;
-    border:none;
-    -webkit-box-shadow: inset 0px 0px 8px #333333;
-    -moz-box-shadow: inset 0px 0px 8px #333333;
-    box-shadow: inset 0px 0px 8px #333333;
-}
-
-.crafting-items-info{
-    width: 32px;
-    height: 32px;
-}
-
-.crafting-items-image{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-
-.arrow{
-    width: 48px;
-    height: 48px;
-}
-
 /* Background for the different crafting tiers */
 .raw{
     background-image: linear-gradient(to bottom, #b5b0a1, #66635c);
@@ -208,18 +122,6 @@ p{
 
 .legendary{
     background-image: linear-gradient(to bottom, #81e3da, #7d2ba6);
-}
-
-/* CSS for the Ruin Crafting: Artifact*/
-.fit-content{
-    width: fit-content;
-    max-width: 40%;
-}
-
-.inline-paragraph{
-    margin: 0 0 0 0;
-    text-align: center;
-    font-size: 24px;
 }
 
 /* CSS for the calculator container */
