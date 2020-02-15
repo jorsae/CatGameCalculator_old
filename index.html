@@ -13,6 +13,8 @@
         <script type="text/javascript" src="js/cookie.js" defer></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157531722-1"></script>
         <script>
@@ -24,11 +26,22 @@
         </script>
     </head>
     <body>
-        <nav>
+        <nav class="topnav">
             <ul>
-                <li><a href="./">Cat Game Calculator</a></li><!--
-                --><li><a href="about.html">About</a></li><!--
-                --><li><a href="feedback.html">Feedback</a></li>
+                <li>
+                    <a href="./">Cat Game Calculator</a>
+                </li><!--
+                --><li>
+                    <a href="about.html">About</a>
+                </li><!--
+                --><li>
+                    <a href="feedback.html">Feedback</a>
+                </li><!--
+                --><li>
+                    <a href="javascript:void(0);" class="hamburger-menu" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- TODO: Temporary remove cookie banner, cause annoying
