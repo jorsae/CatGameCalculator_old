@@ -5,7 +5,7 @@
         <title> Cat Game Calculator</title>
         <meta name="description" content="Cat Game Calculator is a website which allows you to calculate your crafting materials for maximum efficency">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="js/cookie.js" defer></script>
+        <script type="text/javascript" src="js/all.js" defer></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/media.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,13 +20,14 @@
         </script>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="./">Cat Game Calculator</a></li><!--
-                --><li><a href="about.html">About</a></li><!--
-                --><li><a href="feedback.html">Feedback</a></li>
-            </ul>
-        </nav>
+        <div class="topnav" id="topNav">
+            <a href="./">Cat Game Calculator</a>
+            <a href="about.html">About</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="javascript:void(0);" onclick="hamburgerMenu()" class="hamburger-menu">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <div id="cookiePolicyBanner" class="cookie-policy">
             <p class="cookie-paragraph">This site uses cookies to improve your user experience. By using CatGameCalcuator, you agree to our <a href="privacy.html">use of cookies</a>&nbsp;&nbsp;&nbsp;</p>
             <button id="cookieAccept" class="cookie-policy-close">Accept</button>

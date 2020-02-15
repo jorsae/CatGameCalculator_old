@@ -1,3 +1,12 @@
+function hamburgerMenu(){
+    var x = document.getElementById("topNav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+}
+
 const cookieName = "CatCookie"; // Name of the cookie we set
 const cookieValue = "Yes"; // Value of the cookie when set
 
