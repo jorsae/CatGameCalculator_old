@@ -7,7 +7,7 @@ function init(){
 }
 
 function hamburgerMenu(){
-    var x = document.getElementById("hamburgerMenu");
+    var x = document.getElementById("topNav");
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {
