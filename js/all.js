@@ -1,3 +1,4 @@
+// JS for hamburger menu
 function hamburgerMenu(){
     var x = document.getElementById("topNav");
     if (x.className === "topnav") {
