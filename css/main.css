@@ -85,6 +85,7 @@ p{
     overflow: visible;
     border: solid 1px red;
     text-align: center;
+    margin: auto;
 }
 
 .crafting-tier{
@@ -99,6 +100,35 @@ p{
     flex-wrap: wrap;
     width: 33.33vw;
     border: solid 1px green;
+}
+
+.crafting-item-image{
+    width: 50%;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.crafting-item-amount{
+    font-size: 1.5em;
+    width: 4.5em;
+    background: transparent;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    -webkit-box-shadow: inset 0px 0px 8px #333333;
+    -moz-box-shadow: inset 0px 0px 8px #333333;
+    box-shadow: inset 0px 0px 8px #333333;
+}
+
+.crafting-item-info{
+    width: 1.5em;
+    height: auto;
+}
+
+.arrow{
+    width: auto;
 }
 
 /* Background for the different crafting tiers */
