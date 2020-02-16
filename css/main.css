@@ -83,7 +83,6 @@ p{
     width: 100vw;
     max-width: 100%;
     overflow: visible;
-    border: solid 1px red;
     text-align: center;
     margin: auto;
 }
@@ -91,7 +90,7 @@ p{
 .crafting-tier{
     display: flex;
     flex-direction: row;
-    border: solid 1px blue;
+    justify-content: center;
 }
 
 .crafting-item{
@@ -99,7 +98,6 @@ p{
     flex-direction: column;
     flex-wrap: wrap;
     width: 33.33vw;
-    border: solid 1px green;
 }
 
 .crafting-item-image{
