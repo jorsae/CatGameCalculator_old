@@ -30,7 +30,9 @@
 
         <script>
             $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();
+                $('[data-toggle="tooltip"]').tooltip({
+                    container: 'body'
+                });
             });
         </script>
     </head>
@@ -223,8 +225,8 @@
             </div>
 
             <h2>Magic Crafting</h2>
-            <div class="crafting-tier common">
-                <div class="crafting-item">
+            <div class="crafting-tier">
+                <div class="crafting-item common">
                     <h3>Orb</h3>
                     <img class="crafting-item-image" src="images/game/orb.jpg" alt="Crafting item orb">
                     <span>
@@ -316,6 +318,27 @@
                         <img class="arrow" src="images/arrow-down.png" onclick="clickDown('artifact')" alt="Arrow pointing down">
                     </span>
                 </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="crafting-time-container">
+            <h2 class="text-center">
+                <span>Crafting time</span>
+                <img class="crafting-time-info" src="images/info-icon.png" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs.">
+            </h2>
+
+            <p class="crafting-time-input">
+                <span class="user-input-label">Hours:</span>
+                <input id="userTimeHours" class="user-input" type="number" value="0">
+            </p>
+            <p class="crafting-time-input">
+                <span class="user-input-label">Minutes:</span>
+                <input id="userTimeMinutes" class="user-input" type="number" value="1">
+            </p>
+            <div class="crafting-button">
+                <button id="calculate">Calculate meow</button>
+                <button id="clear">Clear</button>
             </div>
         </div>
     </body>

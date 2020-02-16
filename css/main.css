@@ -150,6 +150,44 @@ p{
     background-image: linear-gradient(to bottom, #81e3da, #7d2ba6);
 }
 
+/* Crafting time input */
+.crafting-time-container{
+    display: block;
+}
+
+.crafting-time-info{
+    width: 10vw;
+    max-width: 1.5em;
+}
+
+.crafting-time-input{
+    width: 40vw;
+    margin: auto;
+    padding: 8px;
+}
+
+.user-input-label{
+    vertical-align: middle;
+}
+
+.user-input{
+    font-size: 1em;
+    width: 15vw;
+    float: right;   
+}
+
+.crafting-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crafting-button button{
+    font-size: 1.5em;
+    margin: 8px;
+}
+
+
 /* about.html */
 .about-article{
     margin: 0 auto;
