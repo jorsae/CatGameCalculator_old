@@ -15,6 +15,9 @@
         <link rel="stylesheet" type="text/css" href="css/media.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157531722-1"></script>
         <script>
@@ -26,6 +29,8 @@
         </script>
     </head>
     <body>
+        <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a>
+
         <div class="topnav" id="topNav">
             <a href="./">Cat Game Calculator</a>
             <a href="about.html">About</a>
@@ -57,10 +62,10 @@
             <div class="crafting-tier">
                 <div class="crafting-item">
                     <h3>String</h3>
-                    <img class="crafting-item-image" src="images/game/string.jpg" />
+                    <img class="crafting-item-image" src="images/game/string.jpg" alt="Crafting item string" />
                     <span>
                         <input id="stringAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Recipe: 3 Cotton|Time: 5 minutes" alt="Information icon">
+                        <img class="crafting-item-info" src="images/info-icon.png" data-toggle="Recipe: 3 Cotton|Time: 5 minutes" tooltip="tooltip" data-placement="top" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" onclick="clickUp('string')" alt="Arrow pointing up">
@@ -69,11 +74,71 @@
                 </div>
                 <div class="crafting-item">
                     <h3>Wood</h3>
+                    <img class="crafting-item-image" src="images/game/wood.jpg" alt="Crafting item wood">
+                    <span>
+                        <input id="woodAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Recipe: 3 Logs|Time: 5 minutes" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('wood')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('wood')" alt="Arrow pointing down">
+                    </span>
                 </div>
                 <div class="crafting-item">
                     <h3>Ribbon</h3>
+                    <img class="crafting-item-image" src="images/game/ribbon.jpg" alt="Crafting item ribbon">
+                    <span>
+                        <input id="ribbonAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Recipe: 2 String, 2 Wood|Time: 15 minutes" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('ribbon')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('ribbon')" alt="Arrow pointing down">
+                    </span>
                 </div>
             </div>
+
+            <h2>Shiny Crafting</h2>
+            <div class="crafting-tier">
+                <div class="crafting-item">
+                    <h3>Metal</h3>
+                    <img class="crafting-item-image" src="images/game/metal.jpg" alt="Crafting item metal" />
+                    <span>
+                        <input id="metalAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Recipe: 3 Rock|Time: 15 minutes" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('metal')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('metal')" alt="Arrow pointing down">
+                    </span>
+                </div>
+                <div class="crafting-item">
+                    <h3>Needles</h3>
+                    <img class="crafting-item-image" src="images/game/needles.jpg" alt="Crafting item needles">
+                    <span>
+                        <input id="woodAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Recipe: 4 Metal, 1 Ribbon|Time: 30 minutes" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('needles')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('needles')" alt="Arrow pointing down">
+                    </span>
+                </div>
+                <div class="crafting-item">
+                    <h3>Ribbon</h3>
+                    <img class="crafting-item-image" src="images/game/metal.jpg" alt="Crafting item metal">
+                    <span>
+                        <input id="ribbonAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Recipe: 2 String, 2 Wood|Time: 15 minutes" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('ribbon')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('ribbon')" alt="Arrow pointing down">
+                    </span>
+                </div>
+            </div>
+            </div>
+
             <h2>Ancient Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item">
@@ -87,5 +152,10 @@
                 </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
     </body>
 </html>
