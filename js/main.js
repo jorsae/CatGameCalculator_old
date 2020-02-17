@@ -145,23 +145,23 @@ function calculate(){
     }
 
     // Adding paragraph with total cost, time, etc to the outputTotal element
-    var outputTotal = document.getElementById("outputTotal");
-    outputTotal.innerHTML = "";
+    var outputTotalCost = document.getElementById("outputTotalCost");
+    outputTotalCost.innerHTML = "";
     
     // Adding total Cost
     var totalCostParagraph = document.createElement("p");
     totalCostParagraph.innerText = "Total cost: " + totalCost.toLocaleString();
-    outputTotal.appendChild(totalCostParagraph);
+    outputTotalCost.appendChild(totalCostParagraph);
 
-    // Adding crafting time
+    // Adding paragraph with total cost, time, etc to the outputTotal element
+    var outputTotalTime = document.getElementById("outputTotalTime");
+    outputTotalTime.innerHTML = "";
     var hours = Math.floor(userTime / 60);
     hours = (hours.toString().length == 1) ? '0' + hours : hours;
     var minutes = userTime % 60;
     minutes = (minutes.toString().length == 1) ? '0' + minutes : minutes;
     
-    var totalTimeParagraph = document.createElement("p");
-    totalTimeParagraph.innerText = "Time to craft: " + hours + ":" + minutes;
-    outputTotal.appendChild(totalTimeParagraph);
+    outputTotalTime.innerText = "Time to craft: " + hours + ":" + minutes;
 
     // Scroll down to the results
     document.getElementById("outputContainer").scrollIntoView();

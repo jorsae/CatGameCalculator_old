@@ -188,6 +188,20 @@ p{
 }
 
 /* output-container */
+.output-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.output-total span{
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 1.5em;
+}
+
 .output-table{
     left: 0px;
     right: 0px;
