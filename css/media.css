@@ -25,6 +25,11 @@
         display: block;
         text-align: left;
     }
+
+    /* This is because the google play image has white-space on both edges, and apple-icon does not */
+    .google-play-icon{
+        margin-left: -16px;
+    }
 }
 
 /* SUPER SMALL devices. Mostly for iPhone 5/SE */
