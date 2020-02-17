@@ -1,11 +1,8 @@
 Technical:
-  ☐ Rework html/css to account for meta name viewport
-    Start design for mobile first!
+  ☐ Waterstone and Elementstone overflow in the outputTable
   ☐ Add a pattern to the website?
     - https://www.heropatterns.com/
     - https://www.gradientmagic.com/browse
-  ☐ Improve tooltip, make them display right away on hover
-  ☐ Make tooltip show on mobile devices
   ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
   ☐ Make an email address and put it in on the website (footer?)
   ☐ Display to the user that calculate is on cooldown
@@ -17,6 +14,10 @@ SEO / "Advertisement":
   ☐ Post on their facebook page?
   
 Archive:
+  ✔ Rework html/css to account for meta name viewport @done(20-02-18 01:48) @project(Technical)
+    Start design for mobile first!
+  ✔ Improve tooltip, make them display right away on hover @done(20-02-18 01:48) @project(Technical)
+  ✔ Make tooltip show on mobile devices @done(20-02-18 01:48) @project(Technical)
   ✘ Change font @cancelled(20-02-13 18:32) @project(Technical)
     Tried some new fonts and old one is good
   ✔ Look into compress png? compresspng.com @done(20-02-13 18:21) @project(Technical)
