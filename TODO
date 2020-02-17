@@ -1,5 +1,5 @@
 Technical:
-  ☐ Add proper minify and bundler to project and use it
+    ☐ Add proper minify and bundler to project and use it
     ☐ Clean up all css files for minify and bundler
     ☐ Clean up all js files for minify and bundler
     ☐ Minify css files
