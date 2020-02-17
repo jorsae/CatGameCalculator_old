@@ -33,11 +33,29 @@
         width: 90vw;
         max-width: 90%;
     }
+
+    .crafting-time-input{
+        width: 25vw;
+    }
+
+    .output-table{
+        width: 90vw;
+        max-width: 90%;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .crafting-container{
+        width: 80vw;
+        max-width: 80%;
+    }
+
+    .crafting-time-input{
+        width: 22vw;
+    }
+
+    .output-table{
         width: 80vw;
         max-width: 80%;
     }
@@ -48,5 +66,18 @@
     .crafting-container{
         width: 70vw;
         max-width: 70%;
+    }
+
+    .output-table{
+        width: 70vw;
+        max-width: 70%;
+    }
+}
+
+/* Wide screens */
+@media only screen and (min-width: 1400px) {
+    .output-table{
+        width: 60vw;
+        max-width: 60%;
     }
 }

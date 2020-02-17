@@ -28,6 +28,7 @@
         gtag('config', 'UA-157531722-1');
         </script>
 
+        <!-- TODO: enable and fix tooltips
         <script>
             $(document).ready(function(){
                 $('[data-toggle="tooltip"]').tooltip({
@@ -35,6 +36,7 @@
                 });
             });
         </script>
+        -->
     </head>
     <body>
         <div class="topnav" id="topNav">
@@ -325,7 +327,7 @@
         <div class="crafting-time-container">
             <h2 class="text-center">
                 <span>Crafting time</span>
-                <img class="crafting-time-info" src="images/info-icon.png" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs.">
+                <img class="crafting-time-info" src="images/info-icon.png" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." data-toggle="tooltip" data-placement="bottom">
             </h2>
 
             <p class="crafting-time-input">

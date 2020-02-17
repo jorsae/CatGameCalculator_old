@@ -87,6 +87,11 @@ p{
     margin: auto;
 }
 
+.crafting-container h2{
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+}
+
 .crafting-tier{
     display: flex;
     flex-direction: row;
@@ -98,6 +103,10 @@ p{
     flex-direction: column;
     flex-wrap: wrap;
     width: 33.33vw;
+}
+
+.crafting-item h3{
+    margin: 4px;
 }
 
 .crafting-item-image{
@@ -260,11 +269,6 @@ tbody tr:nth-child(even){
 .app-store-icon{
     height: 97px;
     width: 225px;
-}
-
-/* feedback.html */
-.feedback{
-    text-align: center;
 }
 
 /* privacy.html */
