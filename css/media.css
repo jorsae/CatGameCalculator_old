@@ -1,5 +1,11 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .topnav{
+        font-size: 1.5em;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
         display: none;
     }

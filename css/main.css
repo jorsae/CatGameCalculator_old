@@ -243,7 +243,6 @@ tbody tr:nth-child(even){
     background-color: #a859b4;
 }
 
-
 /* about.html */
 .about-article{
     margin: 0 auto;
@@ -269,6 +268,12 @@ tbody tr:nth-child(even){
 .app-store-icon{
     height: 97px;
     width: 225px;
+}
+
+/* feedback.html */
+.feedback{
+    text-align: center;
+    width: 100%;
 }
 
 /* privacy.html */
