@@ -1,5 +1,9 @@
 Technical:
+  ☐ Add proper minify and bundler to project and use it
+    ☐ Clean up all css files for minify and bundler
+    ☐ Clean up all js files for minify and bundler
   ☐ Waterstone and Elementstone overflow in the outputTable
+  ☐ Add tooltip to show that the table have been added to the users clipboard
   ☐ Add a pattern to the website?
     - https://www.heropatterns.com/
     - https://www.gradientmagic.com/browse
