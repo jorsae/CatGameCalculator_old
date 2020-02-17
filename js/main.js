@@ -170,6 +170,17 @@ function calculate(){
     craftingRecipes.delete(userItem.name);
 }
 
+/* Converts int to abbreviated number. 1,005,123 => 1m, etc. */
+function intToString (value) {
+    var suffixes = ["", "k", "m", "b","t"];
+    var suffixNum = Math.floor((""+value).length/3);
+    var shortValue = parseFloat((suffixNum != 0 ? (value / Math.pow(1000,suffixNum)) : value).toPrecision(2));
+    if (shortValue % 1 != 0) {
+        shortValue = shortValue.toFixed(1);
+    }
+    return shortValue+suffixes[suffixNum];
+}
+
 function createOutput(item, cost, craftingMethods, userTime){
     var outputTable = document.getElementById('outputTable').getElementsByTagName('tbody')[0];
     var tableRow = outputTable.insertRow();
@@ -192,7 +203,7 @@ function createOutput(item, cost, craftingMethods, userTime){
 
     // Add cost cell
     var cellCost = tableRow.insertCell(3);
-    var cellNodeCost = document.createTextNode(cost.toLocaleString());
+    var cellNodeCost = document.createTextNode(intToString(cost));
     cellCost.appendChild(cellNodeCost);
 
     // Raw ingredients, does not need to be crafted, so we don't add that text to them
