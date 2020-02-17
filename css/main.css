@@ -187,6 +187,39 @@ p{
     margin: 8px;
 }
 
+/* output-container */
+.output-table{
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+th{
+    font-weight: 900;
+    font-size: 1em;
+}
+
+td{
+    text-align: center;
+}
+
+td img{
+    max-height: 5vw;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #169ed1;
+}
+
+tbody tr:nth-child(even){
+    background-color: #a859b4;
+}
+
 
 /* about.html */
 .about-article{
