@@ -1,0 +1,26 @@
+{
+  "name": "CatGameCalc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorsae/CatGameCalculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorsae/CatGameCalculator/issues"
+  },
+  "homepage": "https://github.com/jorsae/CatGameCalculator#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-obfuscator": "^0.24.6"
+  }
+}
