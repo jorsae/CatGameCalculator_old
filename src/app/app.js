@@ -4,6 +4,7 @@ import { CraftingItemOutput } from "./classes";
 
 import { craftingRecipes } from "./globals";
 import { currentCraft } from "./globals";
+import { rarity } from "./globals";
 
 /**
  * This file takes care of:
@@ -11,15 +12,6 @@ import { currentCraft } from "./globals";
  *  Generating all crafting items (Crafting)
  *  Outputting the results to the website (Output)
  */
-
-var rarity = {
-    HIDDEN: 'hidden',
-    RAW: 'raw',
-    COMMON: 'common',
-    RARE: 'rare',
-    EPIC: 'epic',
-    LEGENDARY: 'legendary'
-}
 
 /* Crafting Function */
 function getCraftingRequirements(item, parentQuantity = 1){
