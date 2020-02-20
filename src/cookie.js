@@ -1,22 +1,6 @@
-/**
- * This file takes care of:
- *  Hamburger menu
- *  Cookie for displaying "cookie consent banner"
- */
-
-/* Hamburger menu */
-function hamburgerMenu(){
-    var x = document.getElementById("topNav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-}
-
 /* Cookie and cookie consent */
-var cookieName = "CatCookie"; // Name of the cookie we set
-var cookieValue = "Yes"; // Value of the cookie when set
+const cookieName = "CatCookie"; // Name of the cookie we set
+const cookieValue = "Yes"; // Value of the cookie when set
 
 startCookie();
 
