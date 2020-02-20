@@ -2,6 +2,8 @@ import { CraftingRequirement } from "./classes";
 import { CraftingItem } from "./classes";
 import { CraftingItemOutput } from "./classes";
 
+import { craftingRecipes } from "./globals";
+
 /**
  * This file takes care of:
  *  Global variables (Globals)
@@ -11,8 +13,6 @@ import { CraftingItemOutput } from "./classes";
  */
 
 /* Globals */
-var craftingRecipes = new Map(); // Used to store all the different crafting recipes
-var outputRows = 4; // How many crafting items per row in the output
 var currentCraft = new Map(); // Stores the current items the user have selected to calculate
 var lastTimeCalculated = 100; // Stores last time the "calculate" button was pressed
 var calculateDelay = 1 * 1000; // Stores how many ms delay it should be between the user is allowed to click "calculate"
@@ -374,15 +374,4 @@ function createOutput(item, cost, craftingMethods, userTime){
     var cellCrafting = tableRow.insertCell(4);
     var cellNodeCrafting = document.createTextNode(craftingText);
     cellCrafting.appendChild(cellNodeCrafting);
-}
-
-function getOutputRow(itemNumber){
-    var itemNumberModulo = itemNumber % outputRows;
-    if(itemNumberModulo === 0){
-        var outputRowElement = document.createElement("div");
-        outputRowElement.classList.add("output-content-row");
-        outputRowElement.id = itemNumber - itemNumberModulo;
-        return outputRowElement;
-    }
-    return document.getElementById(itemNumber - itemNumberModulo);
 }

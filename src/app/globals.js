@@ -1,0 +1,1 @@
+export var craftingRecipes = new Map(); // Used to store all the different crafting recipes
