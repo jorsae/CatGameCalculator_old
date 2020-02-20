@@ -1,25 +1,32 @@
+Cat Game Events:
+    February:
+        12th - 17th
+
 Technical:
-    ☐ Add proper minify and bundler to project and use it
+    ☐ Add a favicon for the website
+    ✔ Add some background pattern to the website @done(20-02-21 00:34)
+    ☐ Add cat images to the website?
     ☐ Clean up all css files for minify and bundler
-    ☐ Clean up all js files for minify and bundler
     ☐ Minify css files
-    ☐ Minify js files
-  ☐ Waterstone and Elementstone overflow in the outputTable
-  ☐ Add tooltip to show that the table have been added to the users clipboard
-  ☐ Add a pattern to the website?
-    - https://www.heropatterns.com/
-    - https://www.gradientmagic.com/browse
-  ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
-  ☐ Make an email address and put it in on the website (footer?)
-  ☐ Display to the user that calculate is on cooldown
-    Probably have it show up as a tooltip?
+    ☐ Waterstone and Elementstone overflow in the outputTable
+    ☐ Add tooltip to show that the table have been added to the users clipboard
+    ☐ Add a pattern to the website?
+        - https://www.heropatterns.com/
+        - https://www.gradientmagic.com/browse
+    ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
+    ☐ Make an email address and put it in on the website (footer?)
+    ☐ Display to the user that calculate is on cooldown
+        Probably have it show up as a tooltip?
 SEO / "Advertisement":
-  ☐ https://www.lambdatest.com/pricing for testing website on Safari on mac/iPhone
-  ☐ "Advertise" on the different discord server. Read and follow the rules before doing so!
-  ☐ "Advertise" on youtube videos
-  ☐ Post on their facebook page?
+    ☐ https://www.lambdatest.com/pricing for testing website on Safari on mac/iPhone
+    ☐ "Advertise" on the different discord server. Read and follow the rules before doing so!
+    ☐ "Advertise" on youtube videos
+    ☐ Post on their facebook page?
   
 Archive:
+  ✔ Add proper minify and bundler to project and use it @done(20-02-21 00:21) @project(Technical)
+  ✔ Clean up all js files for minify and bundler @done(20-02-21 00:21) @project(Technical)
+  ✔ Minify js files @done(20-02-21 00:21) @project(Technical)
   ✔ Rework html/css to account for meta name viewport @done(20-02-18 01:48) @project(Technical)
     Start design for mobile first!
   ✔ Improve tooltip, make them display right away on hover @done(20-02-18 01:48) @project(Technical)
