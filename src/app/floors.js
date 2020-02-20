@@ -7,7 +7,7 @@ floorRecipes.set(basic.name, basic);
 
 /**
  * Floors added:
- * 6, 7, 8, 9, 10, 11
+ * 6, 7, 8, 9, 10, 11, 12, 13
  */
 
 const farmReq = [new CraftingRequirement(craftingRecipes.get("String"), 5),
@@ -70,3 +70,25 @@ const woodsReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 6),
                 ];
 const woods = new Floor("Woods", 11, woodsReq);
 floorRecipes.set(woods.name, woods);
+
+const galacticReq = [new CraftingRequirement(craftingRecipes.get("String"), 19),
+                    new CraftingRequirement(craftingRecipes.get("Wood"), 11),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 16),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 11),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Bronze"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 5),
+                ];
+const galactic = new Floor("Galactic", 12, galacticReq);
+floorRecipes.set(galactic.name, galactic);
+
+const eightiesReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 18),
+                    new CraftingRequirement(craftingRecipes.get("Metal"), 12),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 15),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 9),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 1),
+                ];
+const eighties = new Floor("Eighties", 13, eightiesReq);
+floorRecipes.set(eighties.name, eighties);
