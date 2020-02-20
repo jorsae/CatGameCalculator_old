@@ -98,6 +98,13 @@ p{
     margin-top: 0.5em;
 }
 
+.crafting-container select,
+.crafting-container button,
+.crafting-container label {
+    margin: 4px;
+    font-size: 1.5em;
+}
+
 .crafting-tier{
     display: flex;
     flex-direction: row;
