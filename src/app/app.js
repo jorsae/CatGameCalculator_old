@@ -3,6 +3,7 @@ import { CraftingItem } from "./classes";
 import { CraftingItemOutput } from "./classes";
 
 import { craftingRecipes } from "./globals";
+import { currentCraft } from "./globals";
 
 /**
  * This file takes care of:
@@ -13,7 +14,6 @@ import { craftingRecipes } from "./globals";
  */
 
 /* Globals */
-var currentCraft = new Map(); // Stores the current items the user have selected to calculate
 var lastTimeCalculated = 100; // Stores last time the "calculate" button was pressed
 var calculateDelay = 1 * 1000; // Stores how many ms delay it should be between the user is allowed to click "calculate"
 
