@@ -1,10 +1,9 @@
-/**
- * This file takes care of:
- *  Hamburger menu
- *  Cookie for displaying "cookie consent banner"
- */
+registerHamburgeMenu();
 
-/* Hamburger menu */
+function registerHamburgeMenu(){
+    document.getElementById("hamburgerMenu").onclick = hamburgerMenu;
+}
+
 function hamburgerMenu(){
     var x = document.getElementById("topNav");
     if (x.className === "topnav") {
