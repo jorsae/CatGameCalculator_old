@@ -1,18 +1,33 @@
+Cat Game Event Crafting:
+    Requirements:
+        - Items:
+            - 3 raw materials
+            - 6 crafted materials
+        - Input:
+            - Amount of supplies and event tokens
+        - Determining factor:
+            - Event tokens is more restricted than supplies. At least for Sammy
+            - Supplies (Cotton, Log, Quartz, etc)
+            - Event tokens
+        - Boosts can decrease the event token cost
+
 Cat Game Events:
     February:
         12th - 17th
 
 Technical:
     ☐ Add a favicon for the website
+    ☐ Add pre-configured floors
+        - https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select
+        User should use a select ^, and select the floor they want. Then click "add" and all the items for that floor will be automatically addded.
+        If items are already inputted, it should prompt the user if they want to clear, before adding a floor.
+        There should also be a list, that displays to the user what floors have been added
     ✔ Add some background pattern to the website @done(20-02-21 00:34)
     ☐ Add cat images to the website?
     ☐ Clean up all css files for minify and bundler
     ☐ Minify css files
     ☐ Waterstone and Elementstone overflow in the outputTable
     ☐ Add tooltip to show that the table have been added to the users clipboard
-    ☐ Add a pattern to the website?
-        - https://www.heropatterns.com/
-        - https://www.gradientmagic.com/browse
     ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     ☐ Make an email address and put it in on the website (footer?)
     ☐ Display to the user that calculate is on cooldown
