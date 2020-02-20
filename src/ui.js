@@ -2,6 +2,10 @@
  * This file takes care of:
  *  onclick event for all crafting items.
  */
+
+/**
+ * User increased the value on a CraftingItem (arg)
+ */
 function clickUp(arg){
     var element = document.getElementById(arg + "Amount");
     if(element === null){
@@ -10,7 +14,9 @@ function clickUp(arg){
     var value = parseInt(element.value);
     element.value = ++value;
 }
-
+/**
+ * User decreased the value on a CraftingItem (arg)
+ */
 function clickDown(arg){
     var element = document.getElementById(arg + "Amount");
     if(element === null){

@@ -1,9 +1,14 @@
-/* Cookie and cookie consent */
+/**
+ * This file contains everything regarding setting, getting cookie for cookie-consent
+ */
 const cookieName = "CatCookie"; // Name of the cookie we set
 const cookieValue = "Yes"; // Value of the cookie when set
 
+/**
+ * Sets up cookieAccept event.
+ * Call to check if the user have accepted the cookie policy already
+ */
 startCookie();
-
 function startCookie(){
     document.getElementById("cookieAccept").onclick = cookieAccept;
     checkCookie();
@@ -20,15 +25,18 @@ function checkCookie(){
     }
 }
 
-/*
-    User accepted our cookie policy
-*/
+/**
+ * User accepted the cookie policy
+ */
 function cookieAccept(){
     setCookie(cookieName, cookieValue, 365);
     var cookieBanner = document.getElementById("cookiePolicyBanner");
     cookieBanner.style.display = "none";
 }
 
+/**
+ * Sets a cookie
+ */
 function setCookie(name, value, days) {
     var expires = "";
     if (days) {
@@ -39,6 +47,9 @@ function setCookie(name, value, days) {
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
 
+/**
+ * Gets a cookie by name
+ */
 function getCookie(name) {
     var value = "; " + document.cookie;
     var parts = value.split("; " + name + "=");
