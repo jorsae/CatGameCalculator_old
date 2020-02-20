@@ -7,15 +7,10 @@ import { currentCraft } from "./globals";
 
 /**
  * This file takes care of:
- *  Global variables (Globals)
  *  Function for fetching crafting requirements (Crafting Function)
  *  Generating all crafting items (Crafting)
  *  Outputting the results to the website (Output)
  */
-
-/* Globals */
-var lastTimeCalculated = 100; // Stores last time the "calculate" button was pressed
-var calculateDelay = 1 * 1000; // Stores how many ms delay it should be between the user is allowed to click "calculate"
 
 var rarity = {
     HIDDEN: 'hidden',
@@ -228,11 +223,11 @@ function clear(){
     Afterwards the CraftingItem "UseItem" is then deleted from the craftingRecipes.
 */
 function calculate(){
-    if(new Date().getTime() < (lastTimeCalculated + calculateDelay)){
+    if(new Date().getTime() < (window.lastTimeCalculated + window.calculateDelay)){
         console.log("Calculate is on cooldown");
         return;
     }
-    lastTimeCalculated = new Date().getTime();
+    window.lastTimeCalculated = new Date().getTime();
 
     var userHours = parseInt(document.getElementById("userTimeHours").value);
     var userMinutes = parseInt(document.getElementById("userTimeMinutes").value);
