@@ -11,10 +11,6 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
-Cat Game Events:
-    February:
-        12th - 17th
-
 Technical:
     ☐ Add a favicon for the website
     ☐ Add pre-configured floors
@@ -22,7 +18,6 @@ Technical:
         User should use a select ^, and select the floor they want. Then click "add" and all the items for that floor will be automatically addded.
         If items are already inputted, it should prompt the user if they want to clear, before adding a floor.
         There should also be a list, that displays to the user what floors have been added
-    ✔ Add some background pattern to the website @done(20-02-21 00:34)
     ☐ Add cat images to the website?
     ☐ Clean up all css files for minify and bundler
     ☐ Minify css files
@@ -39,6 +34,8 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Cleaned up all .js files with comments and proper webpacking @done(20-02-21 05:09) @project(Technical)
+  ✔ Add some background pattern to the website @done(20-02-21 00:34) @project(Technical)
   ✔ Add proper minify and bundler to project and use it @done(20-02-21 00:21) @project(Technical)
   ✔ Clean up all js files for minify and bundler @done(20-02-21 00:21) @project(Technical)
   ✔ Minify js files @done(20-02-21 00:21) @project(Technical)
