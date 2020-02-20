@@ -7,7 +7,7 @@ floorRecipes.set(basic.name, basic);
 
 /**
  * Floors added:
- * 7, 8, 9, 10
+ * 7, 8, 9, 10, 11
  */
 
 const plantReq = [new CraftingRequirement(craftingRecipes.get("Ribbon"), 6),
@@ -49,3 +49,14 @@ const dreamReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 2),
 const dream = new Floor("Dream", 10, dreamReq);
 floorRecipes.set(dream.name, dream);
 
+const woodsReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Bronze"), 9),
+                    new CraftingRequirement(craftingRecipes.get("Metal"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 1),
+                ];
+const woods = new Floor("Woods", 11, woodsReq);
+floorRecipes.set(woods.name, woods);
