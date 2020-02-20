@@ -1,22 +1,32 @@
 import { floorRecipes, craftingRecipes } from "./globals";
 import { Floor, CraftingRequirement } from "./classes";
 
-var basicReq = [new CraftingRequirement(craftingRecipes.get("String"), 3)];
+const basicReq = [new CraftingRequirement(craftingRecipes.get("String"), 3)];
 const basic = new Floor("Basic", 1, basicReq);
 floorRecipes.set(basic.name, basic);
 
-/*
-    // Basic Crafting
-    var stringReq = [new CraftingRequirement(cotton, 3)];
-    const string = new CraftingItem("String", 5, 50, rarity.COMMON, 5, stringReq);
-    craftingRecipes.set(string.name, string);
+/**
+ * Floors added:
+ * 7
+ * 8
+ */
 
-    const cotton = new CraftingItem("Cotton", 0, 0, rarity.RAW, 1);
-    const log = new CraftingItem("Log", 0, 0, rarity.RAW, 2);
-    const rock = new CraftingItem("Rock", 0, 0, rarity.RAW, 3);
-    const quartz = new CraftingItem("Quartz", 0, 0, rarity.RAW, 4);
-    craftingRecipes.set(cotton.name, cotton);
-    craftingRecipes.set(log.name, log);
-    craftingRecipes.set(rock.name, rock);
-    craftingRecipes.set(quartz.name, quartz);
-*/
+const plantReq = [new CraftingRequirement(craftingRecipes.get("Ribbon"), 6),
+                    new CraftingRequirement(craftingRecipes.get("String"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Wood"), 14),
+                    new CraftingRequirement(craftingRecipes.get("Metal"), 15),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 1),
+                ];
+const plant = new Floor("Plant", 7, plantReq);
+floorRecipes.set(plant.name, plant);
+
+const forestReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 7),
+                    new CraftingRequirement(craftingRecipes.get("String"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Metal"), 9),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 2),
+                ];
+const forest = new Floor("Forest", 8, forestReq);
+floorRecipes.set(forest.name, forest);
