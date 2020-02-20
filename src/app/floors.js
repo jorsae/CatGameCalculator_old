@@ -7,7 +7,8 @@ floorRecipes.set(basic.name, basic);
 
 /**
  * Floors added:
- * 6, 7, 8, 9, 10, 11, 12, 13
+ * 6, 7, 8, 9, 10, 11, 12, 13, 14
+ * 15, 16, 17, 18, 19, 20
  */
 
 const farmReq = [new CraftingRequirement(craftingRecipes.get("String"), 5),
@@ -92,3 +93,76 @@ const eightiesReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 18),
                 ];
 const eighties = new Floor("Eighties", 13, eightiesReq);
 floorRecipes.set(eighties.name, eighties);
+
+const oasisReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 18),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 2),
+                ];
+const oasis = new Floor("Oasis", 14, oasisReq);
+floorRecipes.set(oasis.name, oasis);
+
+const reefReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 19),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 16),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
+                ];
+const reef = new Floor("Reef", 15, reefReq);
+floorRecipes.set(reef.name, reef);
+
+const gardenReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 15),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                ];
+const garden = new Floor("Garden", 16, gardenReq);
+floorRecipes.set(garden.name, garden);
+
+const nightmareReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 14),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                ];
+const nightmare = new Floor("Nightmare", 17, nightmareReq);
+floorRecipes.set(nightmare.name, nightmare);
+
+const oceanReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 11),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
+                ];
+const ocean = new Floor("Ocean", 18, oceanReq);
+floorRecipes.set(ocean.name, ocean);
+
+const pyramidReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 19),
+                    new CraftingRequirement(craftingRecipes.get("Bronze"), 20),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 18),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 7),
+                ];
+const pyramid = new Floor("Pyramid", 19, pyramidReq);
+floorRecipes.set(pyramid.name, pyramid);
+
+const cakeReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 4),
+                ];
+const cake = new Floor("Cake", 20, cakeReq);
+floorRecipes.set(cake.name, cake);
