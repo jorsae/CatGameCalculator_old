@@ -1,6 +1,9 @@
 import { craftingRecipes } from "./globals";
 import { currentCraft } from "./globals";
 
+/**
+ * Recursive function that will fetch all crafting requirements from a given item.
+ */
 export function getCraftingRequirements(item, parentQuantity = 1){
     if(item.craftingRequirements === null){
         return;

@@ -1,4 +1,8 @@
-/* Classes */
+/**
+ * This class holds how to craft an item.
+ * One item will have an array of CraftingMethod.
+ * i.e: Craft 3x 2 times and Craft: 2x 2times
+ */
 class CraftingMethod{
     constructor(itemQuantity, crafts){
         this.itemQuantity = itemQuantity;
@@ -6,6 +10,9 @@ class CraftingMethod{
     }
 }
 
+/**
+ * This class holds all the CraftingRequirement for a CraftingItem
+ */
 export class CraftingRequirement{
     constructor(craftingItem, quantity){
         this.craftingItem = craftingItem;
@@ -17,6 +24,10 @@ export class CraftingRequirement{
     }
 }
 
+/**
+ * This is a CraftingItem.
+ * i.e: String, Cotton, Firestone, etc.
+ */
 export class CraftingItem{
     constructor(name, craftingTime, baseCost, rarity, sortingOrder, craftingRequirements = null){
         this.name = name;
@@ -37,6 +48,11 @@ export class CraftingItem{
     }
 }
 
+/**
+ * This holds a craftingItem, with extra functionality and quantity.
+ * This funcionality is used to do the calculations as well as hold the quantity of items needed.
+ * This functionality/information be displayed to the user.
+ */
 export class CraftingItemOutput{
     constructor(name, craftingTime, baseCost, rarity, quantity, sortingOrder){
         this.name = name;

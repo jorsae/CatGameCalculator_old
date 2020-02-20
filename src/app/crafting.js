@@ -4,7 +4,10 @@ import { CraftingRequirement } from "./classes";
 import { craftingRecipes } from "./globals";
 import { rarity } from "./globals";
 
-/* Crafting */
+/**
+ * This class constructs and stores all the Crafting Items in the game
+ */
+
 // Base
 const cotton = new CraftingItem("Cotton", 0, 0, rarity.RAW, 1);
 const log = new CraftingItem("Log", 0, 0, rarity.RAW, 2);

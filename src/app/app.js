@@ -8,27 +8,23 @@ import { rarity } from "./globals";
 
 import { getCraftingRequirements } from "./crafting_requirement";
 
+
 /**
- * This file takes care of:
- *  Function for fetching crafting requirements (Crafting Function)
- *  Outputting the results to the website (Output)
+ * Setting up all the button events for the calculator
  */
-
-/* Output */
 window.onload = init;
-
 function init(){
     document.getElementById("calculate").onclick = calculate;
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
 }
 
-/*
-    Puts the output table to the users clipboard.
-    We can only copy to clipboard things that are on the website itself.
-    We create a invisible div and create a clone of the table, without the first column.
-    We then copy that table and then remove the div so everything is deleted afterwards.
-*/
+/**
+ * Puts the output table to the users clipboard.
+ * We can only copy to clipboard things that are on the website itself.
+ * We create a invisible div and create a clone of the table, without the first column.
+ * We then copy that table and then remove the div so everything is deleted afterwards.
+ */
 function copyClipboard(){
     var table = document.createElement("table");
 
@@ -75,9 +71,9 @@ function copyClipboard(){
     document.body.removeChild(tableDiv);
 }
 
-/*
-    Clear all user input
-*/
+/**
+ * Clear all user input (crafting items)
+ */
 function clear(){
     for (const entry of craftingRecipes.entries()) {
         var item = craftingRecipes.get(entry[0]);
@@ -89,11 +85,11 @@ function clear(){
     }
 }
 
-/*
-    iterates through all the craftingItem text fields and adds all the values > 0 in the userItemReq list.
-    it then creates a new CraftingItem called "UseItem", with the new requirements and calculates everything.
-    Afterwards the CraftingItem "UseItem" is then deleted from the craftingRecipes.
-*/
+/**
+ * iterates through all the craftingItem text fields and adds all the values > 0 in the userItemReq list
+ * it then creates a new CraftingItem called "UseItem", with the new requirements and calculates everything.
+ * Afterwards the CraftingItem "UseItem" is then deleted from the craftingRecipes.
+ */
 function calculate(){
     if(new Date().getTime() < (window.lastTimeCalculated + window.calculateDelay)){
         console.log("Calculate is on cooldown");
@@ -187,7 +183,9 @@ function calculate(){
     craftingRecipes.delete(userItem.name);
 }
 
-/* Converts int to abbreviated number. 1,005,123 => 1m, etc. */
+/**
+ * Converts int to abbreviated number. 1,005,123 => 1m, etc.
+ */
 function intToString (value) {
     var suffixes = ["", "k", "m", "b","t"];
     var suffixNum = Math.floor((""+value).length/3);
@@ -198,6 +196,11 @@ function intToString (value) {
     return shortValue+suffixes[suffixNum];
 }
 
+/**
+ * Creates a full table row for the selected item
+ * This will have: crafting item image, quantity, cost and how to craft the item(s)
+ * The full table row will be appended to the outputTable
+ */
 function createOutput(item, cost, craftingMethods, userTime){
     var outputTable = document.getElementById('outputTable').getElementsByTagName('tbody')[0];
     var tableRow = outputTable.insertRow();
