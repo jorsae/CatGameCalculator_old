@@ -6,38 +6,13 @@ import { craftingRecipes } from "./globals";
 import { currentCraft } from "./globals";
 import { rarity } from "./globals";
 
+import { getCraftingRequirements } from "./crafting_requirement";
+
 /**
  * This file takes care of:
  *  Function for fetching crafting requirements (Crafting Function)
  *  Outputting the results to the website (Output)
  */
-
-/* Crafting Function */
-function getCraftingRequirements(item, parentQuantity = 1){
-    if(item.craftingRequirements === null){
-        return;
-    }
-
-    // Adds all the requirements
-    for(var i = 0; i < item.craftingRequirements.length; i++){
-        var name = item.craftingRequirements[i].craftingItem.name;
-        var quantity = item.craftingRequirements[i].quantity * parentQuantity;
-        
-        var nameMap = currentCraft.get(name);
-        if(nameMap === undefined){
-            var craftingItem = craftingRecipes.get(name);
-            getCraftingRequirements(craftingItem, quantity);
-            currentCraft.set(name, quantity);
-        }
-        else{
-            var craftingItem = craftingRecipes.get(name);
-            getCraftingRequirements(craftingItem, quantity);
-            var oldQuantity = currentCraft.get(name);
-            currentCraft.set(name, oldQuantity + quantity);
-        }
-    }
-    return currentCraft;
-}
 
 /* Output */
 window.onload = init;
