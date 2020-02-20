@@ -4,8 +4,8 @@ const JavaScriptObfuscator = require('webpack-obfuscator');
 
 module.exports = {
     entry: {
-        'all': ['./src/menu.js', './src/cookie.js'],
-        'app':  ['./src/crafting/classes.js', './src/crafting/app.js']
+        'all': ['./src/all/menu.js', './src/all/cookie.js'],
+        'app':  ['./src/app/classes.js', './src/app/app.js']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -13,7 +13,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-          'classes': './src/crafting/classes.js'
+          'classes': './src/app/classes.js'
         }
       },
     plugins: [
