@@ -7,8 +7,18 @@ floorRecipes.set(basic.name, basic);
 
 /**
  * Floors added:
- * 7, 8, 9, 10, 11
+ * 6, 7, 8, 9, 10, 11
  */
+
+const farmReq = [new CraftingRequirement(craftingRecipes.get("String"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Wood"), 11),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Metal"), 23),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 1),
+                ];
+const farm = new Floor("Farm", 6, farmReq);
+floorRecipes.set(farm.name, farm);
 
 const plantReq = [new CraftingRequirement(craftingRecipes.get("Ribbon"), 6),
                     new CraftingRequirement(craftingRecipes.get("String"), 6),
