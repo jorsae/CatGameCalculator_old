@@ -2,7 +2,7 @@ import { CraftingRequirement } from "./classes";
 import { CraftingItem } from "./classes";
 import { CraftingItemOutput } from "./classes";
 
-import { craftingRecipes } from "./globals";
+import { craftingRecipes, floorRecipes } from "./globals";
 import { currentCraft } from "./globals";
 import { rarity } from "./globals";
 
@@ -17,6 +17,46 @@ function init(){
     document.getElementById("calculate").onclick = calculate;
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
+    document.getElementById("addFloor").onclick = addFloor;
+    populateFloor();
+}
+
+/**
+ * Populates the select floors html with all floors available.
+ */
+function populateFloor(){
+    var select = document.getElementById("floors");
+    for (const [key, value] of floorRecipes.entries()) {
+        var option = document.createElement("option");
+        option.value = value.name;
+        option.innerHTML = value;
+        select.appendChild(option);
+      }
+}
+
+/**
+ * Adds all the crafting items required for the selected floor.
+ */
+function addFloor(){
+    var floors = document.getElementById("floors");
+    var floorValue = floors.options[floors.selectedIndex].value;
+    const floor = floorRecipes.get(floorValue);
+    if(floor === undefined){
+        console.log("undefined floor");
+        return;
+    }
+
+    var floorReq = floor.requirements;
+    for(var i = 0; i < floorReq.length; i++){
+        var itemName = floorReq[i].craftingItem.name.toLowerCase();
+        var quantity = floorReq[i].quantity;
+        var count = document.getElementById(itemName + "Amount");
+        if(count === null){
+            continue;
+        }
+        var value = parseInt(count.value);
+        count.value = value + quantity;
+    }
 }
 
 /**

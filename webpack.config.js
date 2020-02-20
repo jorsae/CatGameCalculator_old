@@ -5,7 +5,8 @@ const JavaScriptObfuscator = require('webpack-obfuscator');
 module.exports = {
     entry: {
         'all': ['./src/all/menu.js', './src/all/cookie.js'],
-        'app':  ['./src/app/classes.js', './src/app/app.js', './src/app/globals.js', './src/app/crafting.js', './src/app/crafting_requirement.js']
+        'app':  ['./src/app/classes.js', './src/app/app.js', './src/app/globals.js', './src/app/crafting.js',
+                './src/app/crafting_requirement.js', './src/app/floors.js']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -16,7 +17,8 @@ module.exports = {
           'classes': './src/app/classes.js',
           'globals': './src/app/globals.js',
           'crafting': './src/app/crafting.js',
-          'crafting_requirement': './src/app/crafting_requirement.js'
+          'crafting_requirement': './src/app/crafting_requirement.js',
+          'floors': './src/app/floors.js'
         }
       },
     plugins: [
@@ -27,7 +29,8 @@ module.exports = {
             'classes': 'classes',
             'globals': 'globals',
             'crafting': 'crafting',
-            'crafting_requirement': 'crafting_requirement'
+            'crafting_requirement': 'crafting_requirement',
+            'floors': 'floors'
           })
     ]
 };
