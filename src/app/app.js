@@ -1,4 +1,3 @@
-import { CraftingMethod } from "./classes";
 import { CraftingRequirement } from "./classes";
 import { CraftingItem } from "./classes";
 import { CraftingItemOutput } from "./classes";

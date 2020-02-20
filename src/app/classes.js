@@ -1,5 +1,5 @@
 /* Classes */
-export class CraftingMethod{
+class CraftingMethod{
     constructor(itemQuantity, crafts){
         this.itemQuantity = itemQuantity;
         this.crafts = crafts;
