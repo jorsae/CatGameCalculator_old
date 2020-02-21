@@ -7,7 +7,7 @@ floorRecipes.set(basic.name, basic);
 
 /**
  * Floors added:
- * 6-30
+ * 6-35
  */
 
 const farmReq = [new CraftingRequirement(craftingRecipes.get("String"), 5),
@@ -293,3 +293,69 @@ const dogsReq = [new CraftingRequirement(craftingRecipes.get("Water"), 6),
                 ];
 const dogs = new Floor("Dogs", 30, dogsReq);
 floorRecipes.set(dogs.name, dogs);
+
+const dinerReq = [new CraftingRequirement(craftingRecipes.get("Water"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                ];
+const diner = new Floor("Diner", 31, dinerReq);
+floorRecipes.set(diner.name, diner);
+
+const sportsReq = [new CraftingRequirement(craftingRecipes.get("Water"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 12),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                ];
+const sports = new Floor("Sports", 32, sportsReq);
+floorRecipes.set(sports.name, sports);
+
+const desertReq = [new CraftingRequirement(craftingRecipes.get("Water"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 9),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 2),
+                ];
+const desert = new Floor("Desert", 33, desertReq);
+floorRecipes.set(desert.name, desert);
+
+const dinosaursReq = [new CraftingRequirement(craftingRecipes.get("Water"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 12),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 2),
+                ];
+const dinosaurs = new Floor("Dinosaurs", 34, dinosaursReq);
+floorRecipes.set(dinosaurs.name, dinosaurs);
+
+const hairSalonReq = [new CraftingRequirement(craftingRecipes.get("Water"), 16),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                ];
+const hairSalon = new Floor("Hair Salon", 35, hairSalonReq);
+floorRecipes.set(hairSalon.name, hairSalon);
