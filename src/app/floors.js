@@ -1,10 +1,6 @@
 import { floorRecipes, craftingRecipes } from "./globals";
 import { Floor, CraftingRequirement } from "./classes";
 
-const basicReq = [new CraftingRequirement(craftingRecipes.get("String"), 3)];
-const basic = new Floor("Basic", 1, basicReq);
-floorRecipes.set(basic.name, basic);
-
 /**
  * Floors added:
  * 6-40
