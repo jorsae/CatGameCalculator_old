@@ -7,7 +7,7 @@ floorRecipes.set(basic.name, basic);
 
 /**
  * Floors added:
- * 6-25
+ * 6-30
  */
 
 const farmReq = [new CraftingRequirement(craftingRecipes.get("String"), 5),
