@@ -226,3 +226,70 @@ const bugsReq = [new CraftingRequirement(craftingRecipes.get("Ribbon"), 9),
                 ];
 const bugs = new Floor("Bugs", 25, bugsReq);
 floorRecipes.set(bugs.name, bugs);
+
+const winterReq = [new CraftingRequirement(craftingRecipes.get("Ribbon"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 9),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 11),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 8),
+                ];
+const winter = new Floor("Winter", 26, winterReq);
+floorRecipes.set(winter.name, winter);
+
+const springReq = [new CraftingRequirement(craftingRecipes.get("Orb"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                ];
+const spring = new Floor("Spring", 27, springReq);
+floorRecipes.set(spring.name, spring);
+
+const autumnReq = [new CraftingRequirement(craftingRecipes.get("Sparkles"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                ];
+const autumn = new Floor("Autumn", 28, autumnReq);
+floorRecipes.set(autumn.name, autumn);
+
+const schoolReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 14),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 13),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 2),
+                ];
+const school = new Floor("School", 29, schoolReq);
+floorRecipes.set(school.name, school);
+
+const dogsReq = [new CraftingRequirement(craftingRecipes.get("Water"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 3),
+                ];
+const dogs = new Floor("Dogs", 30, dogsReq);
+floorRecipes.set(dogs.name, dogs);
