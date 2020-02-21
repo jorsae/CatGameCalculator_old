@@ -7,8 +7,7 @@ floorRecipes.set(basic.name, basic);
 
 /**
  * Floors added:
- * 6, 7, 8, 9, 10, 11, 12, 13, 14
- * 15, 16, 17, 18, 19, 20
+ * 6-25
  */
 
 const farmReq = [new CraftingRequirement(craftingRecipes.get("String"), 5),
@@ -166,3 +165,64 @@ const cakeReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 7),
                 ];
 const cake = new Floor("Cake", 20, cakeReq);
 floorRecipes.set(cake.name, cake);
+
+const interstellarReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 4),
+                ];
+const interstellar = new Floor("Interstellar", 21, interstellarReq);
+floorRecipes.set(interstellar.name, interstellar);
+
+const punkReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                ];
+const punk = new Floor("Punk", 22, punkReq);
+floorRecipes.set(punk.name, punk);
+
+const africanReq = [new CraftingRequirement(craftingRecipes.get("Water"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 9),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 1),
+                ];
+const african = new Floor("African", 23, africanReq);
+floorRecipes.set(african.name, african);
+
+
+const professionReq = [new CraftingRequirement(craftingRecipes.get("Ribbon"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 1),
+                ];
+const profession = new Floor("Profession", 24, professionReq);
+floorRecipes.set(profession.name, profession);
+
+const bugsReq = [new CraftingRequirement(craftingRecipes.get("Ribbon"), 9),
+                    new CraftingRequirement(craftingRecipes.get("Amethyst"), 18),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 12),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 1),
+                ];
+const bugs = new Floor("Bugs", 25, bugsReq);
+floorRecipes.set(bugs.name, bugs);

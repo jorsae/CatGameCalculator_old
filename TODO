@@ -18,6 +18,7 @@ Technical:
         User should use a select ^, and select the floor they want. Then click "add" and all the items for that floor will be automatically addded.
         If items are already inputted, it should prompt the user if they want to clear, before adding a floor.
         There should also be a list, that displays to the user what floors have been added
+        ☐ Add floor 1-5
         ☐ Add to floor 30
         ☐ Add to floor 40
         ☐ Add to floor 50
