@@ -7,7 +7,7 @@ floorRecipes.set(basic.name, basic);
 
 /**
  * Floors added:
- * 6-35
+ * 6-40
  */
 
 const farmReq = [new CraftingRequirement(craftingRecipes.get("String"), 5),
@@ -359,3 +359,66 @@ const hairSalonReq = [new CraftingRequirement(craftingRecipes.get("Water"), 16),
                 ];
 const hairSalon = new Floor("Hair Salon", 35, hairSalonReq);
 floorRecipes.set(hairSalon.name, hairSalon);
+
+const heavyMetalReq = [new CraftingRequirement(craftingRecipes.get("Orb"), 14),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 3),
+                ];
+const heavyMetal = new Floor("Heavy Metal", 36, heavyMetalReq);
+floorRecipes.set(heavyMetal.name, heavyMetal);
+
+const westernReq = [new CraftingRequirement(craftingRecipes.get("Needles"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 11),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 4),
+                ];
+const western = new Floor("Western", 37, westernReq);
+floorRecipes.set(western.name, western);
+
+const racingReq = [new CraftingRequirement(craftingRecipes.get("Ribbon"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 15),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 16),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 6),
+                ];
+const racing = new Floor("Racing", 38, racingReq);
+floorRecipes.set(racing.name, racing);
+
+const mysteryMansionReq = [new CraftingRequirement(craftingRecipes.get("Orb"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 3),
+                ];
+const mysteryMansion = new Floor("Mystery Mansion", 39, mysteryMansionReq);
+floorRecipes.set(mysteryMansion.name, mysteryMansion);
+
+const stationeryReq = [new CraftingRequirement(craftingRecipes.get("Gold"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Sparkles"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 4),
+                ];
+const stationery = new Floor("Stationery", 40, stationeryReq);
+floorRecipes.set(stationery.name, stationery);
