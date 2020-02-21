@@ -46,6 +46,12 @@ function addFloor(){
         return;
     }
 
+    if(craftingItemInputted()){
+        if(!confirm("You already have crafting items inputted.\nPress 'Ok' if you want to add 'floor " + floor + "' on top")){
+            return;
+        }
+    }
+
     var floorReq = floor.requirements;
     for(var i = 0; i < floorReq.length; i++){
         var itemName = floorReq[i].craftingItem.name.toLowerCase();
@@ -57,6 +63,24 @@ function addFloor(){
         var value = parseInt(count.value);
         count.value = value + quantity;
     }
+}
+
+/**
+ * Helper function, checks if any crafting items have input in them
+ * return true or false
+ */
+function craftingItemInputted(){
+    for (const entry of craftingRecipes.entries()) {
+        var item = craftingRecipes.get(entry[0]);
+        var itemAmountElement = document.getElementById(item.name.toLowerCase() + 'Amount');
+        
+        if(itemAmountElement !== null){
+            if(parseInt(itemAmountElement.value) > 0){
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 /**
