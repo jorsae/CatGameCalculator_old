@@ -505,3 +505,14 @@ const bathroomReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 1),
                 ];
 const bathroom = new Floor("Bathroom", 45, bathroomReq);
 floorRecipes.set(bathroom.name, bathroom);
+
+const jungleReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 7),
+                ];
+const jungle = new Floor("Jungle", 46, jungleReq);
+floorRecipes.set(jungle.name, jungle);
