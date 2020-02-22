@@ -11,17 +11,18 @@ test_path = 'D:\code\web\CatGameCalculatorTest'
 publish_path = 'D:\code\web\CatGameCalculatorPublish'
 path = None
 
-deleted = [0, 0]
-copied = [0, 0]
+deleted = [0, 0] # files, folders
+copied = [0, 0]  # files, folders
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-p", "--publish", action='store_true', help="If set, readies for publishing the new changes.")
 parser.add_argument("-c", "--commit", type=str)
 args = parser.parse_args()
 
-
 def print_stats():
-    print(f'path: {path}')
+    print()
+    print('='*len(path))
+    print(f'PATH:\t{path}')
     print(f'DELETED\tfiles: {deleted[0]}\tfolders: {deleted[1]}')
     print(f'COPIED\tfiles: {copied[0]}\tfolders: {copied[1]}')
 
@@ -37,6 +38,7 @@ for filename in os.listdir(path):
         continue
     filename = f'{path}\{filename}'
     print(f'Deleting: {filename}')
+
     if os.path.isfile(filename):
         deleted[0] += 1
         os.remove(filename)
