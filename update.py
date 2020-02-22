@@ -18,6 +18,11 @@ parser.add_argument("-p", "--publish", action='store_true', help="If set, readie
 parser.add_argument("-c", "--commit", type=str)
 args = parser.parse_args()
 
+
+def print_stats():
+    print(f'Deleted: {files_deleted} files/folders')
+    print(f'Copied: {files_copied} files/folders')
+
 if args.publish:
     print(f'Updates publish version ({publish_path})')
     path = publish_path
@@ -47,15 +52,12 @@ for filename in copy_over:
         shutil.copy(filename, path)
     files_copied += 1
 
-print(f'Deleted: {files_deleted} files/folders')
-print(f'Copied: {files_copied} files/folders')
-
 if not args.commit:
+    print_stats()
     sys.exit()
-
-print('commiting')
-print(args.commit)
 
 subprocess.call(["git", "add", "."], shell=True, cwd=path)
 subprocess.call(['git', 'commit', f'-m {args.commit}'], shell=True, cwd=path)
 subprocess.call(['git', 'push', 'origin', 'master'], shell=True, cwd=path)
+
+print_stats()
