@@ -18,11 +18,11 @@ Technical:
         User should use a select ^, and select the floor they want. Then click "add" and all the items for that floor will be automatically addded.
         If items are already inputted, it should prompt the user if they want to clear, before adding a floor.
         There should also be a list, that displays to the user what floors have been added
-        ☐ Add floor 1-5
         ☐ Add to floor 50
         ☐ Add to floor 60
         ☐ Add all floors
-    ☐ Add display when you click on button: "Add floor", "Copy to clipboard".
+    ☐ Make clickUp/clickDown events added with jQuery, so ui.js can be minified!
+    ☐ Add display(popover?) when you click on button: "Add floor", "Copy to clipboard".
     ☐ Add cat images to the website?
     ☐ Clean up all css files for minify and bundler
     ☐ Minify css files
@@ -39,6 +39,7 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Add floor 1-5 @done(20-02-22 12:29) @project(Technical)
   ✔ Add to floor 30 @done(20-02-22 09:38) @project(Technical)
   ✔ Add to floor 40 @done(20-02-22 09:38) @project(Technical)
   ✔ Cleaned up all .js files with comments and proper webpacking @done(20-02-21 05:09) @project(Technical)
