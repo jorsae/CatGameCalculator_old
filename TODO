@@ -18,9 +18,9 @@ Technical:
             User should use a select ^, and select the floor they want. Then click "add" and all the items for that floor will be automatically addded.
             If items are already inputted, it should prompt the user if they want to clear, before adding a floor.
             There should also be a list, that displays to the user what floors have been added
-        ☐ Add to floor 50
-        ☐ Add to floor 60
-        ☐ Add all floors
+            ☐ Add to floor 50
+            ☐ Add to floor 60
+            ☐ Add all floors
         ☐ Make clickUp/clickDown events added with jQuery, so ui.js can be minified!
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     User interface:
@@ -35,6 +35,9 @@ Technical:
     Performance:
         ☐ Clean up all css files for minify and bundler
         ☐ Minify css files
+        ☐ After reply from Mino games regarding using their images. Make all crafting items in a spritesheet.
+        ☐ General images: (Up/down arrow, info-icon) should be in a spritesheet
+        ☐ Look into the "duplicate home page" message on https://search.google.com/
 SEO / "Advertisement":
     ☐ https://www.lambdatest.com/pricing for testing website on Safari on mac/iPhone
     ☐ "Advertise" on the different discord server. Read and follow the rules before doing so!
