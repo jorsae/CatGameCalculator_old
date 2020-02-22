@@ -516,3 +516,48 @@ const jungleReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
                 ];
 const jungle = new Floor("Jungle", 46, jungleReq);
 floorRecipes.set(jungle.name, jungle);
+
+const skateParkReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 16),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 9),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 6),
+                ];
+const skatePark = new Floor("Skate Park", 47, skateParkReq);
+floorRecipes.set(skatePark.name, skatePark);
+
+const arcticReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 16),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Necklace"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Artifact"), 1),
+                ];
+const arctic = new Floor("Arctic", 48, arcticReq);
+floorRecipes.set(arctic.name, arctic);
+
+const detectiveReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Gold"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Necklace"), 2),
+                ];
+const detective = new Floor("Detective", 49, detectiveReq);
+floorRecipes.set(detective.name, detective);
+
+const catGameDevReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 18),
+                    new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 3),
+                ];
+const catGameDev = new Floor("Cat Game Dev", 50, catGameDevReq);
+floorRecipes.set(catGameDev.name, catGameDev);
