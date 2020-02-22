@@ -1,8 +1,8 @@
 /**
- * Entry point for main js
+ * Entry point for menu js
  */
-window.onload = init;
-function init(){
+startMenu();
+function startMenu(){
     document.getElementById("versionNumber").innerText = "Version: " + __VERSION__;
     registerHamburgerMenu();
 }
