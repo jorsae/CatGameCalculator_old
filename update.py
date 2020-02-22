@@ -57,5 +57,5 @@ print('commiting')
 print(args.commit)
 
 subprocess.call(["git", "add", "."], shell=True, cwd=path)
-subprocess.call(['git', 'commit', '-m {args.commit}'], shell=True, cwd=path)
+subprocess.call(['git', 'commit', f'-m {args.commit}'], shell=True, cwd=path)
 subprocess.call(['git', 'push', 'origin', 'master'], shell=True, cwd=path)
