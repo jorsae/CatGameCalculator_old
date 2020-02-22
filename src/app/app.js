@@ -13,7 +13,6 @@ import { getCraftingRequirements } from "./crafting_requirement";
  */
 window.onload = init;
 function init(){
-    console.log("registerEvents");
     document.getElementById("calculate").onclick = calculate;
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
@@ -25,10 +24,8 @@ function init(){
  * Populates the select floors html with all floors available.
  */
 function populateFloor(){
-    console.log("populateFloor");
     var select = document.getElementById("floors");
     for (const [key, value] of floorRecipes.entries()) {
-        console.log("floorRecipes");
         var option = document.createElement("option");
         option.value = value.name;
         option.innerHTML = value;
