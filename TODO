@@ -18,8 +18,6 @@ Technical:
             User should use a select ^, and select the floor they want. Then click "add" and all the items for that floor will be automatically addded.
             If items are already inputted, it should prompt the user if they want to clear, before adding a floor.
             There should also be a list, that displays to the user what floors have been added
-            ☐ Add to floor 50
-            ☐ Add to floor 60
             ☐ Add all floors
         ☐ Make clickUp/clickDown events added with jQuery, so ui.js can be minified!
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
@@ -46,6 +44,8 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Add to floor 50 @done(20-02-23 01:07) @project(Technical.General)
+  ✔ Add to floor 60 @done(20-02-23 01:07) @project(Technical.General)
   ✔ Add floor 1-5 @done(20-02-22 12:29) @project(Technical)
   ✔ Add to floor 30 @done(20-02-22 09:38) @project(Technical)
   ✔ Add to floor 40 @done(20-02-22 09:38) @project(Technical)

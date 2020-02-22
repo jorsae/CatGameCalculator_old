@@ -561,3 +561,114 @@ const catGameDevReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 4
                 ];
 const catGameDev = new Floor("Cat Game Dev", 50, catGameDevReq);
 floorRecipes.set(catGameDev.name, catGameDev);
+
+const cruiseReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
+                new CraftingRequirement(craftingRecipes.get("Water"), 18),
+                new CraftingRequirement(craftingRecipes.get("Fire"), 12),
+                new CraftingRequirement(craftingRecipes.get("Waterstone"), 8),
+                new CraftingRequirement(craftingRecipes.get("Firestone"), 3),
+                new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                ];
+const cruise = new Floor("Cruise", 51, cruiseReq);
+floorRecipes.set(cruise.name, cruise);
+
+const birthdayReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 14),
+                new CraftingRequirement(craftingRecipes.get("Water"), 14),
+                new CraftingRequirement(craftingRecipes.get("Fire"), 7),
+                new CraftingRequirement(craftingRecipes.get("Gold"), 4),
+                new CraftingRequirement(craftingRecipes.get("Necklace"), 3),
+                ];
+const birthday = new Floor("Birthday", 52, birthdayReq);
+floorRecipes.set(birthday.name, birthday);
+
+const arcadeReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 23),
+                new CraftingRequirement(craftingRecipes.get("Sparkles"), 8),
+                new CraftingRequirement(craftingRecipes.get("Silver"), 6),
+                new CraftingRequirement(craftingRecipes.get("Gold"), 11),
+                new CraftingRequirement(craftingRecipes.get("Necklace"), 3),
+                ];
+const arcade = new Floor("Arcade", 53, arcadeReq);
+floorRecipes.set(arcade.name, arcade);
+
+const tattooReq = [new CraftingRequirement(craftingRecipes.get("Artifact"), 1),
+                new CraftingRequirement(craftingRecipes.get("Sparkles"), 10),
+                new CraftingRequirement(craftingRecipes.get("Needles"), 14),
+                new CraftingRequirement(craftingRecipes.get("Gold"), 6),
+                new CraftingRequirement(craftingRecipes.get("Silver"), 12),
+                new CraftingRequirement(craftingRecipes.get("Water"), 9),
+                new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                new CraftingRequirement(craftingRecipes.get("Waterstone"), 4),
+                new CraftingRequirement(craftingRecipes.get("Firestone"), 5),
+                new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                ];
+const tattoo = new Floor("Tattoo", 54, tattooReq);
+floorRecipes.set(tattoo.name, tattoo);
+
+const airportReq = [new CraftingRequirement(craftingRecipes.get("Water"), 11),
+                new CraftingRequirement(craftingRecipes.get("Fire"), 6),
+                new CraftingRequirement(craftingRecipes.get("Gold"), 6),
+                new CraftingRequirement(craftingRecipes.get("Silver"), 7),
+                new CraftingRequirement(craftingRecipes.get("Waterstone"), 10),
+                new CraftingRequirement(craftingRecipes.get("Firestone"), 5),
+                new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                ];
+const airport = new Floor("Airport", 55, airportReq);
+floorRecipes.set(airport.name, airport);
+
+const smallPetsReq = [new CraftingRequirement(craftingRecipes.get("Water"), 10),
+                new CraftingRequirement(craftingRecipes.get("Gold"), 2),
+                new CraftingRequirement(craftingRecipes.get("Silver"), 6),
+                new CraftingRequirement(craftingRecipes.get("Pendant"), 2),
+                new CraftingRequirement(craftingRecipes.get("Necklace"), 3),
+                new CraftingRequirement(craftingRecipes.get("Fire"), 4),
+                new CraftingRequirement(craftingRecipes.get("Waterstone"), 8),
+                new CraftingRequirement(craftingRecipes.get("Firestone"), 6),
+                ];
+const smallPets = new Floor("Small Pets", 56, smallPetsReq);
+floorRecipes.set(smallPets.name, smallPets);
+
+const hippieReq = [new CraftingRequirement(craftingRecipes.get("Artifact"), 1),
+                new CraftingRequirement(craftingRecipes.get("Gold"), 2),
+                new CraftingRequirement(craftingRecipes.get("Silver"), 6),
+                new CraftingRequirement(craftingRecipes.get("Necklace"), 2),
+                new CraftingRequirement(craftingRecipes.get("Water"), 9),
+                new CraftingRequirement(craftingRecipes.get("Fire"), 5),
+                new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                new CraftingRequirement(craftingRecipes.get("Firestone"), 6),
+                ];
+const hippie = new Floor("Hippie", 57, hippieReq);
+floorRecipes.set(hippie.name, hippie);
+
+const piratesReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 12),
+                new CraftingRequirement(craftingRecipes.get("Gold"), 4),
+                new CraftingRequirement(craftingRecipes.get("Waterstone"), 6),
+                new CraftingRequirement(craftingRecipes.get("Fire"), 5),
+                new CraftingRequirement(craftingRecipes.get("Firestone"), 2),
+                new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                new CraftingRequirement(craftingRecipes.get("Necklace"), 3),
+                ];
+const pirates = new Floor("Pirates", 58, piratesReq);
+floorRecipes.set(pirates.name, pirates);
+
+const hospitalReq = [new CraftingRequirement(craftingRecipes.get("Sparkles"), 12),
+                new CraftingRequirement(craftingRecipes.get("Needles"), 12),
+                new CraftingRequirement(craftingRecipes.get("Gold"), 8),
+                new CraftingRequirement(craftingRecipes.get("Silver"), 8),
+                new CraftingRequirement(craftingRecipes.get("Water"), 6),
+                new CraftingRequirement(craftingRecipes.get("Fire"), 5),
+                new CraftingRequirement(craftingRecipes.get("Waterstone"), 8),
+                new CraftingRequirement(craftingRecipes.get("Firestone"), 6),
+                new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                ];
+const hospital = new Floor("Hospital", 59, hospitalReq);
+floorRecipes.set(hospital.name, hospital);
+
+const playgroundReq = [new CraftingRequirement(craftingRecipes.get("Necklace"), 2),
+                new CraftingRequirement(craftingRecipes.get("Water"), 10),
+                new CraftingRequirement(craftingRecipes.get("Fire"), 14),
+                new CraftingRequirement(craftingRecipes.get("Waterstone"), 10),
+                new CraftingRequirement(craftingRecipes.get("Firestone"), 2),
+                new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                ];
+const playground = new Floor("Playground", 60, playgroundReq);
+floorRecipes.set(playground.name, playground);
