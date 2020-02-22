@@ -3,8 +3,34 @@ import { Floor, CraftingRequirement } from "./classes";
 
 /**
  * Floors added:
- * 6-40
+ *  1-3 is not added, because all the requirements are basic items, nothing crafted.
+ *  I do not have a way of adding to just basic items, that are not craftable.
+ * 1-40
+ * 
+ * Floor 1 requirement:
+ *  18 logs
+ *  17 cotton
+ * Floor 2 requirement:
+ *  24 logs
+ *  30 cotton
+ * Floor 3 requirement:
+ *  63 logs
+ *  60 cotton
  */
+
+const mayhemReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 14),
+                    new CraftingRequirement(craftingRecipes.get("String"), 18),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 6),
+                ];
+const mayhem = new Floor("Mayhem", 4, mayhemReq);
+floorRecipes.set(mayhem.name, mayhem);
+
+const beachReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 8),
+                    new CraftingRequirement(craftingRecipes.get("String"), 18),
+                    new CraftingRequirement(craftingRecipes.get("Ribbon"), 17),
+                ];
+const beach = new Floor("Beach", 5, beachReq);
+floorRecipes.set(beach.name, beach);
 
 const farmReq = [new CraftingRequirement(craftingRecipes.get("String"), 5),
                     new CraftingRequirement(craftingRecipes.get("Wood"), 11),
