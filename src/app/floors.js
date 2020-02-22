@@ -672,3 +672,42 @@ const playgroundReq = [new CraftingRequirement(craftingRecipes.get("Necklace"), 
                 ];
 const playground = new Floor("Playground", 60, playgroundReq);
 floorRecipes.set(playground.name, playground);
+
+const shipwreckReq = [new CraftingRequirement(craftingRecipes.get("Artifact"), 2),
+                new CraftingRequirement(craftingRecipes.get("Gold"), 2),
+                new CraftingRequirement(craftingRecipes.get("Silver"), 6),
+                new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                new CraftingRequirement(craftingRecipes.get("Necklace"), 2),
+                new CraftingRequirement(craftingRecipes.get("Waterstone"), 3),
+                new CraftingRequirement(craftingRecipes.get("Firestone"), 5),
+                new CraftingRequirement(craftingRecipes.get("Elementstone"), 3),
+                ];
+const shipwreck = new Floor("Shipwreck", 61, shipwreckReq);
+floorRecipes.set(shipwreck.name, shipwreck);
+
+/**
+ * Floor: 62-64 all require the same material, in the same order.
+ *  Increase performance, by just using the same CraftingRequirement list
+ */
+const identical62_64 = [new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 11),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+];
+
+const gnomes = new Floor("Gnomes", 62, identical62_64);
+floorRecipes.set(gnomes.name, gnomes);
+
+const deconstructivism = new Floor("Deconstructivism", 63, identical62_64);
+floorRecipes.set(deconstructivism.name, deconstructivism);
+
+const caveman = new Floor("Caveman", 64, identical62_64);
+floorRecipes.set(caveman.name, caveman);
+
+const miniature = new Floor("Miniature", 65, identical62_64);
+floorRecipes.set(miniature.name, miniature);
+
+const wrestling = new Floor("Wrestling", 66, identical62_64);
+floorRecipes.set(wrestling.name, wrestling);
