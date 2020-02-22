@@ -12,30 +12,34 @@ Cat Game Event Crafting:
         - Boosts can decrease the event token cost
 
 Technical:
-    ☐ Add a favicon for the website
-    ☐ Add pre-configured floors
-        - https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select
-        User should use a select ^, and select the floor they want. Then click "add" and all the items for that floor will be automatically addded.
-        If items are already inputted, it should prompt the user if they want to clear, before adding a floor.
-        There should also be a list, that displays to the user what floors have been added
+    General:
+        ☐ Add pre-configured floors
+            - https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select
+            User should use a select ^, and select the floor they want. Then click "add" and all the items for that floor will be automatically addded.
+            If items are already inputted, it should prompt the user if they want to clear, before adding a floor.
+            There should also be a list, that displays to the user what floors have been added
         ☐ Add to floor 50
         ☐ Add to floor 60
         ☐ Add all floors
-    ☐ Make clickUp/clickDown events added with jQuery, so ui.js can be minified!
-    ☐ Add display(popover?) when you click on button: "Add floor", "Copy to clipboard".
-    ☐ Add cat images to the website?
-    ☐ Clean up all css files for minify and bundler
-    ☐ Minify css files
-    ☐ Waterstone and Elementstone overflow in the outputTable
-    ☐ Add tooltip to show that the table have been added to the users clipboard
-    ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
-    ☐ Make an email address and put it in on the website (footer?)
-    ☐ Display to the user that calculate is on cooldown
-        Probably have it show up as a tooltip?
+        ☐ Make clickUp/clickDown events added with jQuery, so ui.js can be minified!
+        ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
+    User interface:
+        ☐ Add a favicon for the website
+        ☐ Waterstone and Elementstone overflow in the outputTable on mobile devices.
+        ☐ Add display(popover?) when you click on button: "Add floor", "Copy to clipboard".
+        ☐ Add cat images to the website?
+        ☐ Add tooltip to show that the table have been added to the users clipboard
+        ☐ Make an email address and put it in on the website (footer?)
+        ☐ Display to the user that calculate is on cooldown
+            Probably have it show up as a tooltip?
+    Performance:
+        ☐ Clean up all css files for minify and bundler
+        ☐ Minify css files
 SEO / "Advertisement":
     ☐ https://www.lambdatest.com/pricing for testing website on Safari on mac/iPhone
     ☐ "Advertise" on the different discord server. Read and follow the rules before doing so!
     ☐ "Advertise" on youtube videos
+    ☐ Advertise with the in game chat?
     ☐ Post on their facebook page?
   
 Archive:
