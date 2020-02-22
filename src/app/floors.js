@@ -5,7 +5,7 @@ import { Floor, CraftingRequirement } from "./classes";
  * Floors added:
  *  1-3 is not added, because all the requirements are basic items, nothing crafted.
  *  I do not have a way of adding to just basic items, that are not craftable.
- * 1-40
+ * 1-45
  * 
  * Floor 1 requirement:
  *  18 logs
@@ -444,3 +444,64 @@ const stationeryReq = [new CraftingRequirement(craftingRecipes.get("Gold"), 6),
                 ];
 const stationery = new Floor("Stationery", 40, stationeryReq);
 floorRecipes.set(stationery.name, stationery);
+
+const magicShowReq = [new CraftingRequirement(craftingRecipes.get("Orb"), 18),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 16),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 7),
+                    new CraftingRequirement(craftingRecipes.get("Necklace"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 4),
+                ];
+const magicShow = new Floor("Magic Show", 41, magicShowReq);
+floorRecipes.set(magicShow.name, magicShow);
+
+const campingReq = [new CraftingRequirement(craftingRecipes.get("Sparkles"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 6),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 5),
+                ];
+const camping = new Floor("Camping", 42, campingReq);
+floorRecipes.set(camping.name, camping);
+
+const plushReq = [new CraftingRequirement(craftingRecipes.get("Gold"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 15),
+                    new CraftingRequirement(craftingRecipes.get("Needles"), 9),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 10),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 12),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 6),
+                ];
+const plush = new Floor("Plush", 43, plushReq);
+floorRecipes.set(plush.name, plush);
+
+const roleplayReq = [new CraftingRequirement(craftingRecipes.get("Gold"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 12),
+                    new CraftingRequirement(craftingRecipes.get("Pendant"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Silver"), 5),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 3),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 2),
+                    new CraftingRequirement(craftingRecipes.get("Elementstone"), 4),
+                ];
+const roleplay = new Floor("Roleplay", 44, roleplayReq);
+floorRecipes.set(roleplay.name, roleplay);
+
+const bathroomReq = [new CraftingRequirement(craftingRecipes.get("Pendant"), 1),
+                    new CraftingRequirement(craftingRecipes.get("Orb"), 14),
+                    new CraftingRequirement(craftingRecipes.get("Water"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Fire"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Waterstone"), 8),
+                    new CraftingRequirement(craftingRecipes.get("Firestone"), 4),
+                    new CraftingRequirement(craftingRecipes.get("Necklace"), 2),
+                ];
+const bathroom = new Floor("Bathroom", 45, bathroomReq);
+floorRecipes.set(bathroom.name, bathroom);
