@@ -1,6 +1,7 @@
-import os
+import os, sys
 import shutil
 import argparse
+import subprocess
 
 dont_delete = ['.git']
 copy_over = ['css', 'dist', 'images', 'src',
@@ -14,6 +15,7 @@ files_copied = 0
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-p", "--publish", action='store_true', help="If set, readies for publishing the new changes.")
+parser.add_argument("-c", "--commit", type=str)
 args = parser.parse_args()
 
 if args.publish:
@@ -47,3 +49,14 @@ for filename in copy_over:
 
 print(f'Deleted: {files_deleted} files/folders')
 print(f'Copied: {files_copied} files/folders')
+
+if not args.commit:
+    sys.exit()
+
+print('commiting')
+print(args.commit)
+
+subprocess.call('ls', cwd=path)
+subprocess.call(["git", "add", "."])
+subprocess.call([f'git commit -m {args.commit}'])
+subprocess.call(["git", "push"])
