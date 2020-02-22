@@ -10,8 +10,9 @@ copy_over = ['css', 'dist', 'images', 'src',
 test_path = 'D:\code\web\CatGameCalculatorTest'
 publish_path = 'D:\code\web\CatGameCalculatorPublish'
 path = None
-files_deleted = 0
-files_copied = 0
+
+deleted = [0, 0]
+copied = [0, 0]
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-p", "--publish", action='store_true', help="If set, readies for publishing the new changes.")
@@ -20,8 +21,9 @@ args = parser.parse_args()
 
 
 def print_stats():
-    print(f'Deleted: {files_deleted} files/folders')
-    print(f'Copied: {files_copied} files/folders')
+    print(f'path: {path}')
+    print(f'DELETED\tfiles: {deleted[0]}\tfolders: {deleted[1]}')
+    print(f'COPIED\tfiles: {copied[0]}\tfolders: {copied[1]}')
 
 if args.publish:
     print(f'Updates publish version ({publish_path})')
@@ -34,23 +36,21 @@ for filename in os.listdir(path):
     if filename in dont_delete:
         continue
     filename = f'{path}\{filename}'
+    print(f'Deleting: {filename}')
     if os.path.isfile(filename):
-        print(f'Deleting: {filename}')
+        deleted[0] += 1
         os.remove(filename)
-        files_deleted += 1
     else:
-        print(f'Deleting: {filename}')
+        deleted[1] += 1
         shutil.rmtree(filename)
-        files_deleted += 1
 
 for filename in copy_over:
-    if os.path.isdir(filename):
-        print(f'[dir] Copying: {filename}')
-        shutil.copytree(filename, f'{path}\{filename}')
-    else:
-        print(f'[file] Copying: {filename}')
+    if os.path.isfile(filename):
+        copied[0] += 1
         shutil.copy(filename, path)
-    files_copied += 1
+    else:
+        copied[1] += 1
+        shutil.copytree(filename, f'{path}\{filename}')
 
 if not args.commit:
     print_stats()
