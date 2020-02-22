@@ -8,12 +8,11 @@ import { rarity } from "./globals";
 
 import { getCraftingRequirements } from "./crafting_requirement";
 
-
 /**
  * Setting up all the button events for the calculator
  */
-window.onload = init;
-function init(){
+registerEvents();
+function registerEvents(){
     document.getElementById("calculate").onclick = calculate;
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;

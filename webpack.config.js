@@ -31,6 +31,9 @@ module.exports = {
             'crafting': 'crafting',
             'crafting_requirement': 'crafting_requirement',
             'floors': 'floors'
-          })
+          }),
+        new webpack.DefinePlugin({
+            __VERSION__: JSON.stringify(require("./package.json").version)
+        })
     ]
 };

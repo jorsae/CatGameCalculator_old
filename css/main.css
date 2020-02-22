@@ -5,6 +5,15 @@ body{
     color: #ffffff;
 }
 
+/* CSS for version number */
+.version-number{
+    position: absolute;
+    font-size: 0.75em;
+    top: 0vw;
+    right: 1vw;
+    width: auto;;
+}
+
 .tooltip-inner{
     position: absolute;
     background-color: gray;
