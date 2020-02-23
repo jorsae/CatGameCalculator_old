@@ -170,7 +170,7 @@ function copyClipboard(){
 function clear(){
     for (const entry of craftingRecipes.entries()) {
         var item = craftingRecipes.get(entry[0]);
-        var itemAmountElement = document.getElementById(item.name.toLowerCase() + 'Amount');
+        var itemAmountElement = document.getElementById(item.name + 'Amount');
         if(itemAmountElement !== null){
             itemAmountElement.value = 0;
         }
@@ -208,8 +208,6 @@ function calculate(){
     for (const entry of craftingRecipes.entries()) {
         var item = craftingRecipes.get(entry[0]);
         var itemAmountElement = document.getElementById(item.name + 'Amount');
-        console.log(item);
-        console.log(itemAmountElement);
         if(itemAmountElement !== null){
             var itemAmount = parseInt(itemAmountElement.value);
             if(itemAmount > 0){
@@ -222,7 +220,6 @@ function calculate(){
     const userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, 1000, userItemReq);
     craftingRecipes.set(userItem.name, userItem);
     var reqs = getCraftingRequirements(userItem, 1);
-    console.log(userItem);
     
     // Sort and output all the crafting items
     var temporaryCraftingItems = Array.from(reqs);

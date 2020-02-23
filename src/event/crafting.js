@@ -21,15 +21,15 @@ craftingRecipes.set(rawMaterialB.name, rawMaterialB);
 craftingRecipes.set(rawMaterialC.name, rawMaterialC);
 
 // Tier 1
-var tier1AReq = [new CraftingRequirement(rawMaterialA, 4)];
+const tier1AReq = [new CraftingRequirement(rawMaterialA, 4)];
 const tier1A = new CraftingItem(craftingItemNames[0], 15, 20, rarity.COMMON, 5, tier1AReq);
 craftingRecipes.set(tier1A.name, tier1A);
 
-var tier1BReq = [new CraftingRequirement(rawMaterialB, 4)];
+const tier1BReq = [new CraftingRequirement(rawMaterialB, 4)];
 const tier1B = new CraftingItem(craftingItemNames[1], 15, 20, rarity.COMMON, 6, tier1BReq);
 craftingRecipes.set(tier1B.name, tier1B);
 
-var tier1CReq = [new CraftingRequirement(rawMaterialC, 4)];
+const tier1CReq = [new CraftingRequirement(rawMaterialC, 4)];
 const tier1C = new CraftingItem(craftingItemNames[2], 15, 20, rarity.COMMON, 7, tier1CReq);
 craftingRecipes.set(tier1C.name, tier1C);
 
