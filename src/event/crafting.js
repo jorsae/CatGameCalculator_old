@@ -9,7 +9,7 @@ import { rarity } from "./globals";
  */
 
 const rawMaterialNames = ["Pink Star", "Purple star", "Yellow star"];
-const craftingItemNames = ["Clouds", "Rainbow", "Shooting stars",
+export const craftingItemNames = ["Clouds", "Rainbow", "Shooting stars",
                             "Asteroid", "Planet", "Cosmos"];
 
 // Base

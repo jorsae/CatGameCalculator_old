@@ -18,7 +18,7 @@ function init(){
     document.getElementById("copyClipboard").onclick = copyClipboard;
     document.getElementById("addFloor").onclick = addFloor;
     populateItems();
-    //populateFloor();
+    populateFloor();
 }
 
 function populateItems(){
@@ -83,7 +83,7 @@ function addFloor(){
 
     var floorReq = floor.requirements;
     for(var i = 0; i < floorReq.length; i++){
-        var itemName = floorReq[i].craftingItem.name.toLowerCase();
+        var itemName = floorReq[i].craftingItem.name;
         var quantity = floorReq[i].quantity;
         var count = document.getElementById(itemName + "Amount");
         if(count === null){
