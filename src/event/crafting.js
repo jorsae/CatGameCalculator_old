@@ -22,11 +22,11 @@ craftingRecipes.set(rawMaterialC.name, rawMaterialC);
 
 // Tier 1
 var tier1AReq = [new CraftingRequirement(rawMaterialA, 4)];
-const tier1A = new CraftingItem(craftingItemNames[0], 5, 20, rarity.COMMON, 5, tier1AReq);
+const tier1A = new CraftingItem(craftingItemNames[0], 15, 20, rarity.COMMON, 5, tier1AReq);
 craftingRecipes.set(tier1A.name, tier1A);
 
 var tier1BReq = [new CraftingRequirement(rawMaterialB, 4)];
-const tier1B = new CraftingItem(craftingItemNames[1], 5, 20, rarity.COMMON, 6, tier1BReq);
+const tier1B = new CraftingItem(craftingItemNames[1], 15, 20, rarity.COMMON, 6, tier1BReq);
 craftingRecipes.set(tier1B.name, tier1B);
 
 var tier1CReq = [new CraftingRequirement(rawMaterialC, 4)];
@@ -39,9 +39,9 @@ const tier2A = new CraftingItem(craftingItemNames[3], 15, 150, rarity.RARE, 8, t
 craftingRecipes.set(tier2A.name, tier2A);
 
 const tier2BReq = [new CraftingRequirement(tier2A, 2), new CraftingRequirement(tier1C, 4), new CraftingRequirement(tier1B, 4)];
-const tier2B = new CraftingItem(craftingItemNames[4], 15, 200, rarity.RARE, 8, tier2BReq);
+const tier2B = new CraftingItem(craftingItemNames[4], 30, 200, rarity.RARE, 8, tier2BReq);
 craftingRecipes.set(tier2B.name, tier2B);
 
 const tier2CReq = [new CraftingRequirement(tier2B, 3), new CraftingRequirement(tier1A, 8)];
-const tier2C = new CraftingItem(craftingItemNames[5], 15, 200, rarity.RARE, 8, tier2CReq);
+const tier2C = new CraftingItem(craftingItemNames[5], 60, 200, rarity.RARE, 8, tier2CReq);
 craftingRecipes.set(tier2C.name, tier2C);

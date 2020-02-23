@@ -14,6 +14,9 @@ Cat Game Event Crafting:
 Technical:
     General:
         ☐ Make clickUp/clickDown events added with jQuery, so ui.js can be minified!
+            This will also make my current code for injecting clickUp/clickDown in event.js redundant.
+            This function will have to have a rawMaterialCount so we can ignore those items!
+        ☐ Make event able to calculate with output to the user.
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     User interface:
         ☐ Add a favicon for the website
