@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> Cat Game Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A calculator for optimizing your crafting needs in Cat Game - The Cats Collector!">
+        <script type="text/javascript" src="dist/event.min.js" defer></script>
+        <script type="text/javascript" src="dist/all.min.js" defer></script>
+        <script type="text/javascript" src="src/ui.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157531722-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157531722-1');
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip({
+                    boundary: 'window'
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="versionNumber" class="version-number"></p>
+
+        <div class="topnav" id="topNav">
+            <a href="./">Cat Game Calculator</a>
+            <a href="about.html">About</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="javascript:void(0);" class="hamburger-menu" id="hamburgerMenu">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div id="cookiePolicyBanner" class="cookie-policy">
+            <p class="cookie-paragraph">This site uses cookies to improve your user experience. By using CatGameCalcuator, you agree to our <a href="privacy.html">use of cookies</a>&nbsp;&nbsp;&nbsp;</p>
+            <button id="cookieAccept" class="cookie-policy-close">Accept</button>
+        </div>
+        
+
+        <h1 class="text-center">Cat Game Calculator</h1>
+        <div class="guide-container">
+            <ol>
+                <lh>How to use</lh>
+                <li>Input the items you want to craft. Either manually or you can add whole floors at a time.</li>
+                <li>Select the time you want to use crafting them (shorter time, costs more)</li>
+                <li>Press the "Calculate meow" button</li>
+            </ol>
+        </div>
+
+        <div class="crafting-container">
+            <h2>Add crafting items for a floor</h2>
+            <select id="floors">
+            </select>
+            <button id="addFloor">Add floor</button>
+
+
+            <h2>Tier 1 Crafting</h2>
+            <div class="crafting-tier">
+                <div class="crafting-item common">
+                    <h3>String</h3>
+                    <img class="crafting-item-image" src="images/game/string.jpg" alt="Crafting item string" />
+                    <span>
+                        <input id="stringAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Cotton, 5min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('string')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('string')" alt="Arrow pointing down">
+                    </span>
+                </div>
+                <div class="crafting-item common">
+                    <h3>Wood</h3>
+                    <img class="crafting-item-image" src="images/game/wood.jpg" alt="Crafting item wood">
+                    <span>
+                        <input id="woodAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Logs, 5min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('wood')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('wood')" alt="Arrow pointing down">
+                    </span>
+                </div>
+                <div class="crafting-item rare">
+                    <h3>Ribbon</h3>
+                    <img class="crafting-item-image" src="images/game/ribbon.jpg" alt="Crafting item ribbon">
+                    <span>
+                        <input id="ribbonAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 String, 2 Wood, 15min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('ribbon')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('ribbon')" alt="Arrow pointing down">
+                    </span>
+                </div>
+            </div>
+
+            <h2>Tier 2 Crafting</h2>
+            <div class="crafting-tier">
+                <div class="crafting-item common">
+                    <h3>Metal</h3>
+                    <img class="crafting-item-image" src="images/game/metal.jpg" alt="Crafting item metal" />
+                    <span>
+                        <input id="metalAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Rock, 15min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('metal')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('metal')" alt="Arrow pointing down">
+                    </span>
+                </div>
+                <div class="crafting-item rare">
+                    <h3>Needles</h3>
+                    <img class="crafting-item-image" src="images/game/needles.jpg" alt="Crafting item needles">
+                    <span>
+                        <input id="needlesAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 4 Metal, 1 Ribbon, 30min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('needles')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('needles')" alt="Arrow pointing down">
+                    </span>
+                </div>
+                <div class="crafting-item epic">
+                    <h3>Sparkles</h3>
+                    <img class="crafting-item-image" src="images/game/sparkles.jpg" alt="Crafting item sparkles">
+                    <span>
+                        <input id="sparklesAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 Needles, 2 Ribbons, 1hour" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
+                    </span>
+                    <span>
+                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('sparkles')" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('sparkles')" alt="Arrow pointing down">
+                    </span>
+                </div>
+            </div>
+        <hr>
+        <div class="crafting-time-container">
+            <h2 class="text-center">
+                <span>Crafting time</span>
+                <img class="crafting-time-info" src="images/info-icon.png" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." data-toggle="tooltip" data-placement="bottom">
+            </h2>
+
+            <p class="crafting-time-input">
+                <span class="user-input-label">Hours:</span>
+                <input id="userTimeHours" class="user-input" type="number" value="0">
+            </p>
+            <p class="crafting-time-input">
+                <span class="user-input-label">Minutes:</span>
+                <input id="userTimeMinutes" class="user-input" type="number" value="1">
+            </p>
+            <div class="crafting-button">
+                <button id="calculate">Calculate meow</button>
+                <button id="clear">Clear</button>
+            </div>
+        </div>
+
+        <div id="outputContainer" class="output-container">
+            <div class="output-total">
+                <span id="outputTotalCost"></span>
+                <span id="outputTotalTime"></span>
+            </div>
+            <table id="outputTable" class="output-table">
+                <thead>
+                    <tr>
+                        <th><button id="copyClipboard">Copy to clipboard</button></th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Cost</th>
+                        <th>Crafting method</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
