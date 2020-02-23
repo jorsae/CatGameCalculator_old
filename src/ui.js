@@ -7,7 +7,6 @@
  * User increased the value on a CraftingItem (arg)
  */
 function clickUp(arg){
-    console.log("clickUp: " + arg);
     var element = document.getElementById(arg + "Amount");
     if(element === null){
         return;
@@ -19,7 +18,6 @@ function clickUp(arg){
  * User decreased the value on a CraftingItem (arg)
  */
 function clickDown(arg){
-    console.log("clickDown: " + arg);
     var element = document.getElementById(arg + "Amount");
     if(element === null){
         return;
