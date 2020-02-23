@@ -5,7 +5,8 @@ import subprocess
 
 dont_delete = ['.git', 'CNAME']
 copy_over = ['css', 'dist', 'images', 'src',
-            'index.html', 'about.html', 'feedback.html', 'privacy.html' ]
+            'index.html', 'event.html', 'about.html',
+            'feedback.html', 'privacy.html' ]
 
 test_path = 'D:\code\web\CatGameCalculatorTest'
 publish_path = 'D:\code\web\CatGameCalculatorPublish'
