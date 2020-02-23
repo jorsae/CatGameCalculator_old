@@ -101,7 +101,7 @@ function addFloor(){
 function craftingItemInputted(){
     for (const entry of craftingRecipes.entries()) {
         var item = craftingRecipes.get(entry[0]);
-        var itemAmountElement = document.getElementById(item.name.toLowerCase() + 'Amount');
+        var itemAmountElement = document.getElementById(item.name + 'Amount');
         
         if(itemAmountElement !== null){
             if(parseInt(itemAmountElement.value) > 0){
