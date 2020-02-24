@@ -11,15 +11,9 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
-Mino Games Response:
-    If I am allowed to use their images, make event.html support images.
-    If I am NOT allowed: Make event.html use filler images.
 
 Technical:
     General:
-        ☐ Make clickUp/clickDown events added with jQuery, so ui.js can be minified!
-            This will also make my current code for injecting clickUp/clickDown in event.js redundant.
-            This function will have to have a rawMaterialCount so we can ignore those items!
         ☐ Figure out what can be merged together among app and event
         ☐ Make things consistent!
             A lot of things on event uses key, while on app they use key.toLowerCase()
@@ -50,6 +44,9 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Make clickUp/clickDown events added with jQuery, so ui.js can be minified! @done(20-02-25 05:07) @project(Technical.General)
+    This will also make my current code for injecting clickUp/clickDown in event.js redundant.
+    This function will have to have a rawMaterialCount so we can ignore those items!
   ✔ Make event able to calculate with output to the user. @done(20-02-23 22:16) @project(Technical.General)
   ✔ Add pre-configured floors @done(20-02-23 01:24) @project(Technical.General)
   ✔ Add all floors @done(20-02-23 01:24) @project(Technical.General)
