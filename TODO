@@ -17,6 +17,7 @@ Technical:
         ☐ Figure out what can be merged together among app and event
             ✔ populate floor @done(20-02-25 05:15)
             ☐ craftingItemInputted function
+            ☐ addFloor function
         ✔ Make things consistent! @done(20-02-25 05:22)
             A lot of things on event uses key, while on app they use key.toLowerCase()
             Make sure stuff like this is consistent accross the files.
@@ -33,7 +34,18 @@ Technical:
         ☐ Display to the user that calculate is on cooldown
             Probably have it show up as a tooltip?
     Performance:
+        Chrome:
+            2.12
+            2.47
+            2.69
+            3.4
+        Firefox:
+            4ms
+        Edge:
+            8ms
+            7.9ms
         ☐ Make both floors.js use strings in their requirement instead of CraftingRequirement objects
+            This does not seem to have any noticeable effect. I took the time during window.onload. So my test was useless
         ☐ Clean up all css files for minify and bundler
         ☐ Minify css files
         ☐ After reply from Mino games regarding using their images. Make all crafting items in a spritesheet.

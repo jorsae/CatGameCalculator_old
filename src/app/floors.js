@@ -17,6 +17,8 @@ import { Floor, CraftingRequirement } from "../util/classes";
  *  63 logs
  *  60 cotton
  */
+var start = window.performance.now();
+
 const mayhemReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 14),
                     new CraftingRequirement(craftingRecipes.get("String"), 18),
                     new CraftingRequirement(craftingRecipes.get("Ribbon"), 6),
@@ -710,3 +712,7 @@ floorRecipes.set(miniature.name, miniature);
 
 const wrestling = new Floor("Wrestling", 66, identical62_64);
 floorRecipes.set(wrestling.name, wrestling);
+
+var end = window.performance.now();
+var time = end - start;
+alert(time);
