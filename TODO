@@ -11,18 +11,9 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
-
 Technical:
     General:
         ☐ Figure out what can be merged together among app and event
-            ✔ populate floor @done(20-02-25 05:15)
-            ☐ craftingItemInputted function
-            ☐ addFloor function
-        ✔ Make things consistent! @done(20-02-25 05:22)
-            A lot of things on event uses key, while on app they use key.toLowerCase()
-            Make sure stuff like this is consistent accross the files.
-            i.e: craftingItemInputted is not consistent!
-            Functions like craftingItemInputted should be put in a single file and then exported
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     User interface:
         ☐ Add a favicon for the website
@@ -33,19 +24,6 @@ Technical:
         ☐ Make an email address and put it in on the website (footer?)
         ☐ Display to the user that calculate is on cooldown
             Probably have it show up as a tooltip?
-    Performance:
-        Chrome:
-            2.12
-            2.47
-            2.69
-            3.4
-        Firefox:
-            4ms
-        Edge:
-            8ms
-            7.9ms
-        ☐ Make both floors.js use strings in their requirement instead of CraftingRequirement objects
-            This does not seem to have any noticeable effect. I took the time during window.onload. So my test was useless
         ☐ Clean up all css files for minify and bundler
         ☐ Minify css files
         ☐ After reply from Mino games regarding using their images. Make all crafting items in a spritesheet.
@@ -59,6 +37,17 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ populate floor @done(20-02-25 05:15) @project(Technical.General)
+  ✔ craftingItemInputted function @done(20-02-25 10:46) @project(Technical.General)
+  ✔ addFloor function @done(20-02-25 10:46) @project(Technical.General)
+  ✔ Make things consistent! @done(20-02-25 05:22) @project(Technical.General)
+    A lot of things on event uses key, while on app they use key.toLowerCase()
+    Make sure stuff like this is consistent accross the files.
+    i.e: craftingItemInputted is not consistent!
+    Functions like craftingItemInputted should be put in a single file and then exported
+  ✔ Make both floors.js use strings in their requirement instead of CraftingRequirement objects @done(20-02-25 10:46) @project(Technical.General)
+    This does not seem to have any noticeable effect. I took the time during window.onload. So my test was useless
+    I re-did the test and the performance improvement is significant, specially on mobile devices.
   ✔ Make clickUp/clickDown events added with jQuery, so ui.js can be minified! @done(20-02-25 05:07) @project(Technical.General)
     This will also make my current code for injecting clickUp/clickDown in event.js redundant.
     This function will have to have a rawMaterialCount so we can ignore those items!
