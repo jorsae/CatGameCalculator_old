@@ -25,6 +25,7 @@ Technical:
             A lot of things on event uses key, while on app they use key.toLowerCase()
             Make sure stuff like this is consistent accross the files.
             i.e: craftingItemInputted is not consistent!
+            Functions like craftingItemInputted should be put in a single file and then exported
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     User interface:
         ☐ Add a favicon for the website
