@@ -21,7 +21,6 @@ module.exports = {
           'globals': './src/app/globals.js',
           'crafting': './src/app/crafting.js',
           'crafting_requirement': './src/app/crafting_requirement.js',
-          'floors': './src/app/floors.js'
         }
       },
     plugins: [
@@ -33,8 +32,6 @@ module.exports = {
             'globals': 'globals',
             'crafting': 'crafting',
             'crafting_requirement': 'crafting_requirement',
-            'floors': 'floors',
-            'calc': 'calc'
           }),
         new webpack.DefinePlugin({
             __VERSION__: JSON.stringify(require("./package.json").version)
