@@ -17,7 +17,6 @@ import { Floor, CraftingRequirement } from "../util/classes";
  *  63 logs
  *  60 cotton
  */
-
 const mayhemReq = [new CraftingRequirement(craftingRecipes.get("Wood"), 14),
                     new CraftingRequirement(craftingRecipes.get("String"), 18),
                     new CraftingRequirement(craftingRecipes.get("Ribbon"), 6),

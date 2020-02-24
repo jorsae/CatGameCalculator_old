@@ -7,7 +7,7 @@
         <meta name="description" content="A calculator for optimizing your crafting needs in Cat Game - The Cats Collector!">
         <script type="text/javascript" src="dist/app.min.js" defer></script>
         <script type="text/javascript" src="dist/all.min.js" defer></script>
-        <script type="text/javascript" src="src/ui.js" defer></script>
+        <script type="text/javascript" src="src/ui.min.js" defer></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/media.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -74,36 +74,36 @@
                     <h3>String</h3>
                     <img class="crafting-item-image" src="images/game/string.jpg" alt="Crafting item string" />
                     <span>
-                        <input id="stringAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="StringAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Cotton, 5min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('string')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('string')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item common">
                     <h3>Wood</h3>
                     <img class="crafting-item-image" src="images/game/wood.jpg" alt="Crafting item wood">
                     <span>
-                        <input id="woodAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="WoodAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Logs, 5min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('wood')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('wood')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item rare">
                     <h3>Ribbon</h3>
                     <img class="crafting-item-image" src="images/game/ribbon.jpg" alt="Crafting item ribbon">
                     <span>
-                        <input id="ribbonAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="RibbonAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 String, 2 Wood, 15min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('ribbon')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('ribbon')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
             </div>
@@ -114,36 +114,36 @@
                     <h3>Metal</h3>
                     <img class="crafting-item-image" src="images/game/metal.jpg" alt="Crafting item metal" />
                     <span>
-                        <input id="metalAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="MetalAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Rock, 15min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('metal')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('metal')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item rare">
                     <h3>Needles</h3>
                     <img class="crafting-item-image" src="images/game/needles.jpg" alt="Crafting item needles">
                     <span>
-                        <input id="needlesAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="NeedlesAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 4 Metal, 1 Ribbon, 30min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('needles')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('needles')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item epic">
                     <h3>Sparkles</h3>
                     <img class="crafting-item-image" src="images/game/sparkles.jpg" alt="Crafting item sparkles">
                     <span>
-                        <input id="sparklesAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="SparklesAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 Needles, 2 Ribbons, 1hour" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('sparkles')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('sparkles')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
             </div>
@@ -154,36 +154,36 @@
                     <h3>Bronze</h3>
                     <img class="crafting-item-image" src="images/game/bronze.jpg" alt="Crafting item bronze">
                     <span>
-                        <input id="bronzeAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="BronzeAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 4 Rock, 30min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('bronze')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('bronze')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item rare">
                     <h3>Silver</h3>
                     <img class="crafting-item-image" src="images/game/silver.jpg" alt="Crafting item silver">
                     <span>
-                        <input id="silverAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="SilverAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Bronze, 1 Sparkles, 2hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('silver')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('silver')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item epic">
                     <h3>Gold</h3>
                     <img class="crafting-item-image" src="images/game/gold.jpg" alt="Crafting item gold">
                     <span>
-                        <input id="goldAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="GoldAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 Silver, 2 Sparkles, 6hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('gold')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('gold')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
             </div>
@@ -194,36 +194,36 @@
                     <h3>Amethyst</h3>
                     <img class="crafting-item-image" src="images/game/amethyst.jpg" alt="Crafting item amethyst">
                     <span>
-                        <input id="amethystAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="AmethystAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 10 Quartz, 1hour" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('amethyst')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('amethyst')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item rare">
                     <h3>Pendant</h3>
                     <img class="crafting-item-image" src="images/game/pendant.jpg" alt="Crafting item pendant">
                     <span>
-                        <input id="pendantAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="PendantAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 7 Amethyst, 2 Silver, 3hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('pendant')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('pendant')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item epic">
                     <h3>Necklace</h3>
                     <img class="crafting-item-image" src="images/game/necklace.jpg" alt="Crafting item necklace">
                     <span>
-                        <input id="necklaceAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="NecklaceAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Pendant, 2 Gold, 12hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('necklace')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('necklace')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
             </div>
@@ -234,36 +234,36 @@
                     <h3>Orb</h3>
                     <img class="crafting-item-image" src="images/game/orb.jpg" alt="Crafting item orb">
                     <span>
-                        <input id="orbAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="OrbAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 20 Quartz, 1hour" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('orb')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('orb')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item rare">
                     <h3>Water</h3>
                     <img class="crafting-item-image" src="images/game/water.jpg" alt="Crafting item water">
                     <span>
-                        <input id="waterAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="WaterAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 Orb, 1 Silver, 6hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('water')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('water')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item epic">
                     <h3>Fire</h3>
                     <img class="crafting-item-image" src="images/game/fire.jpg" alt="Crafting item fire">
                     <span>
-                        <input id="fireAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="FireAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 6 Orb, 1Gold, 12hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('fire')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('fire')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
             </div>
@@ -274,36 +274,36 @@
                     <h3>Waterstone</h3>
                     <img class="crafting-item-image" src="images/game/waterstone.jpg" alt="Crafting item waterstone">
                     <span>
-                        <input id="waterstoneAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="WaterstoneAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 Water, 10 Ribbon, 12hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('waterstone')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('waterstone')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item epic">
                     <h3>Firestone</h3>
                     <img class="crafting-item-image" src="images/game/firestone.jpg" alt="Crafting item firestone">
                     <span>
-                        <input id="firestoneAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="FirestoneAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 1 Fire, 2 Sparkles, 12hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('firestone')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('firestone')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
                 <div class="crafting-item legendary">
                     <h3>Elementstone</h3>
                     <img class="crafting-item-image" src="images/game/elementstone.jpg" alt="Crafting item elementstone">
                     <span>
-                        <input id="elementstoneAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="ElementstoneAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 1 Firestone, 1 Waterstone, 24hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('elementstone')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('elementstone')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
             </div>
@@ -314,12 +314,12 @@
                     <h3>Artifact</h3>
                     <img class="crafting-item-image" src="images/game/artifact.jpg" alt="Crafting item artifact">
                     <span>
-                        <input id="artifactAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
+                        <input id="ArtifactAmount" class="crafting-item-amount" type="number" value="0" min="0" onclick="this.select()">
                         <img class="crafting-item-info" src="images/info-icon.png" title="Need: 1 Elementstone, 1 Necklace, 3days" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
-                        <img class="arrow" src="images/arrow-up.png" onclick="clickUp('artifact')" alt="Arrow pointing up">
-                        <img class="arrow" src="images/arrow-down.png" onclick="clickDown('artifact')" alt="Arrow pointing down">
+                        <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
+                        <img class="arrow" src="images/arrow-down.png" alt="Arrow pointing down">
                     </span>
                 </div>
             </div>
