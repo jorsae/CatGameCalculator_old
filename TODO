@@ -15,6 +15,7 @@ Cat Game Event Crafting:
 Technical:
     General:
         ☐ Figure out what can be merged together among app and event
+            ✔ populate floor @done(20-02-25 05:15)
         ☐ Make things consistent!
             A lot of things on event uses key, while on app they use key.toLowerCase()
             Make sure stuff like this is consistent accross the files.

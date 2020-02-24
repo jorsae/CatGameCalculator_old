@@ -8,7 +8,7 @@ import { rarity } from "./globals";
 
 import { getCraftingRequirements } from "./crafting_requirement";
 
-import { registerArrowEvent } from "../util/click";
+import { registerArrowEvent, populateFloor } from "../util/click";
 
 /**
  * Setting up all the button events for the calculator
@@ -21,7 +21,7 @@ function init(){
     document.getElementById("addFloor").onclick = addFloor;
     populateItems();
     registerArrowEvent(3, craftingRecipes);
-    populateFloor();
+    populateFloor(floorRecipes);
 }
 
 function populateItems(){
@@ -45,19 +45,6 @@ function populateItems(){
         index += 1;
     }
 
-}
-
-/**
- * Populates the select floors html with all floors available.
- */
-function populateFloor(){
-    var select = document.getElementById("floors");
-    for (const [key, value] of floorRecipes.entries()) {
-        var option = document.createElement("option");
-        option.value = value.name;
-        option.innerHTML = value;
-        select.appendChild(option);
-      }
 }
 
 /**

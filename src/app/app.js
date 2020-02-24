@@ -1,7 +1,7 @@
 import { CraftingRequirement } from "../util/classes";
 import { CraftingItem } from "../util/classes";
 import { CraftingItemOutput } from "../util/classes";
-import { registerArrowEvent } from "../util/click";
+import { registerArrowEvent, populateFloor } from "../util/click";
 
 import { craftingRecipes, floorRecipes } from "./globals";
 import { currentCraft } from "./globals";
@@ -18,21 +18,8 @@ function init(){
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
     document.getElementById("addFloor").onclick = addFloor;
-    populateFloor();
     registerArrowEvent(4, craftingRecipes);
-}
-
-/**
- * Populates the select floors html with all floors available.
- */
-function populateFloor(){
-    var select = document.getElementById("floors");
-    for (const [key, value] of floorRecipes.entries()) {
-        var option = document.createElement("option");
-        option.value = value.name;
-        option.innerHTML = value;
-        select.appendChild(option);
-      }
+    populateFloor(floorRecipes);
 }
 
 /**

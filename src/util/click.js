@@ -1,4 +1,17 @@
 /**
+ * Populates the select floors html with all floors available.
+ */
+export function populateFloor(floorRecipes){
+    var select = document.getElementById("floors");
+    for (const [key, value] of floorRecipes.entries()) {
+        var option = document.createElement("option");
+        option.value = value.name;
+        option.innerHTML = value;
+        select.appendChild(option);
+      }
+}
+
+/**
  * Register onclick events for up/down arrows for each item.
  * This will increase/decrease the amount of the selected item.
  */
