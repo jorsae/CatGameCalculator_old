@@ -1,7 +1,7 @@
 import { CraftingRequirement } from "../util/classes";
 import { CraftingItem } from "../util/classes";
 import { CraftingItemOutput } from "../util/classes";
-import { registerArrowEvent, populateFloor } from "../util/click";
+import { registerArrowEvent, populateFloor, addFloor } from "../util/click";
 
 import { craftingRecipes, floorRecipes } from "./globals";
 import { currentCraft } from "./globals";
@@ -17,58 +17,10 @@ function init(){
     document.getElementById("calculate").onclick = calculate;
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
-    document.getElementById("addFloor").onclick = addFloor;
+    document.getElementById("addFloor").onclick = function() { addFloor(floorRecipes, craftingRecipes); };
+    
     registerArrowEvent(4, craftingRecipes);
     populateFloor(floorRecipes);
-}
-
-/**
- * Adds all the crafting items required for the selected floor.
- */
-function addFloor(){
-    var floors = document.getElementById("floors");
-    var floorValue = floors.options[floors.selectedIndex].value;
-    const floor = floorRecipes.get(floorValue);
-    if(floor === undefined){
-        console.log("undefined floor");
-        return;
-    }
-
-    if(craftingItemInputted()){
-        if(!confirm("You already have crafting items inputted.\nPress 'Ok' if you want to add 'floor " + floor + "' on top")){
-            return;
-        }
-    }
-
-    var floorReq = floor.requirements;
-    for(var i = 0; i < floorReq.length; i++){
-        var itemName = floorReq[i].craftingItem.name;
-        var quantity = floorReq[i].quantity;
-        var count = document.getElementById(itemName + "Amount");
-        if(count === null){
-            continue;
-        }
-        var value = parseInt(count.value);
-        count.value = value + quantity;
-    }
-}
-
-/**
- * Helper function, checks if any crafting items have input in them
- * return true or false
- */
-function craftingItemInputted(){
-    for (const entry of craftingRecipes.entries()) {
-        var item = craftingRecipes.get(entry[0]);
-        var itemAmountElement = document.getElementById(item.name + 'Amount');
-        
-        if(itemAmountElement !== null){
-            if(parseInt(itemAmountElement.value) > 0){
-                return true;
-            }
-        }
-    }
-    return false;
 }
 
 /**
