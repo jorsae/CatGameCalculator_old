@@ -1,5 +1,5 @@
-import { floorRecipes, craftingRecipes } from "./globals";
-import { Floor, CraftingRequirement } from "../util/classes";
+import { floorRecipes } from "./globals";
+import { Floor } from "../util/classes";
 
 /**
  * Floors added:
