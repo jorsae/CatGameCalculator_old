@@ -4,7 +4,7 @@ import argparse
 import subprocess
 
 dont_delete = ['.git', 'CNAME']
-copy_over = ['css', 'dist', 'images', 'src',
+copy_over = ['css', 'dist', 'images',
             'index.html', 'event.html', 'about.html',
             'feedback.html', 'privacy.html' ]
 
