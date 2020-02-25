@@ -17,18 +17,31 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157531722-1"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'UA-157531722-1');
+            gtag('config', 'UA-157531722-1');
         </script>
 
         <script>
             $(document).ready(function(){
                 $('[data-toggle="tooltip"]').tooltip({
-                    boundary: 'window'
+                    boundary: "window"
                 });
+
+                $('[data-toggle="popover"]')
+                    .popover( { trigger:"manual" } )
+                    .click(function(){
+                        var pop = $(this); 
+                        pop.popover("show") 
+                        pop.on('shown.bs.popover',function() { 
+                            setTimeout(function() {
+                                pop.popover("hide")}, 2200*99999); 
+                            }
+                        )
+                    }
+                );
             });
         </script>
     </head>
@@ -65,7 +78,7 @@
             <h2>Add crafting items for a floor</h2>
             <select id="floors">
             </select>
-            <button id="addFloor">Add floor</button>
+            <button id="addFloor" data-toggle="popover" data-content="Added floor" data-placement="top">Add floor</button>
 
             <h2>Basic Crafting</h2>
             <div class="crafting-tier">
@@ -353,7 +366,7 @@
             <table id="outputTable" class="output-table">
                 <thead>
                     <tr>
-                        <th><button id="copyClipboard">Copy to clipboard</button></th>
+                        <th><button id="copyClipboard" data-toggle="popover" data-placement="top" data-content="Copied!">Copy to clipboard</button></th>
                         <th>Item</th>
                         <th>Quantity</th>
                         <th>Cost</th>

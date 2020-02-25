@@ -11,7 +11,18 @@ body{
     font-size: 0.75em;
     top: 0vw;
     right: 1vw;
-    width: auto;;
+    width: auto;
+}
+
+.popover{
+    position: absolute;
+    font-size: 1em;
+    background-color: gray;
+    width: fit-content;
+    border: solid 2px lightgray;
+    margin-top: -8px;
+    padding: 4px;
+    border-radius: 8px;
 }
 
 .tooltip-inner{

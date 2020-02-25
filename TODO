@@ -17,9 +17,7 @@ Technical:
     User interface:
         ☐ Add a favicon for the website
         ☐ Waterstone and Elementstone overflow in the outputTable on mobile devices.
-        ☐ Add display(popover?) when you click on button: "Add floor", "Copy to clipboard".
         ☐ Add cat images to the website?
-        ☐ Add tooltip to show that the table have been added to the users clipboard
         ☐ Make an email address and put it in on the website (footer?)
         ☐ Display to the user that calculate is on cooldown
             Probably have it show up as a tooltip?
@@ -36,6 +34,9 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Add display(popover?) when you click on button: "Add floor", "Copy to clipboard". @done(20-02-26 01:17) @project(Technical.User interface)
+  ✘ Add tooltip to show that the table have been added to the users clipboard @cancelled(20-02-26 01:17) @project(Technical.User interface)
+    This is merged with a different task
   ✔ Clean up imports in all .js files @done(20-02-25 18:28) @project(Technical.General)
   ✔ Merge together all these functions: @done(20-02-25 18:21) @project(Technical.General)
   ✔ function: copyClipboard @done(20-02-25 17:48) @project(Technical.General)
