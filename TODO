@@ -18,7 +18,7 @@ Technical:
             ✔ function: clear @done(20-02-25 17:53)
             ✔ function: getCraftingRequirements @done(20-02-25 18:08)
             ☐ function: calculate
-            ☐ function: intToString
+            ✔ function: intToString @done(20-02-25 18:12)
             ☐ function: createOutput
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     User interface:

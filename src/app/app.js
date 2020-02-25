@@ -8,7 +8,7 @@ import { craftingRecipes } from "../util/globals";
 import { currentCraft } from "../util/globals";
 import { rarity } from "../util/globals";
 
-import { getCraftingRequirements } from "../util/utility";
+import { getCraftingRequirements, intToString } from "../util/utility";
 
 /**
  * Setting up all the button events for the calculator
@@ -124,18 +124,7 @@ function calculate(){
     craftingRecipes.delete(userItem.name);
 }
 
-/**
- * Converts int to abbreviated number. 1,005,123 => 1m, etc.
- */
-function intToString (value) {
-    var suffixes = ["", "k", "m", "b","t"];
-    var suffixNum = Math.floor((""+value).length/3);
-    var shortValue = parseFloat((suffixNum != 0 ? (value / Math.pow(1000,suffixNum)) : value).toPrecision(2));
-    if (shortValue % 1 != 0) {
-        shortValue = shortValue.toFixed(1);
-    }
-    return shortValue+suffixes[suffixNum];
-}
+
 
 /**
  * Creates a full table row for the selected item
