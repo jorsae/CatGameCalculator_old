@@ -1,4 +1,67 @@
 /**
+ * Adds all the crafting items required for the selected floor.
+ */
+export function addFloor(floorRecipes, craftingRecipes){
+    var floors = document.getElementById("floors");
+    var floorValue = floors.options[floors.selectedIndex].value;
+    const floor = floorRecipes.get(floorValue);
+    if(floor === undefined){
+        console.log("undefined floor");
+        return;
+    }
+
+    if(craftingItemInputted(craftingRecipes)){
+        if(!confirm("You already have crafting items inputted.\nPress 'Ok' if you want to add 'floor " + floor + "' on top")){
+            return;
+        }
+    }
+
+    var floorReq = floor.requirements;
+    console.log(floorReq);
+    for(var i = 0; i < floorReq.length; i++){
+        var itemName = floorReq[i][0];
+        var quantity = floorReq[i][1];
+        var count = document.getElementById(itemName + "Amount");
+        if(count === null){
+            continue;
+        }
+        var value = parseInt(count.value);
+        count.value = value + quantity;
+    }
+}
+
+/**
+ * Helper function, checks if any crafting items have input in them
+ * return true or false
+ */
+function craftingItemInputted(craftingRecipes){
+    for (const entry of craftingRecipes.entries()) {
+        var item = craftingRecipes.get(entry[0]);
+        var itemAmountElement = document.getElementById(item.name + 'Amount');
+        
+        if(itemAmountElement !== null){
+            if(parseInt(itemAmountElement.value) > 0){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+/**
+ * Populates the select floors html with all floors available.
+ */
+export function populateFloor(floorRecipes){
+    var select = document.getElementById("floors");
+    for (const [key, value] of floorRecipes.entries()) {
+        var option = document.createElement("option");
+        option.value = value.name;
+        option.innerHTML = value;
+        select.appendChild(option);
+      }
+}
+
+/**
  * Puts the output table to the users clipboard.
  * We can only copy to clipboard things that are on the website itself.
  * We create a invisible div and create a clone of the table, without the first column.

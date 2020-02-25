@@ -8,8 +8,8 @@ import { rarity } from "./globals";
 
 import { getCraftingRequirements } from "./crafting_requirement";
 
-import { registerArrowEvent, populateFloor, addFloor } from "../util/click";
-import { copyClipboard } from "../util/ui";
+import { populateFloor, addFloor, copyClipboard } from "../util/ui";
+import { registerArrowEvent } from "../util/click"
 
 /**
  * Setting up all the button events for the calculator

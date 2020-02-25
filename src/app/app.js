@@ -1,8 +1,8 @@
 import { CraftingRequirement } from "../util/classes";
 import { CraftingItem } from "../util/classes";
 import { CraftingItemOutput } from "../util/classes";
-import { registerArrowEvent, populateFloor, addFloor } from "../util/click";
-import { copyClipboard } from "../util/ui";
+import { populateFloor, addFloor, copyClipboard } from "../util/ui";
+import { registerArrowEvent } from "../util/click"
 
 import { craftingRecipes, floorRecipes } from "./globals";
 import { currentCraft } from "./globals";
