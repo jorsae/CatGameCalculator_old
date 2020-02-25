@@ -168,7 +168,6 @@ export function clear(){
  * Adds all the crafting items required for the selected floor.
  */
 export function addFloor(){
-    var floors = document.getElementById("floors");
     var floorValue = floors.options[floors.selectedIndex].value;
     const floor = floorRecipes.get(floorValue);
     if(floor === undefined){
@@ -178,10 +177,10 @@ export function addFloor(){
 
     if(craftingItemInputted(craftingRecipes)){
         if(!confirm("You already have crafting items inputted.\nPress 'Ok' if you want to add 'floor " + floor + "' on top")){
+            displayPopover('addFloor', 'Did not add floor: "' + floor + '"');
             return;
         }
     }
-
     var floorReq = floor.requirements;
     for(var i = 0; i < floorReq.length; i++){
         var itemName = floorReq[i][0];
@@ -193,6 +192,8 @@ export function addFloor(){
         var value = parseInt(count.value);
         count.value = value + quantity;
     }
+
+    displayPopover('addFloor', 'Added floor: "' + floor + '"');
 }
 
 /**
@@ -276,4 +277,18 @@ export function copyClipboard(){
     document.execCommand('copy');
     
     document.body.removeChild(tableDiv);
+
+    displayPopover('copyClipboard', 'Copied!');
+}
+
+/**
+ * Helper function that displays a popover on a selected item.
+ * Note:
+ *  For the popover to automatically close, the DOM element must have data-toggle="popover"
+ *  data-placement is also nice to have :eyes:
+ */
+function displayPopover(id, content){
+    var popElement = $('#' + id);
+    popElement.attr('data-content', content);
+    popElement.popover("show");
 }
