@@ -8,7 +8,7 @@ import { craftingRecipes } from "../util/globals";
 import { currentCraft } from "../util/globals";
 import { rarity } from "../util/globals";
 
-import { getCraftingRequirements } from "./crafting_requirement";
+import { getCraftingRequirements } from "../util/crafting_requirement";
 
 /**
  * Setting up all the button events for the calculator
