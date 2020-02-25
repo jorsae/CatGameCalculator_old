@@ -1,4 +1,18 @@
 /**
+ * Clear all user input (crafting items)
+ */
+export function clear(craftingRecipes){
+    for (const entry of craftingRecipes.entries()) {
+        var item = craftingRecipes.get(entry[0]);
+        var itemAmountElement = document.getElementById(item.name + 'Amount');
+        if(itemAmountElement !== null){
+            itemAmountElement.value = 0;
+        }
+        continue;
+    }
+}
+
+/**
  * Adds all the crafting items required for the selected floor.
  */
 export function addFloor(floorRecipes, craftingRecipes){
@@ -17,7 +31,6 @@ export function addFloor(floorRecipes, craftingRecipes){
     }
 
     var floorReq = floor.requirements;
-    console.log(floorReq);
     for(var i = 0; i < floorReq.length; i++){
         var itemName = floorReq[i][0];
         var quantity = floorReq[i][1];

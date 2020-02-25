@@ -14,8 +14,8 @@ Cat Game Event Crafting:
 Technical:
     General:
         ☐ Merge together all these functions:
-            ☐ function: copyClipboard
-            ☐ function: clear
+            ✔ function: copyClipboard @done(20-02-25 17:48)
+            ✔ function: clear @done(20-02-25 17:53)
             ☐ function: calculate
             ☐ function: intToString
             ☐ function: createOutput

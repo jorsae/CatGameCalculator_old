@@ -1,7 +1,7 @@
 import { CraftingRequirement } from "../util/classes";
 import { CraftingItem } from "../util/classes";
 import { CraftingItemOutput } from "../util/classes";
-import { populateFloor, addFloor, copyClipboard } from "../util/ui";
+import { populateFloor, addFloor, copyClipboard, clear } from "../util/ui";
 import { registerArrowEvent } from "../util/click"
 
 import { craftingRecipes, floorRecipes } from "./globals";
@@ -16,7 +16,7 @@ import { getCraftingRequirements } from "./crafting_requirement";
 window.onload = init;
 function init(){
     document.getElementById("calculate").onclick = calculate;
-    document.getElementById("clear").onclick = clear;
+    document.getElementById("clear").onclick = function() { clear(craftingRecipes); };
     document.getElementById("copyClipboard").onclick = copyClipboard;
     document.getElementById("addFloor").onclick = function() { addFloor(floorRecipes, craftingRecipes); };
     
@@ -24,19 +24,7 @@ function init(){
     populateFloor(floorRecipes);
 }
 
-/**
- * Clear all user input (crafting items)
- */
-function clear(){
-    for (const entry of craftingRecipes.entries()) {
-        var item = craftingRecipes.get(entry[0]);
-        var itemAmountElement = document.getElementById(item.name + 'Amount');
-        if(itemAmountElement !== null){
-            itemAmountElement.value = 0;
-        }
-        continue;
-    }
-}
+
 
 /**
  * iterates through all the craftingItem text fields and adds all the values > 0 in the userItemReq list

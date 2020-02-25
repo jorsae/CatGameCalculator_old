@@ -8,7 +8,7 @@ import { rarity } from "./globals";
 
 import { getCraftingRequirements } from "./crafting_requirement";
 
-import { populateFloor, addFloor, copyClipboard } from "../util/ui";
+import { populateFloor, addFloor, copyClipboard, clear } from "../util/ui";
 import { registerArrowEvent } from "../util/click"
 
 /**
@@ -17,7 +17,7 @@ import { registerArrowEvent } from "../util/click"
 window.onload = init;
 function init(){
     document.getElementById("calculate").onclick = calculate;
-    document.getElementById("clear").onclick = clear;
+    document.getElementById("clear").onclick = function() { clear(craftingRecipes); };
     document.getElementById("copyClipboard").onclick = copyClipboard;
     document.getElementById("addFloor").onclick = function() { addFloor(floorRecipes, craftingRecipes); };
 
@@ -50,20 +50,6 @@ function populateItems(){
         index += 1;
     }
 
-}
-
-/**
- * Clear all user input (crafting items)
- */
-function clear(){
-    for (const entry of craftingRecipes.entries()) {
-        var item = craftingRecipes.get(entry[0]);
-        var itemAmountElement = document.getElementById(item.name + 'Amount');
-        if(itemAmountElement !== null){
-            itemAmountElement.value = 0;
-        }
-        continue;
-    }
 }
 
 /**
