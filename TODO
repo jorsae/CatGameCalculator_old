@@ -13,13 +13,6 @@ Cat Game Event Crafting:
 
 Technical:
     General:
-        ☐ Merge together all these functions:
-            ✔ function: copyClipboard @done(20-02-25 17:48)
-            ✔ function: clear @done(20-02-25 17:53)
-            ✔ function: getCraftingRequirements @done(20-02-25 18:08)
-            ☐ function: calculate
-            ✔ function: intToString @done(20-02-25 18:12)
-            ☐ function: createOutput
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     User interface:
         ☐ Add a favicon for the website
@@ -43,6 +36,13 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Merge together all these functions: @done(20-02-25 18:21) @project(Technical.General)
+  ✔ function: copyClipboard @done(20-02-25 17:48) @project(Technical.General)
+  ✔ function: clear @done(20-02-25 17:53) @project(Technical.General)
+  ✔ function: getCraftingRequirements @done(20-02-25 18:08) @project(Technical.General)
+  ✔ function: intToString @done(20-02-25 18:12) @project(Technical.General)
+  ✔ function: calculate @done(20-02-25 18:21) @project(Technical.General)
+  ✔ function: createOutput @done(20-02-25 18:21) @project(Technical.General)
   ✔ Figure out what can be merged together among app and event @done(20-02-25 17:25) @project(Technical.General)
   ✔ populate floor @done(20-02-25 05:15) @project(Technical.General)
   ✔ craftingItemInputted function @done(20-02-25 10:46) @project(Technical.General)
