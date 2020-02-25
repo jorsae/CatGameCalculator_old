@@ -1,5 +1,4 @@
-import { craftingRecipes } from "./globals";
-import { currentCraft } from "./globals";
+import { craftingRecipes, currentCraft } from "../util/globals";
 
 /**
  * Recursive function that will fetch all crafting requirements from a given item.

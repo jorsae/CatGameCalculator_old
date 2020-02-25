@@ -5,10 +5,11 @@ const JavaScriptObfuscator = require('webpack-obfuscator');
 module.exports = {
     entry: {
         'all': ['./src/all/menu.js', './src/all/cookie.js'],
-        'app':  ['./src/util/ui.js', './src/util/click.js', './src/util/classes.js', './src/app/app.js', './src/app/globals.js', './src/app/crafting.js',
+        'app':  ['./src/util/ui.js', './src/util/click.js', './src/util/classes.js', './src/util/globals.js',
+                './src/app/app.js', './src/app/crafting.js',
                 './src/app/crafting_requirement.js', './src/app/floors.js'],
-        'event':  ['./src/util/ui.js', './src/util/click.js', './src/util/classes.js', './src/event/event.js', './src/event/globals.js', './src/event/crafting.js',
-                './src/event/crafting_requirement.js', './src/event/floors.js'],
+        'event':  ['./src/util/ui.js', './src/util/click.js', './src/util/classes.js', './src/util/globals.js',
+                    './src/event/event.js', './src/event/crafting.js', './src/event/crafting_requirement.js', './src/event/floors.js'],
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -18,7 +19,6 @@ module.exports = {
         alias: {
           'classes': './src/util/classes.js',
           'click': './src/util/click.js',
-          'globals': './src/app/globals.js',
           'crafting': './src/app/crafting.js',
           'crafting_requirement': './src/app/crafting_requirement.js',
           'ui': './src/util/ui.js'

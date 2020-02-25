@@ -2,9 +2,9 @@ import { CraftingRequirement } from "../util/classes";
 import { CraftingItem } from "../util/classes";
 import { CraftingItemOutput } from "../util/classes";
 
-import { craftingRecipes, floorRecipes } from "./globals";
-import { currentCraft } from "./globals";
-import { rarity } from "./globals";
+import { craftingRecipes } from "../util/globals";
+import { currentCraft } from "../util/globals";
+import { rarity } from "../util/globals";
 
 import { getCraftingRequirements } from "./crafting_requirement";
 
@@ -17,13 +17,13 @@ import { registerArrowEvent } from "../util/click"
 window.onload = init;
 function init(){
     document.getElementById("calculate").onclick = calculate;
-    document.getElementById("clear").onclick = function() { clear(craftingRecipes); };
+    document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
-    document.getElementById("addFloor").onclick = function() { addFloor(floorRecipes, craftingRecipes); };
+    document.getElementById("addFloor").onclick = addFloor;
 
     populateItems();
     registerArrowEvent(3, craftingRecipes);
-    populateFloor(floorRecipes);
+    populateFloor();
 }
 
 /**

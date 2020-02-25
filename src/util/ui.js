@@ -1,7 +1,9 @@
+import { craftingRecipes, floorRecipes } from "./globals";
+
 /**
  * Clear all user input (crafting items)
  */
-export function clear(craftingRecipes){
+export function clear(){
     for (const entry of craftingRecipes.entries()) {
         var item = craftingRecipes.get(entry[0]);
         var itemAmountElement = document.getElementById(item.name + 'Amount');
@@ -15,7 +17,7 @@ export function clear(craftingRecipes){
 /**
  * Adds all the crafting items required for the selected floor.
  */
-export function addFloor(floorRecipes, craftingRecipes){
+export function addFloor(){
     var floors = document.getElementById("floors");
     var floorValue = floors.options[floors.selectedIndex].value;
     const floor = floorRecipes.get(floorValue);
@@ -47,7 +49,7 @@ export function addFloor(floorRecipes, craftingRecipes){
  * Helper function, checks if any crafting items have input in them
  * return true or false
  */
-function craftingItemInputted(craftingRecipes){
+function craftingItemInputted(){
     for (const entry of craftingRecipes.entries()) {
         var item = craftingRecipes.get(entry[0]);
         var itemAmountElement = document.getElementById(item.name + 'Amount');
@@ -64,7 +66,7 @@ function craftingItemInputted(craftingRecipes){
 /**
  * Populates the select floors html with all floors available.
  */
-export function populateFloor(floorRecipes){
+export function populateFloor(){
     var select = document.getElementById("floors");
     for (const [key, value] of floorRecipes.entries()) {
         var option = document.createElement("option");

@@ -1,4 +1,4 @@
-import { floorRecipes } from "./globals";
+import { floorRecipes } from "../util/globals";
 import { Floor } from "../util/classes";
 import { craftingItemNames } from "./crafting";
 

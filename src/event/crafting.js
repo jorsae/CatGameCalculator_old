@@ -1,8 +1,7 @@
 import { CraftingItem } from "../util/classes";
 import { CraftingRequirement } from "../util/classes";
 
-import { craftingRecipes } from "./globals";
-import { rarity } from "./globals";
+import { craftingRecipes, rarity } from "../util/globals";
 
 /**
  * This class constructs and stores all the Crafting Items in the game
