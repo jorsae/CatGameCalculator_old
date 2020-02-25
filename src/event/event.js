@@ -25,6 +25,9 @@ function init(){
     populateFloor(floorRecipes);
 }
 
+/**
+ * Populate DOM elements with the current event names, etc..
+ */
 function populateItems(){
     const rawMaterials = 3;
     var h3 = document.getElementsByTagName("h3");

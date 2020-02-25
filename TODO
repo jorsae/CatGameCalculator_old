@@ -14,6 +14,12 @@ Cat Game Event Crafting:
 Technical:
     General:
         ☐ Figure out what can be merged together among app and event
+            ☐ function: copyClipboard
+            ☐ function: clear
+            ☐ function: calculate
+            ☐ function: intToString
+            ☐ function: createOutput
+            ☐ function: getCraftingRequirements
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     User interface:
         ☐ Add a favicon for the website
