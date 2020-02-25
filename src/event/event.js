@@ -1,6 +1,6 @@
 import { populateFloor, addFloor, copyClipboard, clear, calculate } from "../util/ui";
+import { registerArrowEvent } from "../util/click";
 import { craftingRecipes } from "../util/globals";
-import { registerArrowEvent } from "../util/click"
 
 /**
  * Setting up all the button events for the calculator

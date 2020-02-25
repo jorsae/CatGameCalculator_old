@@ -1,6 +1,5 @@
 import { populateFloor, addFloor, copyClipboard, clear, calculate } from "../util/ui";
-import { registerArrowEvent } from "../util/click"
-
+import { registerArrowEvent } from "../util/click";
 import { craftingRecipes } from "../util/globals";
 
 /**

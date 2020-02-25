@@ -36,6 +36,7 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Clean up imports in all .js files @done(20-02-25 18:28) @project(Technical.General)
   ✔ Merge together all these functions: @done(20-02-25 18:21) @project(Technical.General)
   ✔ function: copyClipboard @done(20-02-25 17:48) @project(Technical.General)
   ✔ function: clear @done(20-02-25 17:53) @project(Technical.General)
