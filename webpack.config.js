@@ -5,9 +5,9 @@ const JavaScriptObfuscator = require('webpack-obfuscator');
 module.exports = {
     entry: {
         'all': ['./src/all/menu.js', './src/all/cookie.js'],
-        'app':  ['./src/util/ui.js', './src/util/click.js', './src/util/classes.js', './src/util/globals.js', './src/util/crafting_requirement.js',
+        'app':  ['./src/util/ui.js', './src/util/click.js', './src/util/classes.js', './src/util/globals.js', './src/util/utility.js',
                 './src/app/app.js', './src/app/crafting.js', './src/app/floors.js'],
-        'event':  ['./src/util/ui.js', './src/util/click.js', './src/util/classes.js', './src/util/globals.js', './src/util/crafting_requirement.js',
+        'event':  ['./src/util/ui.js', './src/util/click.js', './src/util/classes.js', './src/util/globals.js', './src/util/utility.js',
                     './src/event/event.js', './src/event/crafting.js', './src/event/floors.js'],
     },
     output: {
@@ -19,7 +19,7 @@ module.exports = {
           'classes': './src/util/classes.js',
           'click': './src/util/click.js',
           'crafting': './src/app/crafting.js',
-          'crafting_requirement': './src/util/crafting_requirement.js',
+          'crafting_requirement': './src/util/utility.js',
           'ui': './src/util/ui.js'
         }
       },
@@ -31,7 +31,7 @@ module.exports = {
             'classes': 'classes',
             'globals': 'globals',
             'crafting': 'crafting',
-            'crafting_requirement': 'crafting_requirement',
+            'utility': 'utility',
             'ui': 'ui'
           }),
         new webpack.DefinePlugin({

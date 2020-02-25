@@ -6,7 +6,7 @@ import { craftingRecipes } from "../util/globals";
 import { currentCraft } from "../util/globals";
 import { rarity } from "../util/globals";
 
-import { getCraftingRequirements } from "../util/crafting_requirement";
+import { getCraftingRequirements } from "../util/utility";
 
 import { populateFloor, addFloor, copyClipboard, clear } from "../util/ui";
 import { registerArrowEvent } from "../util/click"
