@@ -13,7 +13,7 @@ Cat Game Event Crafting:
 
 Technical:
     General:
-        ☐ Figure out what can be merged together among app and event
+        ☐ Merge together all these functions:
             ☐ function: copyClipboard
             ☐ function: clear
             ☐ function: calculate
@@ -43,6 +43,7 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Figure out what can be merged together among app and event @done(20-02-25 17:25) @project(Technical.General)
   ✔ populate floor @done(20-02-25 05:15) @project(Technical.General)
   ✔ craftingItemInputted function @done(20-02-25 10:46) @project(Technical.General)
   ✔ addFloor function @done(20-02-25 10:46) @project(Technical.General)
