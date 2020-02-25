@@ -12,6 +12,8 @@ Cat Game Event Crafting:
         - Boosts can decrease the event token cost
 
 Technical:
+    Bug:
+        ☐ The popover can be a bit buggy sometimes
     General:
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     User interface:
