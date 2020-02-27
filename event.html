@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <title> Cat Game Calculator</title>
@@ -55,9 +55,9 @@
         
 
         <h1 class="text-center">Event Calculator (Experimental)</h1>
+        <h2 class="text-center no-margin">How to use</h2>
         <div class="guide-container">
             <ol>
-                <lh>How to use</lh>
                 <li>Input the items you want to craft. Either manually or you can add decoration/cat at a time.</li>
                 <li>Select the time you want to use crafting them (shorter time, costs more)</li>
                 <li>Press the "Calculate meow" button</li>
@@ -153,16 +153,16 @@
         <div class="crafting-time-container">
             <h2 class="text-center">
                 <span>Crafting time</span>
-                <img class="crafting-time-info" src="images/info-icon.png" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." data-toggle="tooltip" data-placement="bottom">
+                <img class="crafting-time-info" src="images/info-icon.png" data-toggle="tooltip" data-placement="bottom" title="Amount of time you want the crafting to be spread out over. Shorter time increases the costs." alt="Information icon for explaining Crafting Time">
             </h2>
 
             <p class="crafting-time-input">
                 <span class="user-input-label">Hours:</span>
-                <input id="userTimeHours" class="user-input" type="number" value="0">
+                <input id="userTimeHours" class="user-input" aria-label="Input for crafting time hours" type="number" value="0">
             </p>
             <p class="crafting-time-input">
                 <span class="user-input-label">Minutes:</span>
-                <input id="userTimeMinutes" class="user-input" type="number" value="1">
+                <input id="userTimeMinutes" class="user-input" aria-label="Input for crafting time minutes" type="number" value="1">
             </p>
             <div class="crafting-button">
                 <button id="calculate">Calculate meow</button>

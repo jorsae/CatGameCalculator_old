@@ -12,6 +12,13 @@ Cat Game Event Crafting:
         - Boosts can decrease the event token cost
 
 Technical:
+    Performance:
+        ☐ Improve website based on audits in google chrome:
+            ✔ Index.html @done(20-02-28 05:37)
+            ☐ Event.html
+            ☐ Feedback.html
+            ☐ About.html
+            ☐ Privacy.html
     Bug:
         ☐ The popover can be a bit buggy sometimes
     General:
