@@ -17,6 +17,7 @@ Technical:
     General:
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
     User interface:
+        ☐ Look into making the feedback form more scaleable
         ☐ Add a favicon for the website
         ☐ Waterstone and Elementstone overflow in the outputTable on mobile devices.
         ☐ Add cat images to the website?
