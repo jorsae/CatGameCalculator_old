@@ -2,6 +2,7 @@ import { populateFloor, addFloor, copyClipboard, clear, calculate } from "../uti
 import { registerArrowEvent } from "../util/click";
 import { craftingRecipes } from "../util/globals";
 import { addFloorRecipes } from "./floors";
+import { addCraftingRecipes } from "./crafting";
 
 /**
  * Setting up all the button events for the calculator
@@ -13,7 +14,9 @@ function init(){
     document.getElementById("copyClipboard").onclick = copyClipboard;
     document.getElementById("addFloor").onclick = addFloor;
     
+    addCraftingRecipes(); // Creates and adds all the crafting recipes to globals.craftingRecipes
     registerArrowEvent(4, craftingRecipes);
+    
     addFloorRecipes(); // Creates and adds all the floor recipes to globals.floorRecipes
     populateFloor();
 }

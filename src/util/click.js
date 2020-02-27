@@ -7,7 +7,7 @@ export function registerArrowEvent(rawMaterials, craftingRecipes){
     const total = craftingRecipes.size - rawMaterials;
     
     if(arrows.length !== total*2){
-        console.log("Something went terribly wrong");
+        console.log("registerArrowEvent: Something went terribly wrong");
         return;
     }
 
