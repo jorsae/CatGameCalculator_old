@@ -1,7 +1,14 @@
 /**
  * Entry point for menu js
  */
-startMenu();
+$(document).ready(function(){
+    startMenu();
+});
+
+/**
+ * Register the hamburger menu click event
+ * Writes the version number
+ */
 function startMenu(){
     document.getElementById("versionNumber").innerText = "Version: " + __VERSION__;
     registerHamburgerMenu();

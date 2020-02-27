@@ -4,11 +4,15 @@
 const cookieName = "CatCookie"; // Name of the cookie we set
 const cookieValue = "Yes"; // Value of the cookie when set
 
+// init function
+$(document).ready(function(){
+    startCookie();
+});
+
 /**
  * Sets up cookieAccept event.
  * Call to check if the user have accepted the cookie policy already
  */
-startCookie();
 function startCookie(){
     document.getElementById("cookieAccept").onclick = cookieAccept;
     checkCookie();
