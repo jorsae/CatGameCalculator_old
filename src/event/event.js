@@ -3,6 +3,7 @@ import { registerArrowEvent } from "../util/click";
 import { craftingRecipes } from "../util/globals";
 import { addFloorRecipes } from "./floors";
 import { addCraftingRecipes } from "./crafting";
+import { CraftingItem } from "../util/classes";
 
 /**
  * Setting up all the button events for the calculator
@@ -43,6 +44,7 @@ function populateItems(){
         const i = index - rawMaterials;
         h3[i].innerText = key;
         craftingItemAmount[i].id = key + "Amount";
+        craftingItemAmount[i].setAttribute("aria-label", "Amount of " + key + " you want to craft");
         index += 1;
     }
 }
