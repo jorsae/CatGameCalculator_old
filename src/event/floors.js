@@ -8,6 +8,16 @@ export function addFloorRecipes(){
                     "Rainbow Wash", "Rainbow Porthole", "Cosmic Rainbow",
                     "Rainbow Rocket" ];
     
+    const prizeAllReq = [[craftingItemNames[0], 5],
+                        [craftingItemNames[1], 8],
+                        [craftingItemNames[2], 7],
+                        [craftingItemNames[3], 32],
+                        [craftingItemNames[4], 21],
+                        [craftingItemNames[5], 11],
+                    ];
+    const prizeAll = new Floor("All decorations/cats", 0, prizeAllReq);
+    floorRecipes.set(prizeAll.name, prizeAll);
+                    
     const prize1Req = [[craftingItemNames[2], 3],
                         [craftingItemNames[3], 2],
                     ];
