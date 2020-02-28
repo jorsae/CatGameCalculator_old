@@ -15,9 +15,9 @@ Technical:
     Performance:
         ☐ Improve website based on audits in google chrome:
             ✔ Index.html @done(20-02-28 05:37)
-            ☐ Event.html
+            ✔ Event.html @done(20-02-28 11:04)
             ☐ Feedback.html
-            ☐ About.html
+            ✔ About.html @done(20-02-28 11:06)
             ☐ Privacy.html
     Bug:
         ☐ The popover can be a bit buggy sometimes
