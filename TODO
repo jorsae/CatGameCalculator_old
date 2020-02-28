@@ -12,13 +12,6 @@ Cat Game Event Crafting:
         - Boosts can decrease the event token cost
 
 Technical:
-    Performance:
-        ☐ Improve website based on audits in google chrome:
-            ✔ Index.html @done(20-02-28 05:37)
-            ✔ Event.html @done(20-02-28 11:04)
-            ☐ Feedback.html
-            ✔ About.html @done(20-02-28 11:06)
-            ☐ Privacy.html
     Bug:
         ☐ The popover can be a bit buggy sometimes
     General:
@@ -44,6 +37,12 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Improve website based on audits in google chrome: @done(20-02-28 11:18) @project(Technical.Performance)
+  ✔ Index.html @done(20-02-28 05:37) @project(Technical.Performance)
+  ✔ Event.html @done(20-02-28 11:04) @project(Technical.Performance)
+  ✔ About.html @done(20-02-28 11:06) @project(Technical.Performance)
+  ✔ Feedback.html @done(20-02-28 11:16) @project(Technical.Performance)
+  ✔ Privacy.html @done(20-02-28 11:18) @project(Technical.Performance)
   ✔ Add display(popover?) when you click on button: "Add floor", "Copy to clipboard". @done(20-02-26 01:17) @project(Technical.User interface)
   ✘ Add tooltip to show that the table have been added to the users clipboard @cancelled(20-02-26 01:17) @project(Technical.User interface)
     This is merged with a different task
