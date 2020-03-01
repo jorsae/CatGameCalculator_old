@@ -31,18 +31,18 @@ function populateItems(){
     var h3 = document.getElementsByTagName("h3");
     var craftingItemAmount = document.getElementsByClassName("crafting-item-amount");
 
-    if(h3.length !== craftingRecipes.size - rawMaterials){
+    if(h3.length !== craftingRecipes.size){
         console.log("populateItems: Something went terribly wrong");
         return;
     }
     var index = 0;
-    for (const [key, value] of craftingRecipes.entries()) {
+    for (const [key, _] of craftingRecipes.entries()) {
+        h3[index].innerText = key;
         if(rawMaterials > index){
             index += 1;
             continue;
         }
         const i = index - rawMaterials;
-        h3[i].innerText = key;
         craftingItemAmount[i].id = key + "Amount";
         craftingItemAmount[i].setAttribute("aria-label", "Amount of " + key + " you want to craft");
         index += 1;
