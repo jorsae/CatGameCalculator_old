@@ -4,7 +4,7 @@ import { craftingRecipes, rarity } from "../util/globals";
 /**
  * This class constructs and stores all the Crafting Items in the game
  */
-const rawMaterialNames = ["Pink Star", "Purple star", "Yellow star"];
+export const rawMaterialNames = ["Pink Star", "Purple star", "Yellow star"];
 export const craftingItemNames = ["Clouds", "Rainbow", "Shooting stars",
                             "Asteroid", "Planet", "Cosmos"];
 /**

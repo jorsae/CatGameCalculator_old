@@ -22,6 +22,7 @@ Technical:
             ☐ Make a selection for the user to pick which of Tier1A, Tier1B or Tier1C that costs the most for them and use that in the calculations
                 ☐ Make the 3 raw materials clickable and add a border to indicate which one is selected
             ☐ Make the user able to add 'stars' as a cost. Need to take quantity as user-input
+        ☐ Fix the numerical abbreviation
     User interface:
         ☐ Look into making the feedback form more scaleable
         ☐ Add a favicon for the website

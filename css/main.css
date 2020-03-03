@@ -291,6 +291,9 @@ tbody tr:nth-child(even){
     padding-bottom: 8px;
 }
 
+.selected-raw-material{
+    border: solid 6px white;
+}
 
 /* about.html */
 .about-article{
