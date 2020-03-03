@@ -19,9 +19,10 @@ Technical:
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
         ☐ Improve event.html:
             ✔ Add a "Add all" as a pre-made floor @done(20-02-29 03:43)
-            ☐ Make a selection for the user to pick which of Tier1A, Tier1B or Tier1C that costs the most for them and use that in the calculations
-                ☐ Make the 3 raw materials clickable and add a border to indicate which one is selected
+            ✔ Make a selection for the user to pick which of Tier1A, Tier1B or Tier1C that costs the most for them and use that in the calculations @done(20-03-03 22:20)
+                ✔ Make the 3 raw materials clickable and add a border to indicate which one is selected @done(20-03-03 22:20)
             ☐ Make the user able to add 'stars' as a cost. Need to take quantity as user-input
+            ☐ Add 'how to' for the raw material selection
         ☐ Fix the numerical abbreviation
     User interface:
         ☐ Look into making the feedback form more scaleable
