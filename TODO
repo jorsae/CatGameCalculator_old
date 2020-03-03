@@ -16,6 +16,7 @@ Technical:
         ☐ The popover can be a bit buggy sometimes
     General:
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
+        ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
         ☐ Improve event.html:
             ✔ Add a "Add all" as a pre-made floor @done(20-02-29 03:43)
             ☐ Make a selection for the user to pick which of Tier1A, Tier1B or Tier1C that costs the most for them and use that in the calculations
