@@ -15,8 +15,12 @@ Technical:
     Bug:
         ☐ The popover can be a bit buggy sometimes
     Discord:
-        ☐ Make the rest of this todo list
         ✔ Find a icon for the discord server. Also use this on your website. @done(20-03-04 15:49)
+        ✔ Write introduction in #Welcome @done(20-03-04 16:17)
+        ✔ Write introduction in #Suggestions @done(20-03-04 16:17)
+        ✔ Write introduction in #Bugs @done(20-03-04 16:17)
+        ✔ Write introduction in #Welcome @done(20-03-04 16:17)
+        ☐ Add discord link to the website
     General:
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
