@@ -98,6 +98,10 @@ p{
     margin-bottom: 4px;
 }
 
+a{
+    color: gold;
+}
+
 .text-center{
     text-align: center;
 }
