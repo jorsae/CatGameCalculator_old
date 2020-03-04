@@ -14,6 +14,9 @@ Cat Game Event Crafting:
 Technical:
     Bug:
         ☐ The popover can be a bit buggy sometimes
+    Discord:
+        ☐ Make the rest of this todo list
+        ✔ Find a icon for the discord server. Also use this on your website. @done(20-03-04 15:49)
     General:
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
@@ -23,7 +26,7 @@ Technical:
                 ✔ Make the 3 raw materials clickable and add a border to indicate which one is selected @done(20-03-03 22:20)
             ☐ Make the user able to add 'stars' as a cost. Need to take quantity as user-input
             ☐ Add 'how to' for the raw material selection
-        ☐ Fix the numerical abbreviation
+        ☐ Fix the numerical abbreviation. e.g: 0.1m --> 1..k
     User interface:
         ☐ Look into making the feedback form more scaleable
         ☐ Add a favicon for the website
