@@ -14,23 +14,14 @@ Cat Game Event Crafting:
 Technical:
     Bug:
         ☐ The popover can be a bit buggy sometimes
-    Discord:
-        ✔ Find a icon for the discord server. Also use this on your website. @done(20-03-04 15:49)
-        ✔ Write introduction in #Welcome @done(20-03-04 16:17)
-        ✔ Write introduction in #Suggestions @done(20-03-04 16:17)
-        ✔ Write introduction in #Bugs @done(20-03-04 16:17)
-        ✔ Write introduction in #Welcome @done(20-03-04 16:17)
-        ☐ Add discord link to the website
     General:
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
         ☐ Improve event.html:
-            ✔ Add a "Add all" as a pre-made floor @done(20-02-29 03:43)
-            ✔ Make a selection for the user to pick which of Tier1A, Tier1B or Tier1C that costs the most for them and use that in the calculations @done(20-03-03 22:20)
-                ✔ Make the 3 raw materials clickable and add a border to indicate which one is selected @done(20-03-03 22:20)
             ☐ Make the user able to add 'stars' as a cost. Need to take quantity as user-input
             ☐ Add 'how to' for the raw material selection
         ☐ Fix the numerical abbreviation. e.g: 0.1m --> 1..k
+        ☐ Event: Fix the tooltip text for crafting-item-info
     User interface:
         ☐ Look into making the feedback form more scaleable
         ☐ Add a favicon for the website
@@ -52,6 +43,15 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Find a icon for the discord server. Also use this on your website. @done(20-03-04 15:49) @project(Technical.Discord)
+  ✔ Write introduction in #Welcome @done(20-03-04 16:17) @project(Technical.Discord)
+  ✔ Write introduction in #Suggestions @done(20-03-04 16:17) @project(Technical.Discord)
+  ✔ Write introduction in #Bugs @done(20-03-04 16:17) @project(Technical.Discord)
+  ✔ Write introduction in #Welcome @done(20-03-04 16:17) @project(Technical.Discord)
+  ✔ Add discord link to the website @done(20-03-05 02:25) @project(Technical.Discord)
+  ✔ Add a "Add all" as a pre-made floor @done(20-02-29 03:43) @project(Technical.General)
+  ✔ Make a selection for the user to pick which of Tier1A, Tier1B or Tier1C that costs the most for them and use that in the calculations @done(20-03-03 22:20) @project(Technical.General)
+  ✔ Make the 3 raw materials clickable and add a border to indicate which one is selected @done(20-03-03 22:20) @project(Technical.General)
   ✔ Improve website based on audits in google chrome: @done(20-02-28 11:18) @project(Technical.Performance)
   ✔ Index.html @done(20-02-28 05:37) @project(Technical.Performance)
   ✔ Event.html @done(20-02-28 11:04) @project(Technical.Performance)
