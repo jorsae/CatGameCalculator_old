@@ -148,6 +148,7 @@ a{
     flex-direction: column;
     flex-wrap: wrap;
     width: 33.33vw;
+    max-width: 33.33%;
 }
 
 .crafting-item h3{
