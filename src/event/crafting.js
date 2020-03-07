@@ -6,7 +6,8 @@ import { craftingRecipes, rarity } from "../util/globals";
  */
 export const rawMaterialNames = ["Pink Star", "Purple star", "Yellow star"];
 export const craftingItemNames = ["Clouds", "Rainbow", "Shooting stars",
-                            "Asteroid", "Planet", "Cosmos"];
+                            "Asteroid", "Planet", "Cosmos",
+                            "3 Stars"];
 /**
  * We wrap adding the crafting recipes in a function so we can call it from window.onload.
  * This makes it so that the javascript is not run at once, so that the html/css can render first.
@@ -48,6 +49,6 @@ export function addCraftingRecipes(){
     
     const starsReq = [new CraftingRequirement(tier1A, 1), new CraftingRequirement(tier1B, 1),
                     new CraftingRequirement(tier1C, 1), new CraftingRequirement(tier2B, 1)];
-    const stars = new CraftingItem("3 Stars", 0, 300, rarity.RARE, 11, starsReq);
+    const stars = new CraftingItem(craftingItemNames[6], 0, 300, rarity.RARE, 11, starsReq);
     craftingRecipes.set(stars.name, stars);
 }

@@ -15,14 +15,10 @@ Technical:
     Bug:
         ☐ The popover can be a bit buggy sometimes
     General:
+        ☐ Event: Fix the tooltip text for crafting-item-info
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
-        ☐ Improve event.html:
-            ☐ Make the user able to add 'stars' as a cost. Need to take quantity as user-input
-                Requirement: 1x Tier2B, 3x Tier1 A,B,C
-            ☐ Add 'how to' for the raw material selection
         ☐ Fix the numerical abbreviation. e.g: 0.1m --> 1..k
-        ☐ Event: Fix the tooltip text for crafting-item-info
     User interface:
         ☐ Look into making the feedback form more scaleable
         ☐ Add a favicon for the website
@@ -44,6 +40,10 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Improve event.html: @done(20-03-07 23:06) @project(Technical.General)
+  ✔ Make the user able to add 'stars' as a cost. Need to take quantity as user-input @done(20-03-07 23:05) @project(Technical.General)
+    Requirement: 1x Tier2B, 3x Tier1 A,B,C
+  ✔ Add 'how to' for the raw material selection @done(20-03-07 23:06) @project(Technical.General)
   ✔ Find a icon for the discord server. Also use this on your website. @done(20-03-04 15:49) @project(Technical.Discord)
   ✔ Write introduction in #Welcome @done(20-03-04 16:17) @project(Technical.Discord)
   ✔ Write introduction in #Suggestions @done(20-03-04 16:17) @project(Technical.Discord)

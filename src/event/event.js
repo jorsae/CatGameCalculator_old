@@ -31,7 +31,8 @@ function populateItems(){
     const h3 = document.getElementsByClassName("crafting-item-header"); // Fills h3 with the crafting name
     const rawMaterials = document.getElementsByClassName("raw-material"); // Fills raw-material with onclick event for selection
     const craftingItemAmount = document.getElementsByClassName("crafting-item-amount"); // sets id for each crafting item
-    
+    const craftingItemInfo = document.getElementsByClassName("crafting-item-info"); // sets tooltip text for each crafting item
+
     var index = 0;
     for (const [key, _] of craftingRecipes.entries()) {
         if(rawMaterialsCount > index){
@@ -45,9 +46,25 @@ function populateItems(){
             craftingItemAmount[craftingItemIndex].id = key + "Amount";
             craftingItemAmount[craftingItemIndex].setAttribute("aria-label", "Amount of " + key + " you want to craft");
             h3[index].innerText = key;
+            
+            const craftingItem = craftingRecipes.get(craftingItemNames[craftingItemIndex]);
+            var craftingItemReq = craftingItem.craftingRequirements;
+
+            var craftingItemInfoText = craftingRequirementToString(craftingItemReq, craftingItem.craftingTime);
+            craftingItemInfo[craftingItemIndex].title = craftingItemInfoText;
         }
         index += 1;
     }
+}
+
+function craftingRequirementToString(craftingRequirements, craftingTime){
+    var output = "Need: ";
+    for(var i = 0; i < craftingRequirements.length; i++){
+        var item = craftingRequirements[i].craftingItem;
+        output += item.name + ": " + craftingRequirements[i].quantity + ", ";
+    }
+    output += craftingTime + " min";
+    return output;
 }
 
 /**
