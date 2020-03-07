@@ -19,9 +19,9 @@ Technical:
         ☐ The popover can be a bit buggy sometimes
     General:
         ✔ Event: Fix the tooltip text for crafting-item-info @done(20-03-07 23:45)
+        ✔ Fix the numerical abbreviation. e.g: 0.1m --> 1..k @done(20-03-08 00:00)
         ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
-        ☐ Fix the numerical abbreviation. e.g: 0.1m --> 1..k
     User interface:
         ☐ Look into making the feedback form more scaleable
         ☐ Add a favicon for the website
