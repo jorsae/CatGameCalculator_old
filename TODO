@@ -19,6 +19,7 @@ Technical:
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
         ☐ Improve event.html:
             ☐ Make the user able to add 'stars' as a cost. Need to take quantity as user-input
+                Requirement: 1x Tier2B, 3x Tier1 A,B,C
             ☐ Add 'how to' for the raw material selection
         ☐ Fix the numerical abbreviation. e.g: 0.1m --> 1..k
         ☐ Event: Fix the tooltip text for crafting-item-info

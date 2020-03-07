@@ -27,30 +27,25 @@ function init(){
  */
 function populateItems(){
     const rawMaterialsCount = 3;
-    var h3 = document.getElementsByTagName("h3");
-    var craftingItemAmount = document.getElementsByClassName("crafting-item-amount");
-    var rawMaterials = document.getElementsByClassName("raw-material");
 
-    if(h3.length !== craftingRecipes.size){
-        console.log("populateItems: Something went terribly wrong");
-        return;
-    }
+    const h3 = document.getElementsByClassName("crafting-item-header"); // Fills h3 with the crafting name
+    const rawMaterials = document.getElementsByClassName("raw-material"); // Fills raw-material with onclick event for selection
+    const craftingItemAmount = document.getElementsByClassName("crafting-item-amount"); // sets id for each crafting item
+    
     var index = 0;
     for (const [key, _] of craftingRecipes.entries()) {
         if(rawMaterialsCount > index){
             const craftingItem = craftingRecipes.get(craftingItemNames[index]);
             h3[index].innerText = key + ": " + craftingItem.craftingRequirements[0].quantity;
-            
-            // index is passed like this, because if not, it will jsut pass a reference to index and it will be wrong.
-            const selectedIndex = index;
+            const selectedIndex = index; // index is passed like this, because if not, it will just pass a reference to index and it will be wrong.
             rawMaterials[index].onclick = function() { setRawMaterial(rawMaterials[selectedIndex], key, craftingItem.name) };
-            index += 1;
-            continue;
         }
-        h3[index].innerText = key;
-        const i = index - rawMaterialsCount;
-        craftingItemAmount[i].id = key + "Amount";
-        craftingItemAmount[i].setAttribute("aria-label", "Amount of " + key + " you want to craft");
+        else{
+            const craftingItemIndex = index - rawMaterialsCount;
+            craftingItemAmount[craftingItemIndex].id = key + "Amount";
+            craftingItemAmount[craftingItemIndex].setAttribute("aria-label", "Amount of " + key + " you want to craft");
+            h3[index].innerText = key;
+        }
         index += 1;
     }
 }
@@ -78,7 +73,6 @@ function setRawMaterial(element, key, selectedItemName){
     const selectedItem = craftingRecipes.get(selectedItemName);
     selectedItem.craftingRequirements[0].quantity = 8;
     
-    console.log(element);
     element.classList.add("selected-raw-material");
     var h3 = element.getElementsByTagName("h3")[0];
     h3.innerText = key + ": 8";
