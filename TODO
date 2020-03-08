@@ -26,16 +26,18 @@ Technical:
     User interface:
         ☐ Look into making the feedback form more scaleable
         ☐ Add a favicon for the website
-        ☐ Waterstone and Elementstone overflow in the outputTable on mobile devices.
+        ☐ Waterstone and Elementstone text overflow in the outputTable on mobile devices.
         ☐ Add cat images to the website?
         ☐ Make an email address and put it in on the website (footer?)
         ☐ Display to the user that calculate is on cooldown
             Probably have it show up as a tooltip?
         ☐ Clean up all css files for minify and bundler
         ☐ Minify css files
-        ☐ After reply from Mino games regarding using their images. Make all crafting items in a spritesheet.
+        ✘ After reply from Mino games regarding using their images. Make all crafting items in a spritesheet. @cancelled(20-03-08 14:41)
+            This seems a lot tricky than normal. Because it won't scale as well. Because you have to specify a set size(the size of the image within the spritesheet image)
         ☐ General images: (Up/down arrow, info-icon) should be in a spritesheet
         ☐ Look into the "duplicate home page" message on https://search.google.com/
+            Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
 SEO / "Advertisement":
     ☐ https://www.lambdatest.com/pricing for testing website on Safari on mac/iPhone
     ☐ "Advertise" on the different discord server. Read and follow the rules before doing so!
