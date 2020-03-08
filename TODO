@@ -19,23 +19,12 @@ Technical:
     Bug:
         ☐ The popover can be a bit buggy sometimes
     General:
-        ✔ Event: Fix the tooltip text for crafting-item-info @done(20-03-07 23:45)
-        ✔ Fix the numerical abbreviation. e.g: 0.1m --> 1..k @done(20-03-08 00:00)
-        ☐ Make the user able to change the sorting method. (rarity, quantity, etc)
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
     User interface:
         ☐ Look into making the feedback form more scaleable
-        ☐ Add a favicon for the website
         ☐ Waterstone and Elementstone text overflow in the outputTable on mobile devices.
         ☐ Add cat images to the website?
-        ☐ Make an email address and put it in on the website (footer?)
-        ☐ Display to the user that calculate is on cooldown
-            Probably have it show up as a tooltip?
-        ☐ Clean up all css files for minify and bundler
         ☐ Minify css files
-        ✘ After reply from Mino games regarding using their images. Make all crafting items in a spritesheet. @cancelled(20-03-08 14:41)
-            This seems a lot tricky than normal. Because it won't scale as well. Because you have to specify a set size(the size of the image within the spritesheet image)
-        ☐ General images: (Up/down arrow, info-icon) should be in a spritesheet
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
 SEO / "Advertisement":
@@ -46,6 +35,18 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✘ Display to the user that calculate is on cooldown @cancelled(20-03-09 04:15) @project(Technical.User interface)
+    Not needed, as clicking 'calculate' does not clear the user-input
+  ✘ Make the user able to change the sorting method. (rarity, quantity, etc) @cancelled(20-03-09 04:14) @project(Technical.General)
+    Not needed
+  ✘ Make an email address and put it in on the website (footer?) @cancelled(20-03-09 04:14) @project(Technical.User interface)
+    Not needed
+  ✔ Event: Fix the tooltip text for crafting-item-info @done(20-03-07 23:45) @project(Technical.General)
+  ✔ Fix the numerical abbreviation. e.g: 0.1m --> 1..k @done(20-03-08 00:00) @project(Technical.General)
+  ✘ After reply from Mino games regarding using their images. Make all crafting items in a spritesheet. @cancelled(20-03-08 14:41) @project(Technical.User interface)
+    This seems a lot tricky than normal. Because it won't scale as well. Because you have to specify a set size(the size of the image within the spritesheet image)
+  ✘ General images: (Up/down arrow, info-icon) should be in a spritesheet @cancelled(20-03-09 04:13) @project(Technical.User interface)
+    This seems a lot tricky than normal. Because it won't scale as well. Because you have to specify a set size(the size of the image within the spritesheet image)
   ✔ Improve event.html: @done(20-03-07 23:06) @project(Technical.General)
   ✔ Make the user able to add 'stars' as a cost. Need to take quantity as user-input @done(20-03-07 23:05) @project(Technical.General)
     Requirement: 1x Tier2B, 3x Tier1 A,B,C
