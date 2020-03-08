@@ -20,13 +20,13 @@ Technical:
         ☐ The popover can be a bit buggy sometimes
     General:
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
+        ☐ Look into the "duplicate home page" message on https://search.google.com/
+            Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
     User interface:
         ☐ Look into making the feedback form more scaleable
         ☐ Waterstone and Elementstone text overflow in the outputTable on mobile devices.
         ☐ Add cat images to the website?
         ☐ Minify css files
-        ☐ Look into the "duplicate home page" message on https://search.google.com/
-            Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
 SEO / "Advertisement":
     ☐ https://www.lambdatest.com/pricing for testing website on Safari on mac/iPhone
     ☐ "Advertise" on the different discord server. Read and follow the rules before doing so!
