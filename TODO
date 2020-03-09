@@ -17,6 +17,7 @@ Version 2.4.5:
 
 Technical:
     Bug:
+        ☐ Tooltip does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
     General:
         ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
