@@ -1,40 +1,31 @@
 import { event30Min, startEvent, startTime } from "./globals";
 
+var timeToNextEvent = 0;
+var nextEvent = null;
+
 export function startEventTimer(){
-    const msHours = 1000 * 60 * 60; // 3,600,000
-    const eventWaitingTime = 1000 * 60 * 60 * 6; // 21,600,000
+    const eventWaitingTime = 1000 * 60 * 60 * 6; // 21,600,000ms
 
-    var now = new Date;
-    var utc = Date.UTC(now.getUTCFullYear(),now.getUTCMonth(), now.getUTCDate() , 
-          now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds(), now.getUTCMilliseconds());
-
-    console.log(utc);
-    // new Date(Date.parse("Jun 13, 2018 10:50:39 GMT+1"));
-    console.log('startEvent: ' + startEvent.name);
-    console.log('startTime: ' + startTime);
-
-    const timeDifference = startTime.getTime() - now;
+    const timeDifference = startTime.getTime() - new Date();
     if(timeDifference >= 0){
-        var timeDisplay = displayTimeLeft(timeDifference);
-        console.log(getEvent(0).name + " in " + timeDisplay);
+        timeToNextEvent = timeDifference;
+        nextEvent = getEvent(0);
     }
     else{
         const timeLeft = Math.abs(timeDifference);
-        console.log(timeLeft); // -2944990 (2,944,990) === 18,655,010 (5.1819472222hours)
         var cycles = Math.ceil(timeLeft / eventWaitingTime); // How many events have passed
-        console.log(cycles);
 
         var time = (cycles * eventWaitingTime) - timeLeft;
-        console.log(time);
-
-        console.log(getEvent(cycles).name + " in " + displayTimeLeft(time));
+        timeToNextEvent = time;
+        nextEvent = getEvent(cycles);
     }
+
+    setInterval(displayTimeLeft, 1000);
 }
 
 function getEvent(cycles){
     var event = startEvent.value + cycles;
     event = event % 3;
-    console.log(event);
     if(event === 0){
         return event30Min.CRAFTING;
 
@@ -46,7 +37,7 @@ function getEvent(cycles){
     }
 }
 
-function displayTimeLeft(duration){
+function getTimeLeft(duration){
     var seconds = Math.floor((duration / 1000) % 60),
     minutes = Math.floor((duration / (1000 * 60)) % 60),
     hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
@@ -56,4 +47,10 @@ function displayTimeLeft(duration){
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
     return hours + ":" + minutes + ":" + seconds;
+}
+
+function displayTimeLeft(){
+    timeToNextEvent -= 1000;
+    var eventCountdown = document.getElementById("eventCountdown");
+    eventCountdown.innerText = nextEvent.name + " in " + getTimeLeft(timeToNextEvent);
 }

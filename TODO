@@ -11,9 +11,8 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
-Version 2.4.5:
- * Fixed event tooltip text
- * Improved the numerical abbreviation
+Version 2.5.0:
+ * Added timer for 30minute events
 
 Technical:
     Discord:
@@ -22,7 +21,12 @@ Technical:
         ☐ Tooltip does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
     General:
-        ☐ Have a timer for the next: "1 min crafting, 5 min delivery (basket), 5 min food restock".
+        ☐ Change the text to join discord
+        ☐ Finish timer for 30minute events
+            ✔ Have timer working @done(20-03-12 03:40)
+            ☐ Polish the UI for the timer
+            ☐ During a 30 minute event, say "xx minutes, left of {event}" or something
+            ☐ Make sure it works on both index and event
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
     User interface:
@@ -32,7 +36,7 @@ Technical:
         ☐ Minify css files
 SEO / "Advertisement":
     ☐ https://www.lambdatest.com/pricing for testing website on Safari on mac/iPhone
-    ☐ "Advertise" on the different discord server. Read and follow the rules before doing so!
+    ✔ "Advertise" on the different discord server. Read and follow the rules before doing so! @done(20-03-12 03:43)
     ☐ "Advertise" on youtube videos
     ☐ Advertise with the in game chat?
     ☐ Post on their facebook page?
