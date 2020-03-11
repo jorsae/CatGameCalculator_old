@@ -76,13 +76,13 @@ body{
 
 /* CSS for Main Menu */
 .topnav{
-    float: left;
     text-decoration: none;
     overflow: none;
     width: 100vw;
     max-width: 100%;
     border-bottom: solid 2px black;
     font-size: 2em;
+    margin-top: 12px;
 }
 
 .topnav a{
