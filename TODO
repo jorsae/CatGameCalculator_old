@@ -14,6 +14,7 @@ Cat Game Event Crafting:
 Version 2.5.0:
  * Added timer for 30minute events
  * Minor UI changes
+ * Google form is responsive
 
 Technical:
     Discord:
@@ -31,7 +32,7 @@ Technical:
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
     User interface:
-        ☐ Look into making the feedback form more scaleable
+        ✔ Look into making the feedback form more scaleable @done(20-03-12 04:24)
         ☐ Waterstone and Elementstone text overflow in the outputTable on mobile devices.
         ☐ Add cat images to the website?
         ☐ Minify css files
