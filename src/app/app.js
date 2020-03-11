@@ -3,6 +3,7 @@ import { registerArrowEvent } from "../util/click";
 import { craftingRecipes } from "../util/globals";
 import { addFloorRecipes } from "./floors";
 import { addCraftingRecipes } from "./crafting";
+import { startEventTimer } from "../util/event_timer";
 
 /**
  * Setting up all the button events for the calculator
@@ -19,4 +20,6 @@ function init(){
     
     addFloorRecipes(); // Creates and adds all the floor recipes to globals.floorRecipes
     populateFloor();
+
+    startEventTimer();
 }

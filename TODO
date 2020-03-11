@@ -16,6 +16,8 @@ Version 2.4.5:
  * Improved the numerical abbreviation
 
 Technical:
+    Discord:
+        ☐ Make discord bot that tags and ping people event reminders
     Bug:
         ☐ Tooltip does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
