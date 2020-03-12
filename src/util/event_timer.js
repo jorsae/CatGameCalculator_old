@@ -1,4 +1,4 @@
-import { event30Min, startEvent, startTime } from "./globals";
+import { event30Min, startEvent, startTime, endTime } from "./globals";
 
 var countdown = 0;
 var nextEvent = null;
@@ -14,6 +14,11 @@ export function startEventTimer(){
     const timeDifference = Math.abs(startTime.getTime() - new Date());
     var cycles = Math.ceil(timeDifference / eventWaitingTime); // How many events have passed
     const timeLeft = (cycles * eventWaitingTime) - timeDifference; // Time till next event
+    
+    const nextEventTimestamp = new Date().getTime() + timeLeft;
+    if(nextEventTimestamp >= endTime.getTime()){
+        return;
+    }
     
     // Event is ongoing
     if(timeLeft > eventWaitingTime - eventDuration){

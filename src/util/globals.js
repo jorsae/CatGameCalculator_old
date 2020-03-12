@@ -26,7 +26,6 @@ export const event30Min = {
     STORE: {value: 2, name: '5 minute re-stock'}
 }
 
-export const startEvent = event30Min.BASKET;
 /**
  * 18:00:00 UTC == 05am aest
  * 12:00:00 UTC == 11pm aest
@@ -34,4 +33,5 @@ export const startEvent = event30Min.BASKET;
  * 00:00:00 UTC == 11am aest
  */
 export const startTime = new Date('Mar 11 2020 12:00:00 UTC')
-export const endTime = new Date('Mar 12 2020 12:00:00 UTC');
+export const startEvent = event30Min.BASKET;
+export const endTime = new Date('Mar 15 2020 23:00:00 UTC');
