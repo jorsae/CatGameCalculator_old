@@ -22,5 +22,6 @@
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-obfuscator": "^0.24.6"
-  }
+  },
+  "dependencies": {}
 }
