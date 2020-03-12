@@ -6,7 +6,7 @@ const eventCountdownElement = document.getElementById("eventCountdown");
 var intervalTimer = null;
 
 export function startEventTimer(){
-    eventCountdownElement.classList.remove("event-ongoing");
+    eventCountdownElement.classList.remove("event-running");
 
     const eventWaitingTime = 1000 * 60 * 60 * 6; // 21,600,000ms | time between each event (6 hours)
     const eventDuration = 1000 * 60 * 30; // 1,800,000ms | time event lasts (30 minutes)

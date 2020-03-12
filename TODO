@@ -28,6 +28,7 @@ Technical:
         ☐ Change the text to join discord
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
+        ☐ Make "How-to" a modal or something to move it out of the way?
     User interface:
         ☐ Waterstone and Elementstone text overflow in the outputTable on mobile devices.
         ☐ Add cat images to the website?
