@@ -23,7 +23,7 @@ Technical:
         ☐ The popover can be a bit buggy sometimes
     General:
         ✔ Make endTime not display the timer, when it's passed @done(20-03-12 18:13)
-        ☐ Make event_timer support having multiple startTimes/endTimes.
+        ✔ Make event_timer support having multiple startTimes/endTimes. @done(20-03-12 23:20)
             That way I can add them at the beginning of the month and not worry about it!
         ☐ Change the text to join discord
         ☐ Look into the "duplicate home page" message on https://search.google.com/
