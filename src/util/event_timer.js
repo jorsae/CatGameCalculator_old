@@ -20,12 +20,10 @@ export function startEventTimer(){
             return;
         }
         else{
-            const timeDifference = Math.abs(timeToStart.getTime() - new Date().getTime());
-            const cycles = Math.ceil(timeDifference / eventWaitingTime); // How many events have passed
-            const timeLeft = timeDifference;
+            countdown = Math.abs(timeToStart.getTime() - new Date().getTime());
+            eventCycles = Math.ceil(countdown / eventWaitingTime); // How many events have passed
             
-            countdown = timeDifference;
-            nextEvent = getEvent(cycles);
+            nextEvent = getEvent(eventCycles);
             intervalTimer = setInterval(displayTimeLeft, 1000);
         }
         return;
