@@ -11,9 +11,9 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
-Version 2.5.0
- * Added timer for 30minute events
- * Minor UI changes
+Version 2.5.1
+ * Added multiple entries for eventTimes
+ * Will countdown when next event starts, if no event is currently running
 
 Technical:
     Discord:
