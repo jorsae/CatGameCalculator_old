@@ -21,9 +21,9 @@ export const rarity = {
 
 //SMALL : {value: 0, name: "Small", code: "S"}, 
 export const event30Min = {
-    CRAFTING: {value: 0, name: '1 minute crafting'},
+    CRAFTING: {value: 0, name: '1min crafting'},
     BASKET: {value: 1, name: '5min basket'},
-    STORE: {value: 2, name: '5 minute re-stock'}
+    STORE: {value: 2, name: '5min shop re-stock'}
 }
 
 /**
