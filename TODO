@@ -11,9 +11,7 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
-Version 2.5.1
- * Added multiple entries for eventTimes
- * Will countdown when next event starts, if no event is currently running
+Version ?
 
 Technical:
     Discord:
@@ -22,9 +20,6 @@ Technical:
         ☐ Tooltip does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
     General:
-        ✔ Make endTime not display the timer, when it's passed @done(20-03-12 18:13)
-        ✔ Make event_timer support having multiple startTimes/endTimes. @done(20-03-12 23:20)
-            That way I can add them at the beginning of the month and not worry about it!
         ☐ Change the text to join discord
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
@@ -42,6 +37,9 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Make endTime not display the timer, when it's passed @done(20-03-12 18:13) @project(Technical.General)
+  ✔ Make event_timer support having multiple startTimes/endTimes. @done(20-03-12 23:20) @project(Technical.General)
+    That way I can add them at the beginning of the month and not worry about it!
   ✔ Finish timer for 30minute events @done(20-03-12 15:34) @project(Technical.General)
   ✔ Have timer working @done(20-03-12 03:40) @project(Technical.General)
   ✔ Polish the UI for the timer @done(20-03-12 15:24) @project(Technical.General)
