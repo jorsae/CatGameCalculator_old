@@ -32,6 +32,11 @@ export const event30Min = {
  * 06:00:00 UTC == 17pm aest
  * 00:00:00 UTC == 11am aest
  */
-export const startTime = new Date('Mar 11 2020 12:00:00 UTC')
+export const startTime = new Date('Mar 11 2020 12:00:00 UTC');
 export const startEvent = event30Min.BASKET;
-export const endTime = new Date('Mar 15 2020 23:00:00 UTC');
+
+export const eventTimes = [
+    { startTime: new Date('Mar 11 2020 12:00:00 UTC'),
+        endTime: new Date('Mar 15 2020 23:59:59 UTC')
+    }
+];
