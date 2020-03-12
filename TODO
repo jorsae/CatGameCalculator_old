@@ -22,6 +22,7 @@ Technical:
         ☐ Tooltip does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
     General:
+        ☐ Make endTime not display the timer, when it's passed
         ☐ Change the text to join discord
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?

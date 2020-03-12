@@ -37,7 +37,7 @@ function getEvent(cycles){
         return event30Min.CRAFTING;
 
     }else if(event === 1){
-        return event30Min.DELIVERY;
+        return event30Min.BASKET;
     }
     else{
         return event30Min.STORE;
