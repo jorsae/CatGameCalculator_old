@@ -5,6 +5,11 @@ body{
     color: white;
 }
 
+.event-ongoing{
+    color: gold;
+    text-decoration: underline;
+}
+
 /* CSS for version number */
 .version-number{
     position: absolute;
@@ -100,6 +105,10 @@ p{
 
 a{
     color: gold;
+}
+
+h1.text-center{
+    margin: 4px;
 }
 
 .text-center{

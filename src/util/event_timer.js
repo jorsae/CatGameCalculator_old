@@ -1,26 +1,33 @@
 import { event30Min, startEvent, startTime } from "./globals";
 
-var timeToNextEvent = 0;
+var countdown = 0;
 var nextEvent = null;
+const eventCountdownElement = document.getElementById("eventCountdown");
+var intervalTimer = null;
 
 export function startEventTimer(){
-    const eventWaitingTime = 1000 * 60 * 60 * 6; // 21,600,000ms
+    eventCountdownElement.classList.remove("event-ongoing");
 
-    const timeDifference = startTime.getTime() - new Date();
-    if(timeDifference >= 0){
-        timeToNextEvent = timeDifference;
-        nextEvent = getEvent(0);
+    const eventWaitingTime = 1000 * 60 * 60 * 6; // 21,600,000ms | time between each event (6 hours)
+    const eventDuration = 1000 * 60 * 30; // 1,800,000ms | time event lasts (30 minutes)
+
+    const timeDifference = Math.abs(startTime.getTime() - new Date());
+    var cycles = Math.ceil(timeDifference / eventWaitingTime); // How many events have passed
+    const timeLeft = (cycles * eventWaitingTime) - timeDifference; // Time till next event
+    
+    // Event is ongoing
+    if(timeLeft > eventWaitingTime - eventDuration){
+        eventCountdownElement.classList.add("event-ongoing");
+        countdown = eventDuration - (eventWaitingTime - timeLeft);
+        nextEvent = getEvent(cycles - 1);
+        intervalTimer = setInterval(function(){ displayTimeLeft(true); }, 1000);
     }
+    // Event is not ongoing
     else{
-        const timeLeft = Math.abs(timeDifference);
-        var cycles = Math.ceil(timeLeft / eventWaitingTime); // How many events have passed
-
-        var time = (cycles * eventWaitingTime) - timeLeft;
-        timeToNextEvent = time;
+        countdown = timeLeft;
         nextEvent = getEvent(cycles);
+        intervalTimer = setInterval(displayTimeLeft, 1000);
     }
-
-    setInterval(displayTimeLeft, 1000);
 }
 
 function getEvent(cycles){
@@ -49,8 +56,17 @@ function getTimeLeft(duration){
     return hours + ":" + minutes + ":" + seconds;
 }
 
-function displayTimeLeft(){
-    timeToNextEvent -= 1000;
-    var eventCountdown = document.getElementById("eventCountdown");
-    eventCountdown.innerText = nextEvent.name + " in " + getTimeLeft(timeToNextEvent);
+function displayTimeLeft(eventOngoing = false){
+    countdown -= 1000;
+    if(countdown < 0){
+        clearInterval(intervalTimer);
+        startEventTimer();
+        return;
+    }
+    if(eventOngoing){
+        eventCountdownElement.innerText = nextEvent.name + " ongoing. Time left: " + getTimeLeft(countdown);
+    }
+    else{
+        eventCountdownElement.innerText = nextEvent.name + " in " + getTimeLeft(countdown);
+    }
 }
