@@ -41,7 +41,8 @@ function getEvent(cycles){
     if(event === 0){
         return event30Min.CRAFTING;
 
-    }else if(event === 1){
+    }
+    else if(event === 1){
         return event30Min.BASKET;
     }
     else{
@@ -66,7 +67,6 @@ function displayTimeLeft(eventOngoing = false){
     if(countdown < 0){
         clearInterval(intervalTimer);
         startEventTimer();
-        return;
     }
     if(eventOngoing){
         eventCountdownElement.innerText = nextEvent.name + " ongoing. Time left: " + getTimeLeft(countdown);
