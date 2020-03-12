@@ -5,6 +5,10 @@ body{
     color: white;
 }
 
+.event-timer{
+    text-decoration: underline;
+}
+
 .event-ongoing{
     color: gold;
     text-decoration: underline;

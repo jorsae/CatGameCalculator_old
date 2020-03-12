@@ -72,6 +72,6 @@ function displayTimeLeft(eventOngoing = false){
         eventCountdownElement.innerText = nextEvent.name + " ongoing. Time left: " + getTimeLeft(countdown);
     }
     else{
-        eventCountdownElement.innerText = nextEvent.name + " in " + getTimeLeft(countdown);
+        eventCountdownElement.innerText = "*** " + nextEvent.name + " in " + getTimeLeft(countdown) + " ***";
     }
 }
