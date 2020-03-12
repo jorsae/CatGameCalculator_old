@@ -21,7 +21,7 @@ export function startEventTimer(){
         }
         else{
             countdown = Math.abs(timeToStart.getTime() - new Date().getTime());
-            eventCycles = Math.ceil(countdown / eventWaitingTime); // How many events have passed
+            const eventCycles = Math.ceil(countdown / eventWaitingTime); // How many events have passed
             
             nextEvent = getEvent(eventCycles);
             intervalTimer = setInterval(displayTimeLeft, 1000);
