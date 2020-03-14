@@ -1,4 +1,4 @@
-import { populateFloor, addFloor, copyClipboard, clear, calculate } from "../util/ui";
+import { populateFloor, addFloor, copyClipboard, clear, calculate, displayHowTo } from "../util/ui";
 import { registerArrowEvent } from "../util/click";
 import { craftingRecipes } from "../util/globals";
 import { addFloorRecipes } from "./floors";
@@ -14,6 +14,7 @@ function init(){
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
     document.getElementById("addFloor").onclick = addFloor;
+    document.getElementById("howToUse").onclick = displayHowTo;
 
     addCraftingRecipes(); // Creates and adds all the crafting recipes to globals.craftingRecipes
     populateItems();

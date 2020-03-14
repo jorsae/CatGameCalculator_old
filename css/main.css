@@ -116,9 +116,23 @@ h1.text-center{
 }
 
 /* CSS for 'How-to use' */
+#howToUse{
+    margin-top: 12px;
+    width: auto;
+    cursor: pointer;
+}
+#howToUse:hover{
+    color: gold;
+}
+
 .guide-container{
     display: flex;
     justify-content: center;
+    height: 0;
+    overflow: hidden;
+}
+.guide-container-height{
+    height: auto;
 }
 
 /* Event countdown timer */ 

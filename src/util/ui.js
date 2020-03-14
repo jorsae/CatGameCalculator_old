@@ -292,3 +292,16 @@ function displayPopover(id, content){
     popElement.attr('data-content', content);
     popElement.popover("show");
 }
+
+/**
+ * Function that sets up click events to display/hide How-to guide
+ */
+export function displayHowTo(){
+    const guideContainer = document.getElementById("guideContainer");
+    if(guideContainer.classList.contains("guide-container-height")){
+        guideContainer.classList.remove("guide-container-height");
+    }
+    else{
+        guideContainer.classList.add("guide-container-height");
+    }
+}
