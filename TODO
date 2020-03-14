@@ -11,7 +11,9 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
-Version ?
+Version 2.5.2
+ * Minor UI improvements
+ * Minor text changes
 
 Technical:
     Discord:
@@ -20,13 +22,11 @@ Technical:
         ☐ Tooltip does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
     General:
-        ☐ Change the text to join discord
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
         ☐ Make "How-to" a modal or something to move it out of the way?
+            Maybe have a "curtain", similiar to: https://www.w3schools.com/howto/howto_js_curtain_menu.asp
     User interface:
-        ☐ Waterstone and Elementstone text overflow in the outputTable on mobile devices.
-        ☐ Add cat images to the website?
         ☐ Minify css files
 SEO / "Advertisement":
     Checking Keyword ranking: https://smallseotools.com/keyword-position/
@@ -37,6 +37,11 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Change the text to join discord @done(20-03-14 16:13) @project(Technical.General)
+  ✔ Waterstone and Elementstone text overflow in the outputTable on mobile devices. @done(20-03-13 21:34) @project(Technical.User interface)
+  ✔ Images in the table isn't aligned properly vertically @done(20-03-13 21:31) @project(Technical.User interface)
+  ✘ Add cat images to the website? @cancelled(20-03-13 21:44) @project(Technical.User interface)
+    Don't want to add more images for the user to download
   ✔ Make endTime not display the timer, when it's passed @done(20-03-12 18:13) @project(Technical.General)
   ✔ Make event_timer support having multiple startTimes/endTimes. @done(20-03-12 23:20) @project(Technical.General)
     That way I can add them at the beginning of the month and not worry about it!

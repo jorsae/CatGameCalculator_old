@@ -1,7 +1,8 @@
 import { craftingRecipes, currentCraft } from "./globals";
 
 /**
- * Converts int to abbreviated number. 1,005,123 => 1m, etc.
+ * Converts int to abbreviated number.
+ * 1,005,123 => 1m, etc.
  */
 export function intToString (num, fixed=0) {
     if (num === null) { return null; } // terminate early

@@ -288,10 +288,12 @@ th{
 
 td{
     text-align: center;
+    overflow: auto;
 }
 
 td img{
     max-height: 5vw;
+    vertical-align: middle;
 }
 
 tbody tr:nth-child(odd){
