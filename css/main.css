@@ -5,13 +5,26 @@ body{
     color: white;
 }
 
-.event-timer{
-    text-decoration: underline;
+/* General CSS functions */
+p{
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
-.event-running{
+a{
     color: gold;
-    text-decoration: underline;
+}
+
+h1.text-center{
+    margin: 4px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.no-margin{
+    margin: 0px;
 }
 
 /* CSS for version number */
@@ -102,30 +115,20 @@ body{
     display: none;
 }
 
-p{
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-a{
-    color: gold;
-}
-
-h1.text-center{
-    margin: 4px;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.no-margin{
-    margin: 0px;
-}
-
+/* CSS for 'How-to use' */
 .guide-container{
     display: flex;
     justify-content: center;
+}
+
+/* Event countdown timer */ 
+.event-timer{
+    text-decoration: underline;
+}
+
+.event-running{
+    color: gold;
+    text-decoration: underline;
 }
 
 /* Crafting item CSS */
