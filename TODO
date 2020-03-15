@@ -11,10 +11,7 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
-Version 2.5.2
- * 'How to use' is clickable
- * Minor UI improvements
- * Minor text changes
+Version 2.5.?
 
 Technical:
     Discord:
@@ -25,8 +22,6 @@ Technical:
     General:
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
-        ☐ Make "How-to" a modal or something to move it out of the way?
-            Maybe have a "curtain", similiar to: https://www.w3schools.com/howto/howto_js_curtain_menu.asp
     User interface:
         ☐ Minify css files
 SEO / "Advertisement":
@@ -38,6 +33,8 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Make "How-to" a modal or something to move it out of the way? @done(20-03-15 20:07) @project(Technical.General)
+    Maybe have a "curtain", similiar to: https://www.w3schools.com/howto/howto_js_curtain_menu.asp
   ✔ Change the text to join discord @done(20-03-14 16:13) @project(Technical.General)
   ✔ Waterstone and Elementstone text overflow in the outputTable on mobile devices. @done(20-03-13 21:34) @project(Technical.User interface)
   ✔ Images in the table isn't aligned properly vertically @done(20-03-13 21:31) @project(Technical.User interface)
