@@ -28,7 +28,10 @@ Event list:
         Feb 20 - Feb 23
         March 19 - March 22
 
-Version 2.5.?
+Version 2.5.3
+ * Added default names for event items
+ * Minor text changes
+
 
 Technical:
     Discord:
