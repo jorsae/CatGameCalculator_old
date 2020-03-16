@@ -11,25 +11,50 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
+Event list:
+    Mini event:
+        Jan 28 - Feb 2
+        Feb 4 - Feb 9
+        Feb 11  Feb 16
+        Feb 24 - Feb 29
+        March 3 - March 8
+        March 10 - March 15
+    Secret Basket:
+        Jan 30 - Feb 4
+        Feb 13 - Feb 18
+        Feb 27 - March 3
+        March 12 - March 17
+    Club event:
+        Feb 20 - Feb 23
+        March 19 - March 22
+
 Version 2.5.?
 
 Technical:
     Discord:
         ☐ Make discord bot that tags and ping people event reminders
     Bug:
-        ☐ Tooltip does not work on chrome on mobile devices
+        ☐ Tooltip(only in event) does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
     General:
+        ☐ Performance improvements
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?
+        ☐ Remove images from event tab?
+        ☐ Have a setting for "compact" mode in index.
+            This should remove images, and try to make it as compact as possible
+        ☐ 1 minute crafting mode. People input end goal(same as before), but every crafitng item has 1minute crafting time
+        ☐ Make event timer also have time for pastel club event
+        ☐ Have a start and end date for club event, and manually change the item names depending on that?
     User interface:
         ☐ Minify css files
 SEO / "Advertisement":
-    Checking Keyword ranking: https://smallseotools.com/keyword-position/
+    Checking Keyword ranking    : https://smallseotools.com/keyword-position/
     
     ☐ https://www.lambdatest.com/pricing for testing website on Safari on mac/iPhone
     ☐ "Advertise" on youtube videos
-    ☐ Advertise with the in game chat?
+    ✔ Advertise with the in game chat? @done(20-03-16 03:22)
+        Works pretty darn well
     ☐ Post on their facebook page?
   
 Archive:

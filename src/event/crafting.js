@@ -4,10 +4,25 @@ import { craftingRecipes, rarity } from "../util/globals";
 /**
  * This class constructs and stores all the Crafting Items in the game
  */
-export const rawMaterialNames = ["Pink Star", "Purple star", "Yellow star"];
+
+// ------------------------------------------------------------------------------------------
+// DO NOT DELETE THIS. THIS IS THE DEFAULT NAME, CHANGE BACK TO THIS AFTER AN EVENT IS OVER
+// ------------------------------------------------------------------------------------------
+export const rawMaterialNames = ["Raw Material A", "Raw Material B", "Raw Material C"];
+export const craftingItemNames = ["Item 1A", "Item 1B", "Item 1C",
+                            "Item: 2A", "Item 2B", "Item 2C",
+                            "3 Stars"];
+
+// ------------------------------------------------------------------------------------------
+// THIS IS THE CURRENT EVENT. IF EVENT IS OVER AND NO NEW IS PUBLISHED. COMMENT THIS OUT
+// ------------------------------------------------------------------------------------------
+/*export const rawMaterialNames = ["Pink Star", "Purple star", "Yellow star"];
 export const craftingItemNames = ["Clouds", "Rainbow", "Shooting stars",
                             "Asteroid", "Planet", "Cosmos",
                             "3 Stars"];
+*/
+
+
 /**
  * We wrap adding the crafting recipes in a function so we can call it from window.onload.
  * This makes it so that the javascript is not run at once, so that the html/css can render first.
