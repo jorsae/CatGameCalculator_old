@@ -32,7 +32,6 @@ Version 2.5.3
  * Added default names for event items
  * Minor text changes
 
-
 Technical:
     Discord:
         ☐ Make discord bot that tags and ping people event reminders
