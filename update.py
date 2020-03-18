@@ -9,8 +9,8 @@ copy_over = ['css', 'dist', 'images',
             'feedback.html', 'privacy.html',
             '.nojekyll' ]
 
-test_path = 'D:\code\web\CatGameCalculatorTest'
-publish_path = 'D:\code\web\CatGameCalculatorPublish'
+test_path = 'D:\code\CatGame\CatGameCalculatorTest'
+publish_path = 'D:\code\CatGame\CatGameCalculatorPublish'
 path = None
 
 deleted = [0, 0] # files, folders
