@@ -24,3 +24,14 @@ function init(){
 
     startEventTimer();
 }
+
+// TODO: use this as a function to set all crafting items craftingTime to 1 minute
+function min1(){
+    console.log(craftingRecipes);
+    for (const [key, _] of craftingRecipes.entries()) {
+        var craftingItem = craftingRecipes.get(key);
+        craftingItem.craftingTime = 1;
+        craftingRecipes.set(key, craftingItem);
+    }
+    console.log(craftingRecipes);
+}
