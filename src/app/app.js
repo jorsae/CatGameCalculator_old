@@ -5,6 +5,8 @@ import { addFloorRecipes } from "./floors";
 import { addCraftingRecipes } from "./crafting";
 import { startEventTimer } from "../util/event_timer";
 
+var craftingTimes = new Map();
+
 /**
  * Setting up all the button events for the calculator
  */
@@ -29,8 +31,8 @@ function init(){
  * Starts the calculation
  */
 function startCalculate(){
-    var crafting = document.getElementById("crafting");
-    calculate(1.00, crafting.checked);
+    //var crafting = document.getElementById("crafting");
+    calculate(1.00, false);
 }
 
 // TODO: use this as a function to set all crafting items craftingTime to 1 minute

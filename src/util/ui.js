@@ -2,6 +2,8 @@ import { CraftingRequirement, CraftingItem, CraftingItemOutput } from "./classes
 import { craftingRecipes, floorRecipes, rarity, currentCraft } from "./globals";
 import { getCraftingRequirements, intToString } from "./utility";
 
+
+
 /**
  * iterates through all the craftingItem text fields and adds all the values > 0 in the userItemReq list
  * it then creates a new CraftingItem called "UseItem", with the new requirements and calculates everything.
