@@ -31,17 +31,35 @@ function init(){
  * Starts the calculation
  */
 function startCalculate(){
-    //var crafting = document.getElementById("crafting");
-    calculate(1.00, false);
+    var crafting = document.getElementById("crafting");
+    swapCraftingTime(crafting.checked);
+    calculate(1.00, crafting.checked);
 }
 
 // TODO: use this as a function to set all crafting items craftingTime to 1 minute
-function min1(){
-    console.log(craftingRecipes);
-    for (const [key, _] of craftingRecipes.entries()) {
-        var craftingItem = craftingRecipes.get(key);
-        craftingItem.craftingTime = 1;
-        craftingRecipes.set(key, craftingItem);
+function swapCraftingTime(crafting){
+    // 1 minute crafting
+    if(crafting){
+        // Have to swap crafting times and save the original
+        if(craftingTimes.size <= 0){
+            for (const [key, _] of craftingRecipes.entries()) {
+                var craftingItem = craftingRecipes.get(key);
+                craftingTimes.set(key, craftingItem.craftingTime); // Storing the original crafting time
+                craftingItem.craftingTime = 1;
+                craftingRecipes.set(key, craftingItem);
+            }
+        }
     }
-    console.log(craftingRecipes);
+    else{
+        // Have to swap crafting times back to the original
+        if(craftingTimes.size > 0){
+            for (const [key, time] of craftingTimes.entries()) {
+                var craftingItem = craftingRecipes.get(key);
+                craftingItem.craftingTime = time;
+                craftingRecipes.set(key, craftingItem)
+            }
+            craftingTimes.clear();
+        }
+    }
+
 }

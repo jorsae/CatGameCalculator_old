@@ -9,10 +9,7 @@ import { getCraftingRequirements, intToString } from "./utility";
  * it then creates a new CraftingItem called "UseItem", with the new requirements and calculates everything.
  * Afterwards the CraftingItem "UseItem" is then deleted from the craftingRecipes.
  */
-export function calculate(boost, crafting){
-    console.log("boost: " + boost);
-    console.log("crafting: " + crafting);
-
+export function calculate(boost){
     if(new Date().getTime() < (window.lastTimeCalculated + window.calculateDelay)){
         console.log("Calculate is on cooldown");
         return;

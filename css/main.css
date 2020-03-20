@@ -162,7 +162,8 @@ h1.text-center{
 
 .crafting-container select,
 .crafting-container button,
-.crafting-container label {
+.crafting-container label,
+.crafting-minute {
     margin: 4px;
     font-size: 1.5em;
 }
@@ -390,4 +391,10 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+input[type=checkbox] {
+    width: 1em;
+    height: 1em;
+    vertical-align: sub;
 }
