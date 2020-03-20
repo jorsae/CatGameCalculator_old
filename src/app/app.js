@@ -10,7 +10,7 @@ import { startEventTimer } from "../util/event_timer";
  */
 window.onload = init;
 function init(){
-    document.getElementById("calculate").onclick = calculate;
+    document.getElementById("calculate").onclick = startCalculate;
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
     document.getElementById("addFloor").onclick = addFloor;
@@ -23,6 +23,14 @@ function init(){
     populateFloor();
 
     startEventTimer();
+}
+
+/**
+ * Starts the calculation
+ */
+function startCalculate(){
+    var crafting = document.getElementById("crafting");
+    calculate(1.00, crafting.checked);
 }
 
 // TODO: use this as a function to set all crafting items craftingTime to 1 minute

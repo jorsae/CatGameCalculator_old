@@ -10,7 +10,7 @@ import { startEventTimer } from "../util/event_timer";
  */
 window.onload = init;
 function init(){
-    document.getElementById("calculate").onclick = calculate;
+    document.getElementById("calculate").onclick = startCalculate;
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
     document.getElementById("addFloor").onclick = addFloor;
@@ -24,6 +24,14 @@ function init(){
     populateFloor();
 
     startEventTimer();
+}
+
+/**
+ * Starting the calculation
+ */
+function startCalculate(){
+    const boost = parseFloat(document.getElementById("userTimeBoost").value);
+    calculate(boost, false);
 }
 
 /**
