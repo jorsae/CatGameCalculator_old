@@ -17,6 +17,12 @@ export function calculate(){
     var userHours = parseInt(document.getElementById("userTimeHours").value);
     var userMinutes = parseInt(document.getElementById("userTimeMinutes").value);
     
+    var boost = 1.00;
+    try{
+        boost = parseInt(document.getElementById("userTimeBoost").value);
+    }
+    catch{ }
+    
     var userTime = 0;
     if(!isNaN(userHours)) {
         userTime += userHours * 60;
@@ -69,7 +75,7 @@ export function calculate(){
 
         var item = craftingItems[i];
         var craftingMethods = item.getCraftingMethod(userTime);
-        var cost = item.getCost(craftingMethods);
+        var cost = Math.ceil(item.getCost(craftingMethods) / boost);
         createOutput(item, cost, craftingMethods, userTime);
         totalCost += cost;
     }
