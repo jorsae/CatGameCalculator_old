@@ -1,13 +1,8 @@
 import { floorRecipes } from "../util/globals";
 import { Floor } from "../util/classes";
-import { craftingItemNames } from "./crafting";
+import { craftingItemNames, prizeNames } from "./crafting";
 
 export function addFloorRecipes(){
-    const prizeNames = [ "Galacta", "Cosmic Balloon", "Nightshade",
-                        "Purple Planet", "BreezeBow", "Cloudy Rainbow",
-                    "Rainbow Wash", "Rainbow Porthole", "Cosmic Rainbow",
-                    "Rainbow Rocket" ];
-    
     const prizeAllReq = [[craftingItemNames[0], 5],
                         [craftingItemNames[1], 8],
                         [craftingItemNames[2], 7],
