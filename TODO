@@ -15,8 +15,6 @@ Version 2.5.6
  * Added 1 minute crafting mode for index
 
 Technical:
-    Discord:
-        ☐ Make discord bot that tags and ping people event reminders
     Bug:
         ☐ Tooltip(only in event) does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
@@ -29,6 +27,10 @@ Technical:
             This should remove images, and try to make it as compact as possible
         ☐ Make event timer also have time for club events
             Make a start/end date for club event so I can manually change the crafting item names depending on that?
+        ☐ A lot of people seem confused in how to use the calculator
+            ☐ Add a "quick calculate" button next to the floor adding. Some people can't find the "calculate meow button"
+            ☐ Have "How to use" expanded by default
+            ☐ Add a "homepage" that tells you how to use it, and links to club event AND normal crafting
     User interface:
         ☐ Minify css files
 SEO / "Advertisement":
@@ -39,6 +41,7 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Make discord bot that tags and ping people event reminders @done(20-03-21 16:37) @project(Technical.Discord)
   ✔ 1 minute crafting mode. People input end goal(same as before), but every crafitng item has 1minute crafting time @done(20-03-20 22:36) @project(Technical.General)
   ✔ Add boosts to club event crafting @done(20-03-20 21:49) @project(Technical.General)
   ✔ Advertise with the in game chat? @done(20-03-16 03:22) @project(SEO / "Advertisement")

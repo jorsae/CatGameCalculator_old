@@ -8,7 +8,7 @@ import { craftingRecipes, rarity } from "../util/globals";
 // ------------------------------------------------------------------------------------------
 // DO NOT DELETE THIS. THIS IS THE DEFAULT NAME, CHANGE BACK TO THIS AFTER AN EVENT IS OVER
 // ------------------------------------------------------------------------------------------
-/*export const rawMaterialNames = ["Raw Material A", "Raw Material B", "Raw Material C"];
+export const rawMaterialNames = ["Raw Material A", "Raw Material B", "Raw Material C"];
 export const craftingItemNames = ["Item 1A", "Item 1B", "Item 1C",
                             "Item: 2A", "Item 2B", "Item 2C",
                             "3 Stars"];
@@ -16,11 +16,11 @@ export const prizeNames = [ "Cat 1", "Decoration 2", "Cat 2",
                             "Decoration 2", "Cat 3", "Decoration 3",
                             "Cat 4", "Decoration 4", "Decoration 5",
                             "Decoration 6" ];
-*/
 
 // ------------------------------------------------------------------------------------------
 // THIS IS THE CURRENT EVENT. IF EVENT IS OVER AND NO NEW IS PUBLISHED. COMMENT THIS OUT
 // ------------------------------------------------------------------------------------------
+/*
 export const rawMaterialNames = ["Daisy", "Lavender", "Azalea"];
 export const craftingItemNames = ["Daisy Oil", "Lavender Oil", "Azalea Oil",
                             "Incense", "Scented Candle", "Air Diffuser",
@@ -29,6 +29,7 @@ export const prizeNames = [ "Lilac", "Floral Vanity", "Mauve",
                             "Pastel Couch", "Teal", "Wicker Lamp",
                             "Mint", "Pastel Rug", "Pink Bouqet",
                             "Floral Lamp" ];
+*/
 
 /**
  * We wrap adding the crafting recipes in a function so we can call it from window.onload.
