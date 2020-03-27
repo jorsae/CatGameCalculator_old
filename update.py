@@ -5,7 +5,7 @@ import subprocess
 
 dont_delete = ['.git', 'CNAME']
 copy_over = ['css', 'dist', 'images',
-            'index.html', 'event.html', 'about.html',
+            'index.html', 'normal.html', 'event.html', 'about.html',
             'feedback.html', 'privacy.html',
             '.nojekyll' ]
 
