@@ -11,8 +11,9 @@ Cat Game Event Crafting:
             - Event tokens
         - Boosts can decrease the event token cost
 
-Version 2.5.6
- * Added 1 minute crafting mode for index
+Version 2.6.0
+ * Added landing page
+ * Minor text changes
 
 Technical:
     Bug:
@@ -35,9 +36,6 @@ Technical:
             ☐ Add a tooltip for index: "Add crafting items for a floor"
             ☐ Add a tooltip for club event: "Add pre-made decoration/cat"
         ☐ Make a interactive tutorial for index and club event
-        ☐ Add description for club-event
-        ☐ Add description for index_fresh.html
-        User interface:
         ☐ Minify css files
 SEO / "Advertisement":
     Checking Keyword ranking    : https://smallseotools.com/keyword-position/
@@ -47,6 +45,8 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✔ Add description for club-event @done(20-03-27 16:01) @project(Technical.General)
+  ✔ Add description for index_fresh.html @done(20-03-27 16:01) @project(Technical.General)
   ✔ Make discord bot that tags and ping people event reminders @done(20-03-21 16:37) @project(Technical.Discord)
   ✔ 1 minute crafting mode. People input end goal(same as before), but every crafitng item has 1minute crafting time @done(20-03-20 22:36) @project(Technical.General)
   ✔ Add boosts to club event crafting @done(20-03-20 21:49) @project(Technical.General)

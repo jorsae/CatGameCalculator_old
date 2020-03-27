@@ -13,6 +13,7 @@ var craftingTimes = new Map();
 window.onload = init;
 function init(){
     document.getElementById("calculate").onclick = startCalculate;
+    document.getElementById("quickCalculate").onclick = startCalculate;
     document.getElementById("clear").onclick = clear;
     document.getElementById("copyClipboard").onclick = copyClipboard;
     document.getElementById("addFloor").onclick = addFloor;
