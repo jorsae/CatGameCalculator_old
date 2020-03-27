@@ -154,12 +154,11 @@ ol{
 
 /* CSS for 'How-to use' */
 #howToUse{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     margin-top: 12px;
-    width: auto;
-    cursor: pointer;
-}
-#howToUse:hover{
-    color: gold;
+    font-size: 1em;
 }
 
 .guide-container{

@@ -29,9 +29,6 @@ Technical:
         ☐ Make event timer also have time for club events
             Make a start/end date for club event so I can manually change the crafting item names depending on that?
         ☐ A lot of people seem confused in how to use the calculator
-            ☐ Add a "quick calculate" button next to the floor adding. Some people can't find the "calculate meow button"
-            ☐ Have "How to use" expanded by default
-            ☐ Add a "homepage" that tells you how to use it, and links to club event AND normal crafting
             ☐ Add a tooltip on club event: "Raw Material"
             ☐ Add a tooltip for index: "Add crafting items for a floor"
             ☐ Add a tooltip for club event: "Add pre-made decoration/cat"
@@ -45,6 +42,9 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✘ Have "How to use" expanded by default @cancelled(20-03-27 16:06) @project(Technical.General)
+  ✔ Add a "homepage" that tells you how to use it, and links to club event AND normal crafting @done(20-03-27 16:05) @project(Technical.General)
+  ✔ Add a "quick calculate" button next to the floor adding. Some people can't find the "calculate meow button" @done(20-03-27 16:05) @project(Technical.General)
   ✔ Add description for club-event @done(20-03-27 16:01) @project(Technical.General)
   ✔ Add description for index_fresh.html @done(20-03-27 16:01) @project(Technical.General)
   ✔ Make discord bot that tags and ping people event reminders @done(20-03-21 16:37) @project(Technical.Discord)
