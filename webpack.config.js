@@ -9,6 +9,7 @@ module.exports = {
                 './src/app/app.js', './src/app/crafting.js', './src/app/floors.js'],
         'event':  ['./src/util/ui.js', './src/util/click.js', './src/util/classes.js', './src/util/globals.js', './src/util/utility.js',
                     './src/event/event.js', './src/event/crafting.js', './src/event/floors.js'],
+        'index':['./src/index/index.js']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
