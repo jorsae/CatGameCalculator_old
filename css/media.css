@@ -1,5 +1,10 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .full-guide{
+        width: 100vw;
+        max-width: 100%;
+    }
+
     .topnav{
         font-size: 2em;
     }
@@ -41,10 +46,19 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .full-guide{
+        width: 90vw;
+        max-width: 90%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .full-guide{
+        width: 85vw;
+        max-width: 85%;
+    }
+    
     .crafting-container{
         width: 90vw;
         max-width: 90%;
@@ -79,6 +93,11 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .full-guide{
+        width: 70vw;
+        max-width: 70%;
+    }
+
     .crafting-container{
         width: 70vw;
         max-width: 70%;
