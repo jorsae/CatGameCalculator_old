@@ -57,17 +57,25 @@
         
         <h1 class="text-center">Cat Game Calculator</h1>
 
+        <div class="calculator-selection">
+            <a href="index.html" class="calculator-option">Normal crafting</a>
+            <a href="event.html" class="calculator-option">Club-Event crafting</a>
+        </div>
+
+        <p class="text-center">For info on changes and new features, join our discord:
+            <strong><a href="https://discord.gg/AXbUEBs">https://discord.gg/AXbUEBs</a></strong>
+        </p>
         <p id="eventCountdown" class="event-timer text-center"></p>
-        <h2 id="howToUse" class="text-center no-margin">How to use Cat Game Calculator</h2>
-        <div id="guideContainer" class="guide-container" style="height: auto;">
+        <h2 class="text-center no-margin">How to use Cat Game Calculator</h2>
+        <div id="guideContainer" class="guide-container full-guide">
             <ol>
                 <li>First you want to input what items you want to calculate. This can be done 2 different ways:</li>
-                <ol>
+                <ol class="small">
                     <li>By using pre-made floors, you can add crafting items for whole floors at a time. Or in the case of club events for cat/decoration at a time.</li>
                     <li>You can scroll down to the desired crafting item and manually type or use the arrow keys to increase/decrease the value.</li>
                 </ol>
                 <li>Select the Crafting time.</li>
-                <ol>
+                <ol class="small">
                     <li>This is the time you want to use to craft all your items.</li>
                     <li>Lower time will mean you will craft fewer items at a time, but it will be cheaper</li>
                     <li>Higher time will mean you will craft more items at a time, but at a increased cost</li>
@@ -76,27 +84,25 @@
                 <li>Press the "Calculate meow" button</li>
                 <li>You can also export the calculations, by clicking the "Copy to clipboard" button and pasting it in excel/google sheet or something similar.</li>
             </ol>
-            
         </div>
-        
+        <div id="guideContainer" class="guide-container full-guide">
         <h2 class="text-center no-margin">Example Usages</h2>
-        <div id="guideContainer" class="guide-container" style="height: auto;">
             <ol>
                 <li>I want to figure out how many materials I need for floor 18</li>
-                <ol>
+                <ol class="small">
                     <li>Select floor: 18</li>
                     <li>Click on the "Quick calculate" button</li>
                     <li>Done. You can now see all the materials needed for floor 18.</li>
                     <li>Since you did not change the crafting time, the cost will be inaccurate, as this goes under the assumption that you will craft all items at the same time.</li>
                 </ol>
                 <li>I want to be able to craft 1 Needle every 30 minutes</li>
-                <ol>
+                <ol class="small">
                     <li>Manually select 1 needle as crafting input</li>
                     <li>Set the crafting time to 30minutes</li>
                     <li>Press the "Calculate meow" button</li>
                     <li>You can now see in the calculations under "Crafting method" how you need to craft</li>
                     <li>So in this example, you need to craft:</li>
-                    <ol>
+                    <ol class="super-small">
                         <li>String 1 at a time, 2 times.</li>
                         <li>Wood 1 at a time, 2 times.</li>
                         <li>Ribbon 1 at a time, 1 time</li>
@@ -106,10 +112,5 @@
                 </ol>
             </ol>
         </div>
-
-        <p class="text-center">For info on changes and new features, join our discord:
-            <b><a href="https://discord.gg/AXbUEBs">https://discord.gg/AXbUEBs</a>
-        </p>
-
     </body>
 </html>

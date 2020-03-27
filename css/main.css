@@ -96,6 +96,43 @@ h1.text-center{
     cursor: pointer;
 }
 
+/* CSS For index page */
+.calculator-selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.calculator-option{
+    font-size: 3em;
+    border: solid 1px white;
+    margin: 8px;
+}
+
+.calculator-option:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+.full-guide{
+    flex-direction: column;
+    height: auto !important;
+    max-width: 50vw;
+    margin: auto;
+}
+
+ol{
+    font-size: 1.25em;
+}
+
+.small{
+    font-size: 0.75em;
+}
+
+.super-small{
+    font-size: 0.95em;
+}
+
 /* CSS for Main Menu */
 .topnav{
     text-decoration: none;
@@ -134,7 +171,6 @@ h1.text-center{
 .guide-container-height{
     height: auto;
 }
-#guide-
 
 /* Event countdown timer */ 
 .event-timer{
