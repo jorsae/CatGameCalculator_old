@@ -232,10 +232,6 @@ li:before {
     max-width: 33.33%;
 }
 
-.crafting-item h3{
-    margin: 4px;
-}
-
 .crafting-item-image{
     width: 50%;
     height: auto;
@@ -374,9 +370,8 @@ tbody tr:nth-child(even){
 
 /* event.html */
 .raw-material{
-    margin-left: 8px;
-    margin-right: 8px;
-    padding-bottom: 8px;
+    margin: auto;
+    padding: 8px;
 }
 
 .selected-raw-material{
