@@ -67,11 +67,14 @@ export function calculate(boost){
     document.getElementById('outputTable').getElementsByTagName('tbody')[0].innerHTML = "";
     var totalCost = 0;
     for(var i = 0; i < craftingItems.length; i++){
-        var tableRow = document.createElement("tr");
-
         var item = craftingItems[i];
         var craftingMethods = item.getCraftingMethod(userTime);
-        var cost = Math.ceil(item.getCost(craftingMethods) / boost);
+        if(item.name === "3 Stars"){
+            var cost = Math.ceil(item.getCost(craftingMethods));
+        }
+        else{
+            var cost = Math.ceil(item.getCost(craftingMethods) / boost);
+        }
         createOutput(item, cost, craftingMethods, userTime);
         totalCost += cost;
     }
