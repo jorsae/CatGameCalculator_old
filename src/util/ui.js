@@ -75,7 +75,7 @@ export function calculate(boost){
         else{
             var cost = Math.ceil(item.getCost(craftingMethods) / boost);
         }
-        createOutput(item, cost, craftingMethods, userTime);
+        createOutput(item, cost, craftingMethods);
         totalCost += cost;
     }
 
@@ -110,7 +110,7 @@ export function calculate(boost){
  * This will have: crafting item image, quantity, cost and how to craft the item(s)
  * The full table row will be appended to the outputTable
  */
-function createOutput(item, cost, craftingMethods, userTime){
+function createOutput(item, cost, craftingMethods){
     var outputTable = document.getElementById('outputTable').getElementsByTagName('tbody')[0];
     var tableRow = outputTable.insertRow();
 
