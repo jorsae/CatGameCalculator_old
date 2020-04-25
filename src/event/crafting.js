@@ -67,7 +67,7 @@ export function addCraftingRecipes(){
     craftingRecipes.set(tier2B.name, tier2B);
     
     const tier2CReq = [new CraftingRequirement(tier2B, 3), new CraftingRequirement(tier1A, 8)];
-    const tier2C = new CraftingItem(craftingItemNames[5], 60, 200, rarity.RARE, 10, tier2CReq);
+    const tier2C = new CraftingItem(craftingItemNames[5], 60, 400, rarity.RARE, 10, tier2CReq);
     craftingRecipes.set(tier2C.name, tier2C);
     
     const starsReq = [new CraftingRequirement(tier1A, 1), new CraftingRequirement(tier1B, 1),
