@@ -716,4 +716,15 @@ export function addFloorRecipes(){
     
     const wrestling = new Floor("Wrestling", 66, identical62_64);
     floorRecipes.set(wrestling.name, wrestling);
+
+
+    const laundromatReq = [["Necklace", 1],
+                        ["Fire", 10],
+                        ["Pendant", 6],
+                        ["Waterstone", 11],
+                        ["Firestone", 8],
+                        ["Elementstone", 2],
+    ];
+    const laundromat = new Floor("Laundromat", 67, laundromatReq);
+    floorRecipes.set(laundromat.name, laundromat);
 }
