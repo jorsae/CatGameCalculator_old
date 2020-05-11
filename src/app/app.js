@@ -34,7 +34,7 @@ function init(){
 function startCalculate(){
     var crafting = document.getElementById("crafting");
     swapCraftingTime(crafting.checked);
-    calculate(1.00, crafting.checked);
+    calculate(1.00);
 }
 
 // TODO: use this as a function to set all crafting items craftingTime to 1 minute

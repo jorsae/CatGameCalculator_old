@@ -44,6 +44,12 @@ export function calculate(boost){
         continue;
     }
 
+    if(userItemReq.length <= 0){
+        displayPopover('quickCalculate', 'Nothing to calculate');
+        displayPopover('calculate', 'Nothing to calculate');
+        return;
+    }
+
     const userItem = new CraftingItem("UserItem", 0, 0, rarity.HIDDEN, 1000, userItemReq);
     craftingRecipes.set(userItem.name, userItem);
     var reqs = getCraftingRequirements(userItem, 1);
@@ -167,6 +173,8 @@ export function clear(){
         }
         continue;
     }
+    
+    displayPopover('clear', 'Cleared!');
 }
 
 /**

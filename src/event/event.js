@@ -32,7 +32,7 @@ function init(){
  */
 function startCalculate(){
     const boost = parseFloat(document.getElementById("userTimeBoost").value);
-    calculate(boost, false);
+    calculate(boost);
 }
 
 /**
