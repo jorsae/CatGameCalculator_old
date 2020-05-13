@@ -85,11 +85,10 @@
             <h2>Basic Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item common">
-                    <h3>String</h3>
-                    <img class="crafting-item-image" src="images/game/string.jpg" alt="Crafting item string" />
+                    <button class="crafting-item-button">String <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="stringInfo"></p>
                     <span>
                         <input id="StringAmount" class="crafting-item-amount" aria-label="Amount of string you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Cotton, 5min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -97,11 +96,10 @@
                     </span>
                 </div>
                 <div class="crafting-item common">
-                    <h3>Wood</h3>
-                    <img class="crafting-item-image" src="images/game/wood.jpg" alt="Crafting item wood">
+                    <button class="crafting-item-button">Wood <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="woodInfo"></p>
                     <span>
                         <input id="WoodAmount" class="crafting-item-amount" aria-label="Amount of wood you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Logs, 5min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -109,11 +107,10 @@
                     </span>
                 </div>
                 <div class="crafting-item rare">
-                    <h3>Ribbon</h3>
-                    <img class="crafting-item-image" src="images/game/ribbon.jpg" alt="Crafting item ribbon">
+                    <button class="crafting-item-button">Ribbon <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="ribbonInfo"></p>
                     <span>
                         <input id="RibbonAmount" class="crafting-item-amount" aria-label="Amount of ribbon you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 String, 2 Wood, 15min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -125,11 +122,10 @@
             <h2>Shiny Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item common">
-                    <h3>Metal</h3>
-                    <img class="crafting-item-image" src="images/game/metal.jpg" alt="Crafting item metal" />
+                    <button class="crafting-item-button">Metal <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="metalInfo"></p>
                     <span>
                         <input id="MetalAmount" class="crafting-item-amount" aria-label="Amount of metal you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Rock, 15min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -137,11 +133,10 @@
                     </span>
                 </div>
                 <div class="crafting-item rare">
-                    <h3>Needles</h3>
-                    <img class="crafting-item-image" src="images/game/needles.jpg" alt="Crafting item needles">
+                    <button class="crafting-item-button">Needles <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="needlesInfo"></p>
                     <span>
                         <input id="NeedlesAmount" class="crafting-item-amount" aria-label="Amount of needles you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 4 Metal, 1 Ribbon, 30min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -149,11 +144,10 @@
                     </span>
                 </div>
                 <div class="crafting-item epic">
-                    <h3>Sparkles</h3>
-                    <img class="crafting-item-image" src="images/game/sparkles.jpg" alt="Crafting item sparkles">
+                    <button class="crafting-item-button">Sparkles <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="sparklesInfo"></p>
                     <span>
                         <input id="SparklesAmount" class="crafting-item-amount" aria-label="Amount of sparkles you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 Needles, 2 Ribbons, 1hour" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -165,11 +159,10 @@
             <h2>Precious Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item common">
-                    <h3>Bronze</h3>
-                    <img class="crafting-item-image" src="images/game/bronze.jpg" alt="Crafting item bronze">
+                    <button class="crafting-item-button">Bronze <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="bronzeInfo"></p>
                     <span>
                         <input id="BronzeAmount" class="crafting-item-amount" aria-label="Amount of bronze you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 4 Rock, 30min" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -177,11 +170,10 @@
                     </span>
                 </div>
                 <div class="crafting-item rare">
-                    <h3>Silver</h3>
-                    <img class="crafting-item-image" src="images/game/silver.jpg" alt="Crafting item silver">
+                    <button class="crafting-item-button">Silver <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="silverInfo"></p>
                     <span>
                         <input id="SilverAmount" class="crafting-item-amount" aria-label="Amount of silver you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Bronze, 1 Sparkles, 2hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -189,11 +181,10 @@
                     </span>
                 </div>
                 <div class="crafting-item epic">
-                    <h3>Gold</h3>
-                    <img class="crafting-item-image" src="images/game/gold.jpg" alt="Crafting item gold">
+                    <button class="crafting-item-button">Gold <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="goldInfo"></p>
                     <span>
                         <input id="GoldAmount" class="crafting-item-amount" aria-label="Amount of gold you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 Silver, 2 Sparkles, 6hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -205,11 +196,10 @@
             <h2>Jewel Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item common">
-                    <h3>Amethyst</h3>
-                    <img class="crafting-item-image" src="images/game/amethyst.jpg" alt="Crafting item amethyst">
+                    <button class="crafting-item-button">Amethyst <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="amethystInfo"></p>
                     <span>
                         <input id="AmethystAmount" class="crafting-item-amount" aria-label="Amount of amethyst you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 10 Quartz, 1hour" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -217,11 +207,10 @@
                     </span>
                 </div>
                 <div class="crafting-item rare">
-                    <h3>Pendant</h3>
-                    <img class="crafting-item-image" src="images/game/pendant.jpg" alt="Crafting item pendant">
+                    <button class="crafting-item-button">Pendant <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="pendantInfo"></p>
                     <span>
                         <input id="PendantAmount" class="crafting-item-amount" aria-label="Amount of pendant you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 7 Amethyst, 2 Silver, 3hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -229,11 +218,10 @@
                     </span>
                 </div>
                 <div class="crafting-item epic">
-                    <h3>Necklace</h3>
-                    <img class="crafting-item-image" src="images/game/necklace.jpg" alt="Crafting item necklace">
+                    <button class="crafting-item-button">Necklace <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="necklaceInfo"></p>
                     <span>
                         <input id="NecklaceAmount" class="crafting-item-amount" aria-label="Amount of necklace you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 3 Pendant, 2 Gold, 12hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -245,11 +233,10 @@
             <h2>Magic Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item common">
-                    <h3>Orb</h3>
-                    <img class="crafting-item-image" src="images/game/orb.jpg" alt="Crafting item orb">
+                    <button class="crafting-item-button">Orb <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="orbInfo"></p>
                     <span>
                         <input id="OrbAmount" class="crafting-item-amount" aria-label="Amount of orb you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 20 Quartz, 1hour" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -257,11 +244,10 @@
                     </span>
                 </div>
                 <div class="crafting-item rare">
-                    <h3>Water</h3>
-                    <img class="crafting-item-image" src="images/game/water.jpg" alt="Crafting item water">
+                    <button class="crafting-item-button">Water <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="waterInfo"></p>
                     <span>
                         <input id="WaterAmount" class="crafting-item-amount" aria-label="Amount of water you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 Orb, 1 Silver, 6hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -269,11 +255,10 @@
                     </span>
                 </div>
                 <div class="crafting-item epic">
-                    <h3>Fire</h3>
-                    <img class="crafting-item-image" src="images/game/fire.jpg" alt="Crafting item fire">
+                    <button class="crafting-item-button">Fire <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="fireInfo"></p>
                     <span>
                         <input id="FireAmount" class="crafting-item-amount" aria-label="Amount of fire you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 6 Orb, 1Gold, 12hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -285,11 +270,10 @@
             <h2>Ancient Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item rare">
-                    <h3>Waterstone</h3>
-                    <img class="crafting-item-image" src="images/game/waterstone.jpg" alt="Crafting item waterstone">
+                    <button class="crafting-item-button">Waterstone <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="waterstoneInfo"></p>
                     <span>
                         <input id="WaterstoneAmount" class="crafting-item-amount" aria-label="Amount of waterstone you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 2 Water, 10 Ribbon, 12hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -297,11 +281,10 @@
                     </span>
                 </div>
                 <div class="crafting-item epic">
-                    <h3>Firestone</h3>
-                    <img class="crafting-item-image" src="images/game/firestone.jpg" alt="Crafting item firestone">
+                    <button class="crafting-item-button">Firestone <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="firestoneInfo"></p>
                     <span>
                         <input id="FirestoneAmount" class="crafting-item-amount" aria-label="Amount of firestone you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 1 Fire, 2 Sparkles, 12hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -309,11 +292,10 @@
                     </span>
                 </div>
                 <div class="crafting-item legendary">
-                    <h3>Elementstone</h3>
-                    <img class="crafting-item-image" src="images/game/elementstone.jpg" alt="Crafting item elementstone">
+                    <button class="crafting-item-button">Elementstone <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="elementstoneInfo"></p>
                     <span>
                         <input id="ElementstoneAmount" class="crafting-item-amount" aria-label="Amount of elementstone ou want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 1 Firestone, 1 Waterstone, 24hours" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">
@@ -325,11 +307,10 @@
             <h2>Ruin Crafting</h2>
             <div class="crafting-tier">
                 <div class="crafting-item legendary">
-                    <h3>Artifact</h3>
-                    <img class="crafting-item-image" src="images/game/artifact.jpg" alt="Crafting item artifact">
+                    <button class="crafting-item-button">Artifact <i class="fa fa-angle-double-down"></i></button>
+                    <p class="crafting-item-info" id="artifactInfo"></p>
                     <span>
                         <input id="ArtifactAmount" class="crafting-item-amount" aria-label="Amount of artifact you want to craft" type="number" value="0" min="0" onclick="this.select()">
-                        <img class="crafting-item-info" src="images/info-icon.png" title="Need: 1 Elementstone, 1 Necklace, 3days" data-toggle="tooltip" data-placement="bottom" alt="Information icon">
                     </span>
                     <span>
                         <img class="arrow" src="images/arrow-up.png" alt="Arrow pointing up">

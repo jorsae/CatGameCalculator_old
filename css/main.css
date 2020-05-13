@@ -230,14 +230,25 @@ li:before {
     flex-wrap: wrap;
     width: 33.33vw;
     max-width: 33.33%;
+    margin-left: 4px;
 }
 
-.crafting-item-image{
-    width: 50%;
+.crafting-item-button{
+    background: none;
+    color: #ffffff;
+    font-size: 1em !important;
+    border: none;
+}
+
+.crafting-item-info{
+    display: none;
+    height: 0;
+    font-size: 1em;
+}
+
+.display-crafting-item-info{
+    display: block;
     height: auto;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
 .crafting-item-amount{
@@ -250,11 +261,6 @@ li:before {
     -webkit-box-shadow: inset 0px 0px 8px #333333;
     -moz-box-shadow: inset 0px 0px 8px #333333;
     box-shadow: inset 0px 0px 8px #333333;
-}
-
-.crafting-item-info{
-    width: 1.5em;
-    height: auto;
 }
 
 .arrow{

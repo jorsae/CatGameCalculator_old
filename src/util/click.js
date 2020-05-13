@@ -25,6 +25,56 @@ export function registerArrowEvent(rawMaterials, craftingRecipes){
     }
 }
 
+export function registerCraftingItemEvent(rawMaterials, craftingRecipes){
+    var craftingItemButton = document.getElementsByClassName("crafting-item-button");
+    const total = craftingRecipes.size - rawMaterials;
+    
+    if(craftingItemButton.length !== total){
+        console.log("registerCraftingItemEvent: Something went terribly wrong");
+        return;
+    }
+
+    var index = 0;
+    for (const [key, value] of craftingRecipes.entries()) {
+        if(rawMaterials > index){
+            index += 1;
+            continue;
+        }
+        const craftingItem = craftingRecipes.get(key);
+        fillCraftingItemInfo(craftingItem);
+
+        craftingItemButton[index - rawMaterials].onclick = function() { displayCraftingItemInfo(craftingItem); };
+        index += 1;
+    }
+}
+
+/**
+ * Click event, that displays/hides crafting item information
+ */
+function displayCraftingItemInfo(craftingItem){
+    const infoParagraph = document.getElementById(craftingItem.name.toLowerCase() + "Info");
+    if(infoParagraph.classList.contains("display-crafting-item-info")){
+        infoParagraph.classList.remove("display-crafting-item-info");
+    }
+    else{
+        infoParagraph.classList.add("display-crafting-item-info");
+    }
+}
+
+/**
+ * Fills the crafting item info paragraph with appropriate information
+ */
+function fillCraftingItemInfo(craftingItem){
+    const infoParagraph = document.getElementById(craftingItem.name.toLowerCase() + "Info");
+    var textContent = "";
+    for(let i = 0; i < craftingItem.craftingRequirements.length; i++){
+        textContent += craftingItem.craftingRequirements[i].craftingItem.name + ": " + craftingItem.craftingRequirements[i].quantity + "<br>";
+    }
+    textContent += "Crafting time: " + craftingItem.craftingTime;
+
+    infoParagraph.innerHTML = textContent;
+}
+    
 /**
  * User increased the value on a CraftingItem (arg)
  */
