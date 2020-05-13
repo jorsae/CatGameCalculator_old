@@ -244,7 +244,7 @@ li:before {
 .crafting-item-info{
     display: none;
     height: 0;
-    font-size: 1em;
+    font-size: 0.75em;
 }
 
 .display-crafting-item-info{
