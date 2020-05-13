@@ -27,8 +27,6 @@ Technical:
         ☐ Remove images from event tab?
         ☐ Have a setting for "compact" mode in index.
             This should remove images, and try to make it as compact as possible
-        ☐ Make event timer also have time for club events
-            Make a start/end date for club event so I can manually change the crafting item names depending on that?
         ☐ A lot of people seem confused in how to use the calculator
             ☐ Add a tooltip on club event: "Raw Material"
             ☐ Add a tooltip for index: "Add crafting items for a floor"
@@ -43,6 +41,8 @@ SEO / "Advertisement":
     ☐ Post on their facebook page?
   
 Archive:
+  ✘ Make event timer also have time for club events @cancelled(20-05-13 21:06) @project(Technical.General)
+    Make a start/end date for club event so I can manually change the crafting item names depending on that?
   ✘ Have "How to use" expanded by default @cancelled(20-03-27 16:06) @project(Technical.General)
   ✔ Add a "homepage" that tells you how to use it, and links to club event AND normal crafting @done(20-03-27 16:05) @project(Technical.General)
   ✔ Add a "quick calculate" button next to the floor adding. Some people can't find the "calculate meow button" @done(20-03-27 16:05) @project(Technical.General)

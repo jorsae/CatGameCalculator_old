@@ -238,6 +238,7 @@ li:before {
     color: #ffffff;
     font-size: 1em !important;
     border: none;
+    height: 2em;
 }
 
 .crafting-item-info{
