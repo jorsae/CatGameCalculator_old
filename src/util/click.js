@@ -70,11 +70,41 @@ function fillCraftingItemInfo(craftingItem){
     for(let i = 0; i < craftingItem.craftingRequirements.length; i++){
         textContent += craftingItem.craftingRequirements[i].craftingItem.name + ": " + craftingItem.craftingRequirements[i].quantity + "<br>";
     }
-    textContent += "Crafting time: " + craftingItem.craftingTime;
+
+
+    textContent += "Crafting time: " + convertMinutes(craftingItem.craftingTime);
 
     infoParagraph.innerHTML = textContent;
 }
-    
+
+/**
+ * Helper function to convert minutes to more readable text
+ */
+function convertMinutes(num){
+    var d = Math.floor(num/1440); // 60*24
+    var h = Math.floor((num-(d*1440))/60);
+    var m = Math.round(num%60);
+
+    var output = "";
+    if(d > 0){
+        output += d + " days, ";
+    }
+
+    if(h > 0){
+        output += h + " hours, ";
+    }
+
+    if(m > 0){
+        output += m + " min";
+    }
+
+    if(output.endsWith(", ")){
+        return output.substring(0, output.length - 2);
+    }
+
+    return output;
+  }
+
 /**
  * User increased the value on a CraftingItem (arg)
  */
