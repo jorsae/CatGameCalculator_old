@@ -1,5 +1,5 @@
 import { populateFloor, addFloor, copyClipboard, clear, calculate, displayHowTo } from "../util/ui";
-import { registerArrowEvent } from "../util/click";
+import { registerCraftingItemEvent, registerArrowEvent } from "../util/click";
 import { craftingRecipes } from "../util/globals";
 import { addFloorRecipes } from "./floors";
 import { addCraftingRecipes, craftingItemNames, rawMaterialNames } from "./crafting";
@@ -19,12 +19,19 @@ function init(){
 
     addCraftingRecipes(); // Creates and adds all the crafting recipes to globals.craftingRecipes
     populateItems();
+    registerCraftingItemEvent(3, craftingRecipes);
     registerArrowEvent(3, craftingRecipes);
 
     addFloorRecipes(); // Creates and adds all the floor recipes to globals.floorRecipes
     populateFloor();
 
     startEventTimer();
+    /**
+     * BEST WAY TO SOLVE PROBLEM WITH CREATING:
+     *  <p class="crafting-item-info display-crafting-item-info" id="metalInfo"></p>
+     * for events, because of the id is different depending onthe event name
+     * IS TO CREATE THAT P class IN populateItems()
+     */
 }
 
 /**
@@ -41,7 +48,10 @@ function startCalculate(){
 function populateItems(){
     const rawMaterialsCount = 3;
 
-    const h3 = document.getElementsByClassName("crafting-item-header"); // Fills h3 with the crafting name
+    const craftingItemButton = document.getElementsByClassName("crafting-item-button"); // Button elements for the crafting items
+    const rawMaterialHeader = document.getElementsByClassName("crafting-item-header"); // h3 elements for the raw materials
+    const craftingItemDiv = document.getElementsByClassName("crafting-item"); // div that contains all info regarding a certain crafting item
+
     const rawMaterials = document.getElementsByClassName("raw-material"); // Fills raw-material with onclick event for selection
     const craftingItemAmount = document.getElementsByClassName("crafting-item-amount"); // sets id for each crafting item
     const craftingItemInfo = document.getElementsByClassName("crafting-item-info"); // sets tooltip text for each crafting item
@@ -50,7 +60,7 @@ function populateItems(){
     for (const [key, _] of craftingRecipes.entries()) {
         if(rawMaterialsCount > index){
             const craftingItem = craftingRecipes.get(craftingItemNames[index]);
-            h3[index].innerText = key + ": " + craftingItem.craftingRequirements[0].quantity;
+            rawMaterialHeader[index].innerText = key + ": " + craftingItem.craftingRequirements[0].quantity;
             const selectedIndex = index; // index is passed like this, because if not, it will just pass a reference to index and it will be wrong.
             rawMaterials[index].onclick = function() { setRawMaterial(rawMaterials[selectedIndex], key, craftingItem.name) };
         }
@@ -58,13 +68,18 @@ function populateItems(){
             const craftingItemIndex = index - rawMaterialsCount;
             craftingItemAmount[craftingItemIndex].id = key + "Amount";
             craftingItemAmount[craftingItemIndex].setAttribute("aria-label", "Amount of " + key + " you want to craft");
-            h3[index].innerText = key;
+            craftingItemButton[craftingItemIndex].innerText = key;
             
             const craftingItem = craftingRecipes.get(craftingItemNames[craftingItemIndex]);
             var craftingItemReq = craftingItem.craftingRequirements;
 
             var craftingItemInfoText = craftingRequirementToString(craftingItemReq, craftingItem.craftingTime);
             craftingItemInfo[craftingItemIndex].title = craftingItemInfoText;
+
+            var craftingItemInfoParagraph = document.createElement("p");
+            craftingItemInfoParagraph.classList.add("crafting-item-info");
+            craftingItemInfoParagraph.id = craftingItem.name.toLowerCase() + "Info";
+            craftingItemDiv[index].insertBefore(craftingItemInfoParagraph, craftingItemDiv[index].children[1]);
         }
         index += 1;
     }

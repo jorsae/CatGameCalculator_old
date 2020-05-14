@@ -7,7 +7,7 @@ export function registerArrowEvent(rawMaterials, craftingRecipes){
     const total = craftingRecipes.size - rawMaterials;
     
     if(arrows.length !== total*2){
-        console.log("registerArrowEvent: Something went terribly wrong");
+        console.log("registerArrowEvent: Something went terribly wrong. " + arrows.length + " | " + total*2);
         return;
     }
 
@@ -30,7 +30,7 @@ export function registerCraftingItemEvent(rawMaterials, craftingRecipes){
     const total = craftingRecipes.size - rawMaterials;
     
     if(craftingItemButton.length !== total){
-        console.log("registerCraftingItemEvent: Something went terribly wrong");
+        console.log("registerCraftingItemEvent: Something went terribly wrong. " + craftingItemButton.length + " | " + total);
         return;
     }
 
@@ -73,6 +73,7 @@ function fillCraftingItemInfo(craftingItem){
 
 
     textContent += "Crafting time: " + convertMinutes(craftingItem.craftingTime);
+    console.log(craftingItem.name);
 
     infoParagraph.innerHTML = textContent;
 }
