@@ -102,7 +102,7 @@ function convertMinutes(num){
     }
 
     return output === "" ? "N/A" : output;
-  }
+}
 
 /**
  * User increased the value on a CraftingItem (arg)
