@@ -327,6 +327,13 @@ li:before {
 }
 
 /* output-container */
+#copyClipboard{
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 .output-total{
     display: flex;
     justify-content: center;
