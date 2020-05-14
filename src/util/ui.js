@@ -121,23 +121,24 @@ function createOutput(item, cost, craftingMethods){
     var tableRow = outputTable.insertRow();
 
     // Add image cell
+    /*
     var cellImage = tableRow.insertCell(0);
     var cellNodeImage = document.createElement("img");
     cellNodeImage.src = "images/game/" + item.name.toLowerCase() + ".jpg";
-    cellImage.appendChild(cellNodeImage);
+    cellImage.appendChild(cellNodeImage);*/ 
 
     // Add item name cell
-    var cellItem = tableRow.insertCell(1);
+    var cellItem = tableRow.insertCell(0);
     var cellNodeItem = document.createTextNode(item.name);
     cellItem.appendChild(cellNodeItem);
 
     // Add quantity cell
-    var cellQuantity = tableRow.insertCell(2);
+    var cellQuantity = tableRow.insertCell(1);
     var cellNodeQuantity = document.createTextNode(item.quantity);
     cellQuantity.appendChild(cellNodeQuantity);
 
     // Add cost cell
-    var cellCost = tableRow.insertCell(3);
+    var cellCost = tableRow.insertCell(2);
     var cellNodeCost = document.createTextNode(intToString(cost));
     cellCost.appendChild(cellNodeCost);
 
@@ -156,7 +157,7 @@ function createOutput(item, cost, craftingMethods){
         craftingText = "None";
     }
     // Add crafting method cell
-    var cellCrafting = tableRow.insertCell(4);
+    var cellCrafting = tableRow.insertCell(3);
     var cellNodeCrafting = document.createTextNode(craftingText);
     cellCrafting.appendChild(cellNodeCrafting);
 }
@@ -250,7 +251,7 @@ export function copyClipboard(){
     var table = document.createElement("table");
 
     // Add table header
-    var tableHeader = document.querySelectorAll("#outputTable tr th:not(:first-child)");
+    var tableHeader = document.querySelectorAll("#outputTable tr th");
     var thead = document.createElement("thead");
     table.appendChild(thead);
 
@@ -263,7 +264,7 @@ export function copyClipboard(){
     thead.appendChild(tableRow);
 
     // Add table data
-    var tableData = document.querySelectorAll("#outputTable tr td:not(:first-child)");
+    var tableData = document.querySelectorAll("#outputTable tr td");
     var tbody = document.createElement("tbody");
     var tableRow = document.createElement("tr");
     for(var i = 0; i < tableData.length; i++){
