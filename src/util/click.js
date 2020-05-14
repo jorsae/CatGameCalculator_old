@@ -101,7 +101,7 @@ function convertMinutes(num){
         return output.substring(0, output.length - 2);
     }
 
-    return output;
+    return output === "" ? "N/A" : output;
   }
 
 /**
