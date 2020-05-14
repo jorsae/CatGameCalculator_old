@@ -21,6 +21,7 @@ Technical:
         ☐ Tooltip(only in event) does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
     General:
+        ☐ Make raw-material in club-even flash, when none of them have been selected
         ☐ Performance improvements
         ☐ Look into the "duplicate home page" message on https://search.google.com/
             Is it possible this is because of https://jorsae.github.io/CatGameCalculatorTest?

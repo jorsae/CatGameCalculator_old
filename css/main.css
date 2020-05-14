@@ -384,7 +384,7 @@ tbody tr:nth-child(even){
 
 /* event.html */
 .raw-material{
-    margin: auto;
+    margin: 4px;
     padding: 8px;
 }
 
