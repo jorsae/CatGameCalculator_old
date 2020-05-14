@@ -76,6 +76,7 @@ function populateItems(){
             var craftingItemInfoText = craftingRequirementToString(craftingItemReq, craftingItem.craftingTime);
             craftingItemInfo[craftingItemIndex].title = craftingItemInfoText;
 
+            // Creates paragraph element that contains crafting-item information
             var craftingItemInfoParagraph = document.createElement("p");
             craftingItemInfoParagraph.classList.add("crafting-item-info");
             craftingItemInfoParagraph.id = craftingItem.name.toLowerCase() + "Info";
