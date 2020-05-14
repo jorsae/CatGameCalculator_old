@@ -71,9 +71,7 @@ function fillCraftingItemInfo(craftingItem){
         textContent += craftingItem.craftingRequirements[i].craftingItem.name + ": " + craftingItem.craftingRequirements[i].quantity + "<br>";
     }
 
-
     textContent += "Crafting time: " + convertMinutes(craftingItem.craftingTime);
-    console.log(craftingItem.name);
 
     infoParagraph.innerHTML = textContent;
 }

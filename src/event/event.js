@@ -54,7 +54,6 @@ function populateItems(){
 
     const rawMaterials = document.getElementsByClassName("raw-material"); // Fills raw-material with onclick event for selection
     const craftingItemAmount = document.getElementsByClassName("crafting-item-amount"); // sets id for each crafting item
-    const craftingItemInfo = document.getElementsByClassName("crafting-item-info"); // sets tooltip text for each crafting item
 
     var index = 0;
     for (const [key, _] of craftingRecipes.entries()) {
@@ -68,13 +67,9 @@ function populateItems(){
             const craftingItemIndex = index - rawMaterialsCount;
             craftingItemAmount[craftingItemIndex].id = key + "Amount";
             craftingItemAmount[craftingItemIndex].setAttribute("aria-label", "Amount of " + key + " you want to craft");
-            craftingItemButton[craftingItemIndex].innerText = key;
+            craftingItemButton[craftingItemIndex].innerHTML = key + ' <i class="fa fa-angle-double-down"></i>';
             
             const craftingItem = craftingRecipes.get(craftingItemNames[craftingItemIndex]);
-            var craftingItemReq = craftingItem.craftingRequirements;
-
-            var craftingItemInfoText = craftingRequirementToString(craftingItemReq, craftingItem.craftingTime);
-            craftingItemInfo[craftingItemIndex].title = craftingItemInfoText;
 
             // Creates paragraph element that contains crafting-item information
             var craftingItemInfoParagraph = document.createElement("p");
@@ -84,16 +79,6 @@ function populateItems(){
         }
         index += 1;
     }
-}
-
-function craftingRequirementToString(craftingRequirements, craftingTime){
-    var output = "Need: ";
-    for(var i = 0; i < craftingRequirements.length; i++){
-        var item = craftingRequirements[i].craftingItem;
-        output += item.name + ": " + craftingRequirements[i].quantity + ", ";
-    }
-    output += craftingTime + " min";
-    return output;
 }
 
 /**
