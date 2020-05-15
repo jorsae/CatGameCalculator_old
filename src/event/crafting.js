@@ -22,14 +22,14 @@ export const prizeNames = [ "Cat 1", "Decoration 2", "Cat 2",
 // ------------------------------------------------------------------------------------------
 // THIS IS THE CURRENT EVENT. IF EVENT IS OVER AND NO NEW IS PUBLISHED. COMMENT THIS OUT
 // ------------------------------------------------------------------------------------------
-export const rawMaterialNames = ["Red Rune", "Blue Rune", "Yellow Rune"];
-export const craftingItemNames = ["Silver Rune", "Gold Rune", "Bronze Rune",
-                            "Shield", "Hammer", "Helmet",
+export const rawMaterialNames = ["Fire Mask", "Flash Mask", "Midnight Mask"];
+export const craftingItemNames = ["Red Bat", "Blue Shield", "Moon Wand",
+                            "Super Hammer", "Super Shield", "Super Wand",
                             "3 Stars"];
-export const prizeNames = [ "Seer", "Longhouse Door", "Chieftain",
-                            "Viking Throne", "Blacksmith", "Iron Cooking Pot",
-                            "Valkyrie", "White Fur Rug", "Viking Lantern",
-                            "Viking Helmet" ];
+export const prizeNames = [ "Hellmet", "Evil Tentacles", "Pawtroller",
+                            "Demolished Building", "Dogsbane", "Graffiti Tower",
+                            "Dark Noir", "Poking Train", "Alien Laser",
+                            "Destructive Robot Arms" ];
 
 /**
  * We wrap adding the crafting recipes in a function so we can call it from window.onload.
