@@ -38,13 +38,7 @@ export const startEvent = event30Min.BASKET;
  * Event times should have date listed in game + 1 day
  */
 export const eventTimes = [
-    { startTime: new Date('Apr 22 2020 00:00:00 UTC'),
-        endTime: new Date('Apr 29 2020 18:00:00 UTC')
-    },
-    { startTime: new Date('Apr 29 2020 00:00:00 UTC'),
-        endTime: new Date('May 6 2020 18:00:00 UTC')
-    },
-    { startTime: new Date('May 6 2020 00:00:00 UTC'),
-        endTime: new Date('May 13 2020 18:00:00 UTC')
+    { startTime: new Date('May 20 2020 00:00:00 UTC'),
+        endTime: new Date('Jun 9 2020 18:00:00 UTC')
     }
 ];
