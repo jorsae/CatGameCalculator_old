@@ -31,8 +31,8 @@ export const event30Min = {
  * 06:00:00 UTC == 17pm aest
  * 00:00:00 UTC == 11am aest
  */
-export const startTime = new Date('Mar 11 2020 12:00:00 UTC');
-export const startEvent = event30Min.BASKET;
+export const startTime = new Date('May 20 2020 00:00:00 UTC');
+export const startEvent = event30Min.CRAFTING;
 
 /**
  * Event times should have date listed in game + 1 day
