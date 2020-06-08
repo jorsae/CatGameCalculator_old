@@ -39,6 +39,6 @@ export const startEvent = event30Min.CRAFTING;
  */
 export const eventTimes = [
     { startTime: new Date('May 20 2020 00:00:00 UTC'),
-        endTime: new Date('Jun 9 2020 18:00:00 UTC')
+        endTime: new Date('Jun 7 2020 18:00:00 UTC')
     }
 ];
