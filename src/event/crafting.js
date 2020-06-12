@@ -10,8 +10,8 @@ import { craftingRecipes, rarity } from "../util/globals";
 // ------------------------------------------------------------------------------------------
 /*
 export const rawMaterialNames = ["Raw Material A", "Raw Material B", "Raw Material C"];
-export const craftingItemNames = ["Item 1A", "Item 1B", "Item 1C",
-                            "Item: 2A", "Item 2B", "Item 2C",
+export const craftingItemNames = ["Item A", "Item B", "Item C",
+                            "Item: D", "Item E", "Item F",
                             "3 Stars"];
 export const prizeNames = [ "Cat 1", "Decoration 2", "Cat 2",
                             "Decoration 2", "Cat 3", "Decoration 3",
@@ -22,14 +22,14 @@ export const prizeNames = [ "Cat 1", "Decoration 2", "Cat 2",
 // ------------------------------------------------------------------------------------------
 // THIS IS THE CURRENT EVENT. IF EVENT IS OVER AND NO NEW IS PUBLISHED. COMMENT THIS OUT
 // ------------------------------------------------------------------------------------------
-export const rawMaterialNames = ["Fire Mask", "Flash Mask", "Midnight Mask"];
-export const craftingItemNames = ["Red Bat", "Blue Shield", "Moon Wand",
-                            "Super Hammer", "Super Shield", "Super Wand",
+export const rawMaterialNames = ["Star Magic", "Moon Magic", "Smoke Magic"];
+export const craftingItemNames = ["Star Book", "Moon Hat", "Smoke Wand",
+                            "Tube Potion", "Bottle Potion", "Cauldron",
                             "3 Stars"];
-export const prizeNames = [ "Hellmet", "Evil Tentacles", "Pawtroller",
-                            "Demolished Building", "Dogsbane", "Graffiti Tower",
-                            "Dark Noir", "Poking Train", "Alien Laser",
-                            "Destructive Robot Arms" ];
+export const prizeNames = [ "Hepzibah", "Brewing Station", "Brew",
+                            "Conjuring Table", "Jocasta", "Familiar",
+                            "Leroi", "Summoning Circle", "Flying Broomsticks",
+                            "Potion Shelf" ];
 
 /**
  * We wrap adding the crafting recipes in a function so we can call it from window.onload.
