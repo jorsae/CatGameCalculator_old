@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jorsae/CatGameCalculator#readme",
   "devDependencies": {
+    "mocha": "^8.0.1",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-obfuscator": "^0.24.6"

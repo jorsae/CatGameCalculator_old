@@ -18,6 +18,8 @@ Version 2.6.0
 
 Technical:
     Bug:
+        ☐ In club-event the 'floors' have a static cost to them, that is not included in the calculations
+            The same is applied to 'normal crafting'!
         ☐ Tooltip(only in event) does not work on chrome on mobile devices
         ☐ The popover can be a bit buggy sometimes
     General:
