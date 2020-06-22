@@ -694,37 +694,29 @@ export function addFloorRecipes(){
      * Floor: 62-64 all require the same material, in the same order.
      *  Increase performance, by just using the same CraftingRequirement list
      */
-    const identical62_64 = [["Necklace", 1],
-                        ["Fire", 10],
-                        ["Pendant", 6],
-                        ["Waterstone", 11],
-                        ["Firestone", 6],
-                        ["Elementstone", 2],
-    ];
-    
-    const gnomes = new Floor("Gnomes", 62, identical62_64);
-    floorRecipes.set(gnomes.name, gnomes);
-    
-    const deconstructivism = new Floor("Deconstructivism", 63, identical62_64);
-    floorRecipes.set(deconstructivism.name, deconstructivism);
-    
-    const caveman = new Floor("Caveman", 64, identical62_64);
-    floorRecipes.set(caveman.name, caveman);
-    
-    const miniature = new Floor("Miniature", 65, identical62_64);
-    floorRecipes.set(miniature.name, miniature);
-    
-    const wrestling = new Floor("Wrestling", 66, identical62_64);
-    floorRecipes.set(wrestling.name, wrestling);
-
-
-    const laundromatReq = [["Necklace", 1],
+    const identical62_67 = [["Necklace", 1],
                         ["Fire", 10],
                         ["Pendant", 6],
                         ["Waterstone", 11],
                         ["Firestone", 8],
                         ["Elementstone", 2],
     ];
-    const laundromat = new Floor("Laundromat", 67, laundromatReq);
+    
+    const gnomes = new Floor("Gnomes", 62, identical62_67);
+    floorRecipes.set(gnomes.name, gnomes);
+    
+    const deconstructivism = new Floor("Deconstructivism", 63, identical62_67);
+    floorRecipes.set(deconstructivism.name, deconstructivism);
+    
+    const caveman = new Floor("Caveman", 64, identical62_67);
+    floorRecipes.set(caveman.name, caveman);
+    
+    const miniature = new Floor("Miniature", 65, identical62_67);
+    floorRecipes.set(miniature.name, miniature);
+    
+    const wrestling = new Floor("Wrestling", 66, identical62_67);
+    floorRecipes.set(wrestling.name, wrestling);
+    
+    const laundromat = new Floor("Laundromat", 67, identical62_67);
     floorRecipes.set(laundromat.name, laundromat);
 }
